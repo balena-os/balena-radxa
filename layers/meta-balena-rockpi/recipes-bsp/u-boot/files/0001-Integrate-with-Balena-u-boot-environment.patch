@@ -1,0 +1,36 @@
+From 65a9bb77c8d0c6d2898eb0a33b9ad6ea03d7c1b2 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Tue, 3 Aug 2021 13:29:48 +0200
+Subject: [PATCH] Integrate with Balena u-boot environment
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ configs/rock-pi-4b-rk3399_defconfig | 1 +
+ include/configs/rockchip-common.h   | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/configs/rock-pi-4b-rk3399_defconfig b/configs/rock-pi-4b-rk3399_defconfig
+index f0292e864c..df0e42d992 100644
+--- a/configs/rock-pi-4b-rk3399_defconfig
++++ b/configs/rock-pi-4b-rk3399_defconfig
+@@ -106,3 +106,4 @@ CONFIG_LCD=y
+ CONFIG_USE_TINY_PRINTF=y
+ CONFIG_ERRNO_STR=y
+ CONFIG_OF_LIBFDT_OVERLAY=y
++CONFIG_CMD_SETEXPR=y
+diff --git a/include/configs/rockchip-common.h b/include/configs/rockchip-common.h
+index cc783e74b7..bf4638bfec 100644
+--- a/include/configs/rockchip-common.h
++++ b/include/configs/rockchip-common.h
+@@ -112,6 +112,7 @@
+ 	"fi; \0"
+ 
+ #define RKIMG_BOOTCOMMAND \
++	"setenv resin_kernel_load_addr ${kernel_addr_r}; run resin_set_kernel_root; run set_os_cmdline;"\
+ 	"run distro_bootcmd;"\
+ 	"boot_android ${devtype} ${devnum};" \
+ 	"bootrkp;"
+-- 
+2.17.1
+
