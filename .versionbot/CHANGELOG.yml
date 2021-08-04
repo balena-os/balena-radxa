@@ -1,4 +1,19 @@
 - commits:
+    - subject: Fix boot partition number in rockpi-4b-rk3399.coffee
+      hash: 2e3aa7891a4263701cd9bcc76c3e90b958768f8b
+      body: |
+        The rockpi-4b-rk3399 uses a different partitioning scheme
+        so let's set here the correct boot partition number.
+      footer:
+        Changelog-entry: Fix boot partition number in rockpi-4b-rk3399.coffee
+        changelog-entry: Fix boot partition number in rockpi-4b-rk3399.coffee
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.83.1+rev2
+  date: 2021-08-04T14:57:38.470Z
+- commits:
     - subject: Add initial support for rockpi-4b-rk3399
       hash: 4781a9b258391b2f027d811e99bcb6f9bdebb87a
       body: ''
