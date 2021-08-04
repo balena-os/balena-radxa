@@ -1,1 +1,13 @@
-[]
+- commits:
+    - subject: Add initial support for rockpi-4b-rk3399
+      hash: 4781a9b258391b2f027d811e99bcb6f9bdebb87a
+      body: ''
+      footer:
+        Changelog-entry: Add initial support for rockpi-4b-rk3399
+        changelog-entry: Add initial support for rockpi-4b-rk3399
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.83.1+rev1
+  date: 2021-08-04T13:09:22.399Z
