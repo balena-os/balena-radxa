@@ -8,9 +8,12 @@ DEVICE_SPECIFIC_SPACE_rockpi-4b-rk3399 = "40960"
 IMAGE_ROOTFS_SIZE="733184"
 BALENA_BOOT_SIZE="80960"
 
+IMAGE_INSTALL_append_rockpi-4b-rk3399 = " bluetooth-broadcom"
+
 BALENA_BOOT_PARTITION_FILES = " \
     rockpi-4b-linux-${MACHINE}.dtb:/rockpi-4b-linux.dtb \
     ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
+    hw_intfc.conf:/ \
 "
 
 device_specific_configuration_rockpi-4b-rk3399() {
