@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix bluetooth on rockpi-4b-rk3399
+      hash: 8e3c8191353729e09246875a1f102ac04f514951
+      body: ''
+      footer:
+        Changelog-entry: Fix bluetooth on rockpi-4b-rk3399
+        changelog-entry: Fix bluetooth on rockpi-4b-rk3399
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.83.1+rev3
+  date: 2021-08-12T14:39:04.763Z
+- commits:
     - subject: Fix boot partition number in rockpi-4b-rk3399.coffee
       hash: 2e3aa7891a4263701cd9bcc76c3e90b958768f8b
       body: |
