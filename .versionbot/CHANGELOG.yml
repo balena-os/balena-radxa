@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add missing u-boot hostapp update hook
+      hash: ba4d646763a484f9e7e2a01f6ac2627d67aa1c21
+      body: |
+        We need this hook for u-boot based boards
+      footer:
+        Changelog-entry: Add missing u-boot hostapp update hook
+        changelog-entry: Add missing u-boot hostapp update hook
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.83.5+rev2
+  date: 2021-08-14T03:20:22.071Z
+- commits:
     - subject: Update meta-balena from v2.83.1 to v2.83.5
       hash: b9df3f234505b8cb84d99ab86aa64485916ada7c
       body: |

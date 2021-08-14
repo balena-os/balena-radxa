@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.5+rev2
+## (2021-08-14)
+
+* Add missing u-boot hostapp update hook [Florin Sarbu]
+
 # v2.83.5+rev1
 ## (2021-08-13)
 
