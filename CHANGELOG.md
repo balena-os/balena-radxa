@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.5+rev3
+## (2021-08-18)
+
+* Improve the provisioning instructions for rockpi-4b-rk3399 [Florin Sarbu]
+
 # v2.83.5+rev2
 ## (2021-08-14)
 

@@ -1,4 +1,17 @@
 - commits:
+    - subject: Improve the provisioning instructions for rockpi-4b-rk3399
+      hash: a075368db52e55524e99efb5401dd5d659b3cbc7
+      body: ''
+      footer:
+        Changelog-entry: Improve the provisioning instructions for rockpi-4b-rk3399
+        changelog-entry: Improve the provisioning instructions for rockpi-4b-rk3399
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.83.5+rev3
+  date: 2021-08-18T14:13:55.253Z
+- commits:
     - subject: Add missing u-boot hostapp update hook
       hash: ba4d646763a484f9e7e2a01f6ac2627d67aa1c21
       body: |
