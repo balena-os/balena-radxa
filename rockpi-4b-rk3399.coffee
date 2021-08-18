@@ -1,6 +1,12 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+postProvisioningInstructions = [
+	instructions.BOARD_SHUTDOWN
+	instructions.REMOVE_INSTALL_MEDIA
+	instructions.BOARD_REPOWER
+]
+
 module.exports =
 	version: 1
 	slug: 'rockpi-4b-rk3399'
@@ -8,7 +14,15 @@ module.exports =
 	arch: 'aarch64'
 	state: 'new'
 
-	instructions: commonImg.instructions
+	stateInstructions:
+		postProvisioning: postProvisioningInstructions
+
+	instructions: [
+		instructions.ETCHER_SD
+		instructions.EJECT_SD
+		instructions.FLASHER_WARNING
+	].concat(postProvisioningInstructions)
+
 	gettingStartedLink:
 		windows: 'https://www.balena.io/docs/learn/getting-started/rockpi-4b-rk3399/nodejs/'
 		osx: 'https://www.balena.io/docs/learn/getting-started/rockpi-4b-rk3399/nodejs/'
