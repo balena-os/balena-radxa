@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.10+rev2
+## (2021-08-23)
+
+* Update meta-balena from 1 to 2 [Balena CI]
+
 # v2.83.10+rev1
 ## (2021-08-23)
 

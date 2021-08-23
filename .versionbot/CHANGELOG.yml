@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update meta-balena from 1 to 2
+      hash: 6048cd336ed291fb396af4e6dbd8c88a193a21e3
+      body: ''
+      footer:
+        Changelog-entry: Update meta-balena from 1 to 2
+        changelog-entry: Update meta-balena from 1 to 2
+        Signed-off-by: Stathis Moraitidis stathis@balena.io
+        signed-off-by: Stathis Moraitidis stathis@balena.io
+      author: Balena CI
+      nested: []
+  version: 2.83.10+rev2
+  date: 2021-08-23T11:04:36.831Z
+- commits:
     - subject: Update meta-balena from v2.83.5 to v2.83.10
       hash: 9fbfab9f41608329bcf308fc16d714e32d98596a
       body: |
