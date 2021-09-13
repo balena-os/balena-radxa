@@ -1,4 +1,33 @@
 - commits:
+    - subject: Use the balena/warrior poky branch
+      hash: a8f0b20e3e4f58e0d8ae888fa0f87ec232794f54
+      body: >
+        Recent meta-balena releases that combine the OS variants into a single
+
+        image require to remove the `zap_empty_root_password` postprocess
+        command
+
+        (see meta-balena@6444043c250589cac693de8b259646d79961bbd0), which leaves
+
+        a double comma that is not supported by older bitbakes (before Dunfell).
+
+
+        This commit uses a forked Poky that allows this double comma statement
+        as
+
+        a temporary solution until the device is updated to Dunfell.
+      footer:
+        Changelog-entry: Use the balena/warrior poky branch
+        changelog-entry: Use the balena/warrior poky branch
+        Relates-to: meta-balena#2226
+        relates-to: meta-balena#2226
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.83.10+rev2
+  date: 2021-09-13T13:35:38.172Z
+- commits:
     - subject: Update meta-balena from v2.83.5 to v2.83.10
       hash: 9fbfab9f41608329bcf308fc16d714e32d98596a
       body: |

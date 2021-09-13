@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.10+rev2
+## (2021-09-13)
+
+* Use the balena/warrior poky branch [Alex Gonzalez]
+
 # v2.83.10+rev1
 ## (2021-08-23)
 
