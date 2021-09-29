@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.10+rev2
+## (2021-09-29)
+
+* balena-image: Install boot overlays in the root partition [Alexandru Costache]
+
 # v2.83.10+rev1
 ## (2021-08-23)
 

@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'balena-image: Install boot overlays in the root partition'
+      hash: b8de2384bf0351829d574b1964324f7f0a69108a
+      body: ''
+      footer:
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+        Changelog-entry: 'balena-image: Install boot overlays in the root partition'
+        changelog-entry: 'balena-image: Install boot overlays in the root partition'
+      author: Alexandru Costache
+      nested: []
+  version: 2.83.10+rev2
+  date: 2021-09-29T11:24:06.775Z
+- commits:
     - subject: Update meta-balena from v2.83.5 to v2.83.10
       hash: 9fbfab9f41608329bcf308fc16d714e32d98596a
       body: |
