@@ -14,6 +14,23 @@ BALENA_BOOT_PARTITION_FILES = " \
     rockpi-4b-linux-${MACHINE}.dtb:/rockpi-4b-linux.dtb \
     ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
     hw_intfc.conf:/ \
+    overlays/at24c02.dtbo:/ \
+    overlays/console-on-ttyS2.dtbo:/ \
+    overlays/console-on-ttyS4.dtbo:/ \
+    overlays/cpufreq.dtbo:/ \
+    overlays/devspi1.dtbo:/ \
+    overlays/devspi2.dtbo:/ \
+    overlays/hifiberry-dac.dtbo:/ \
+    overlays/hifiberry-dacplus.dtbo:/ \
+    overlays/imx219.dtbo:/ \
+    overlays/ov5647.dtbo:/ \
+    overlays/pcie-gen2.dtbo:/ \
+    overlays/raspberrypi-7-inch-lcd.dtbo:/ \
+    overlays/spi1-flash.dtbo:/ \
+    overlays/spi1-waveshare35b-v2.dtbo:/ \
+    overlays/spi1-waveshare35c.dtbo:/ \
+    overlays/two-color-led.dtbo:/ \
+    overlays/w1-gpio4-30.dtbo:/ \
 "
 
 device_specific_configuration_rockpi-4b-rk3399() {
