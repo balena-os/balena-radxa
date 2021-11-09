@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.83.10+rev3
+## (2021-11-09)
+
+* Load spidev overlay by default [Alexandru Costache]
+
 # v2.83.10+rev2
 ## (2021-09-29)
 

@@ -1,4 +1,17 @@
 - commits:
+    - subject: Load spidev overlay by default
+      hash: d7809dac8194af2ab0283dafe82fe0dda141c21c
+      body: ''
+      footer:
+        Changelog-entry: Load spidev overlay by default
+        changelog-entry: Load spidev overlay by default
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.83.10+rev3
+  date: 2021-11-09T14:53:12.887Z
+- commits:
     - subject: 'balena-image: Install boot overlays in the root partition'
       hash: b8de2384bf0351829d574b1964324f7f0a69108a
       body: ''
