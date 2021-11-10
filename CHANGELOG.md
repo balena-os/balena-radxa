@@ -1,6 +1,11 @@
 # v2021.10.1
 ## (2021-11-09)
 
+# v2021.10.2
+## (2021-11-10)
+
+* Backport u-boot fat fs related patch in order to fix write failure when saving bootcount [Florin Sarbu]
+
 * Load spidev overlay by default [Alexandru Costache]
 
 # 2021.10.0

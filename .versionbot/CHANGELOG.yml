@@ -1,4 +1,28 @@
 - commits:
+    - subject: >-
+        Backport u-boot fat fs related patch in order to fix write failure when
+        saving bootcount
+      hash: b34195bb27d52e272e070472c30591280edfaa04
+      body: |
+        We backport an u-boot patch in order to fix the following:
+        writing bootcount.env
+        Error Invalid FAT entry 0x3ffffffa
+        Invalid FAT entry
+        Error Invalid FAT entry 0x3ffffffa
+      footer:
+        Changelog-entry: >-
+          Backport u-boot fat fs related patch in order to fix write failure
+          when saving bootcount
+        changelog-entry: >-
+          Backport u-boot fat fs related patch in order to fix write failure
+          when saving bootcount
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2021.10.2
+  date: 2021-11-10T20:10:56.964Z
+- commits:
     - subject: Load spidev overlay by default
       hash: d7809dac8194af2ab0283dafe82fe0dda141c21c
       body: ''
