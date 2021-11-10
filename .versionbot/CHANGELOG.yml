@@ -1,4 +1,28 @@
 - commits:
+    - subject: >-
+        Backport u-boot fat fs related patch in order to fix write failure when
+        saving bootcount
+      hash: 59df2b1eff5a491c09df606261f2dd14e1817d8b
+      body: |
+        We backport an u-boot patch in order to fix the following:
+        writing bootcount.env
+        Error Invalid FAT entry 0x3ffffffa
+        Invalid FAT entry
+        Error Invalid FAT entry 0x3ffffffa
+      footer:
+        Changelog-entry: >-
+          Backport u-boot fat fs related patch in order to fix write failure
+          when saving bootcount
+        changelog-entry: >-
+          Backport u-boot fat fs related patch in order to fix write failure
+          when saving bootcount
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.85.2+rev2
+  date: 2021-11-10T18:35:09.211Z
+- commits:
     - subject: Update meta-balena from v2.83.10 to v2.85.2
       hash: d7e6adda34c40c26a688010af3787b47522ecb86
       body: |

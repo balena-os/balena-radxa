@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.85.2+rev2
+## (2021-11-10)
+
+* Backport u-boot fat fs related patch in order to fix write failure when saving bootcount [Florin Sarbu]
+
 # v2.85.2+rev1
 ## (2021-11-06)
 
