@@ -6,7 +6,10 @@ inherit resin-u-boot
 
 DEPENDS += "radxa-binary-loader radxa-binary-native"
 
-SRC_URI_append = " file://0001-Integrate-with-Balena-u-boot-environment.patch"
+SRC_URI_append = " \
+    file://0001-Integrate-with-Balena-u-boot-environment.patch \
+    file://0002-fs-fat-fix-wrong-casting-to-unsigned-value-of-sect_t.patch \
+"
 
 BALENA_BOOT_PART_rockpi-4b-rk3399 = "4"
 BALENA_DEFAULT_ROOT_PART_rockpi-4b-rk3399 = "5"
