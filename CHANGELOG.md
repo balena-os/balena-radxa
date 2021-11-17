@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.85.2+rev3
+## (2021-11-17)
+
+* balena-image: Install overlays in correct directory [Alexandru Costache]
+
 # v2.85.2+rev2
 ## (2021-11-10)
 
