@@ -1,4 +1,20 @@
 - commits:
+    - subject: 'balena-image: Install overlays in correct directory'
+      hash: 0c3199ff6bf0a16c450c75afeefbaca36b94f485
+      body: |
+        The are currently incorectly installed
+        in the boot partition, instead of the overlays
+        directory. Let's fix that.
+      footer:
+        Changelog-entry: 'balena-image: Install overlays in correct directory'
+        changelog-entry: 'balena-image: Install overlays in correct directory'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2021.10.3
+  date: 2021-11-17T16:15:35.398Z
+- commits:
     - subject: >-
         Backport u-boot fat fs related patch in order to fix write failure when
         saving bootcount

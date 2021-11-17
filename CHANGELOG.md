@@ -1,6 +1,11 @@
 # v2021.10.1
 ## (2021-11-09)
 
+# v2021.10.3
+## (2021-11-17)
+
+* balena-image: Install overlays in correct directory [Alexandru Costache]
+
 # v2021.10.2
 ## (2021-11-10)
 
