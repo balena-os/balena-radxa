@@ -12,7 +12,7 @@ module.exports =
 	slug: 'rockpi-4b-rk3399'
 	name: 'ROCK Pi 4B'
 	arch: 'aarch64'
-	state: 'new'
+	state: 'newd'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
