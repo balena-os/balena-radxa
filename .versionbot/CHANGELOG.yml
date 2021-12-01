@@ -1,4 +1,23 @@
 - commits:
+    - subject: Turn i2c7 bus on by default
+      hash: dd5260d36b9618dcc7bb94980e59d87ea75091e9
+      body: >
+        load i2c7 bus by default as this is the main i2c bus on the 40 pin head,
+        physical pins 3 and 5
+      footer:
+        Closes: '#26'
+        closes: '#26'
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Turn i2c7 bus on by default
+        changelog-entry: Turn i2c7 bus on by default
+        Signed-off-by: Aaron Shaw <shawaj@gmail.com>
+        signed-off-by: Aaron Shaw <shawaj@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 2.85.2+rev4
+  date: 2021-11-22T22:52:20.601Z
+- commits:
     - subject: 'balena-image: Install overlays in correct directory'
       hash: 7783822ffb7bdb8bbb7ce937e5ca9667938fad05
       body: |

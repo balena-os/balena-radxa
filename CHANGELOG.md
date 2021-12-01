@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.85.2+rev4
+## (2021-11-22)
+
+* Turn i2c7 bus on by default [Aaron Shaw]
+
 # v2.85.2+rev3
 ## (2021-11-17)
 
