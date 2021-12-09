@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.85.2+rev5
+## (2021-12-09)
+
+* Fix bluetooth firmware loading [Florin Sarbu]
+
 # v2.85.2+rev4
 ## (2021-11-22)
 

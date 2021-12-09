@@ -1,4 +1,27 @@
 - commits:
+    - subject: Fix bluetooth firmware loading
+      hash: f2ec405715e7ad12aaba14c6c00d38de7a8b3c41
+      body: |
+        There are cases when the rootfs is read-only. In such cases,
+        the approach of updating the systemd service responsible for
+        loading the bluetooth firmware will not work.
+
+        Instead we rework it and use an udev rule and systemd service
+        combination to load the bluetooth firmware.
+
+        Also, we change the logic of getting the /dev node because
+        the current device tree does not define a node named "bt_uart"
+        and instead we grep for "wireless-bluetooth".
+      footer:
+        Changelog-entry: Fix bluetooth firmware loading
+        changelog-entry: Fix bluetooth firmware loading
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.85.2+rev5
+  date: 2021-12-09T14:02:51.973Z
+- commits:
     - subject: Turn i2c7 bus on by default
       hash: dd5260d36b9618dcc7bb94980e59d87ea75091e9
       body: >
