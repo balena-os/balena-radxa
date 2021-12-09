@@ -1,6 +1,11 @@
 # v2021.10.1
 ## (2021-11-09)
 
+# v2021.10.5
+## (2021-12-09)
+
+* Fix bluetooth firmware loading [Florin Sarbu]
+
 # v2021.10.4
 ## (2021-12-01)
 
