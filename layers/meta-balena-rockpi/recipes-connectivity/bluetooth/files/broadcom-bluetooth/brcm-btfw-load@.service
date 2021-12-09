@@ -1,0 +1,10 @@
+[Unit]
+Description=Load Bluetooth firmware
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/sbin/rfkill unblock bluetooth
+ExecStart=/bin/bash /usr/bin/brcm-btfw-load.sh %I
+
+[Install]
+WantedBy=multi-user.target
