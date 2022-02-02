@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.88.4+rev4
+## (2022-02-02)
+
+* Fix variable in local.conf.sample for correct switch to development image [Florin Sarbu]
+
 # v2.88.4+rev3
 ## (2022-01-21)
 
