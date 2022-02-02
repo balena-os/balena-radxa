@@ -44,6 +44,7 @@ See below for using the build script.
 ### Issues
 
 For issues we use an aggregated github repository available [here](https://github.com/balena-os/balena/issues). When you create issue make sure you select the right labels.
+For issues please use this section: https://github.com/balena-os/balena-rockpi/issues
 
 ### Pull requests
 
