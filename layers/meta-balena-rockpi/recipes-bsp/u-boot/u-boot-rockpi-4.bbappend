@@ -76,3 +76,5 @@ EOF
     install -m 0600 "${WORKDIR}/extlinux.conf" "${DEPLOY_DIR_IMAGE}/extlinux"
     install -m 0600 "${WORKDIR}/extlinux.conf_flasher" "${DEPLOY_DIR_IMAGE}/extlinux"
 }
+
+do_deploy[nostamp] = "1"
