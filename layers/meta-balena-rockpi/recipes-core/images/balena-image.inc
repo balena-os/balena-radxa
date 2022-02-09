@@ -44,3 +44,6 @@ IMAGE_CMD_balenaos-img_append () {
     dd if=${DEPLOY_DIR_IMAGE}/u-boot.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=16384
     dd if=${DEPLOY_DIR_IMAGE}/trust.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=24576
 }
+
+# Ensure extlinux.conf files are deployed
+do_rootfs_balenaos-img[depends] += " u-boot-rockpi-4:do_deploy "
