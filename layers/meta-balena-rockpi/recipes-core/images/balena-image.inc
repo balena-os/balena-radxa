@@ -46,4 +46,8 @@ IMAGE_CMD_balenaos-img_append () {
 }
 
 # Ensure extlinux.conf files are deployed
-do_rootfs_balenaos-img[depends] += " u-boot-rockpi-4:do_deploy "
+do_rootfs_balenaos-img_rockpi-4b-rk3399[depends] += " u-boot-rockpi-4:do_deploy "
+
+DEPENDS += " \
+    u-boot-rockpi-4 \
+"
