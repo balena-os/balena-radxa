@@ -1,6 +1,12 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.88.4+rev5
+## (2022-02-11)
+
+* recipes-bsp/u-boot: Ensure deploy task is always run [Alexandru Costache]
+* balena-image: ensure u-boot files are present when generating rootfs [Alexandru Costache]
+
 # v2.88.4+rev4
 ## (2022-02-02)
 

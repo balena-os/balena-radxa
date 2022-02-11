@@ -1,4 +1,34 @@
 - commits:
+    - subject: "recipes-bsp/u-boot: Ensure deploy task is always run"
+      hash: b35336aa11ef243e4160b26a88ecdfbf89672b5a
+      body: |
+        meta-balena PRs happen to stumble on the
+        rockpi build, let's ensure the deploy
+        task is always run on u-boot.
+      footer:
+        Changelog-entry: "recipes-bsp/u-boot: Ensure deploy task is always run"
+        changelog-entry: "recipes-bsp/u-boot: Ensure deploy task is always run"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: "balena-image: ensure u-boot files are present when generating rootfs"
+      hash: 8472847ab7182a7978687ad15b9b17856fe6f8a7
+      body: >
+        We spotted the following error in a meta-balena build PR, on the rockpi
+
+            extlinux.conf_flasher is an invalid path referenced in BALENA_BOOT_PARTITION_FILES
+      footer:
+        Changelog-entry: "balena-image: ensure u-boot files are present when generating rootfs"
+        changelog-entry: "balena-image: ensure u-boot files are present when generating rootfs"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.88.4+rev5
+  title: "'Fix sporadic jenkins builds fail'"
+  date: 2022-02-11T13:25:25.494Z
+- commits:
     - subject: Fix variable in local.conf.sample for correct switch to development image
       hash: 4ec640e602954fcfbcdf939d1e67c342c6a4f1f6
       body: |
