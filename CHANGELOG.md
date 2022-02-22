@@ -1,6 +1,12 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.88.4+rev5
+## (2022-02-22)
+
+* balena-image: Wait on u-boot when creating rootfs [Alexandru Costache]
+* balena-image: ensure u-boot files are present when generating rootfs [Alexandru Costache]
+
 # v2.88.4+rev4
 ## (2022-02-02)
 

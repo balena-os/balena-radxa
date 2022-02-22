@@ -1,4 +1,31 @@
 - commits:
+    - subject: "balena-image: Wait on u-boot when creating rootfs"
+      hash: 8bcec87c318c772902221cd76bdf8930880a300c
+      body: ""
+      footer:
+        Changelog-entry: "balena-image: Wait on u-boot when creating rootfs"
+        changelog-entry: "balena-image: Wait on u-boot when creating rootfs"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: "balena-image: ensure u-boot files are present when generating rootfs"
+      hash: 8472847ab7182a7978687ad15b9b17856fe6f8a7
+      body: >
+        We spotted the following error in a meta-balena build PR, on the rockpi
+
+            extlinux.conf_flasher is an invalid path referenced in BALENA_BOOT_PARTITION_FILES
+      footer:
+        Changelog-entry: "balena-image: ensure u-boot files are present when generating rootfs"
+        changelog-entry: "balena-image: ensure u-boot files are present when generating rootfs"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.88.4+rev5
+  title: "'Fix sporadic jenkins build fail'"
+  date: 2022-02-22T15:06:44.519Z
+- commits:
     - subject: Fix variable in local.conf.sample for correct switch to development image
       hash: 4ec640e602954fcfbcdf939d1e67c342c6a4f1f6
       body: |
