@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update meta-balena from v2.94.2 to v2.94.3
+      hash: 814556e51abf30aa7188fc24d119729c8caef2e7
+      body: |
+        Update meta-balena from 2.94.2 to 2.94.3
+      footer:
+        Changelog-entry: Update meta-balena from v2.94.2 to v2.94.3
+        changelog-entry: Update meta-balena from v2.94.2 to v2.94.3
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "tests/os: fix bracket in bbb overlay test"
+              hash: c11bc9d3e8ad4102f1b0d38a4d2658222687e156
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.94.3
+          title: "'tests/os: fix bracket in bbb overlay test'"
+          date: 2022-03-02T12:06:17.701Z
+  version: 2.94.3
+  title: "'layers/meta-balena: Update to v2.94.3'"
+  date: 2022-03-02T14:53:48.874Z
+- commits:
     - subject: Update meta-balena from v2.88.4 to v2.94.2
       hash: de6330ae92dac41e328a9be2021ba1a4e182e0af
       body: |

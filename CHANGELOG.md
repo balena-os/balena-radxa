@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.94.3
+## (2022-03-02)
+
+
+<details>
+<summary> Update meta-balena from v2.94.2 to v2.94.3 [Florin Sarbu] </summary>
+
+> ## meta-balena-2.94.3
+> ### (2022-03-02)
+> 
+> * tests/os: fix bracket in bbb overlay test [rcooke-warwick]
+> 
+</details>
+
 # v2.94.2
 ## (2022-03-02)
 
