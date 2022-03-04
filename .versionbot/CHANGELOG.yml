@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update meta-balena from v2.94.3 to v2.94.4
+      hash: 6ae8b6fb56f7e041cf00b678e44607a9a8c0152e
+      body: |
+        Update meta-balena from 2.94.3 to 2.94.4
+      footer:
+        Changelog-entry: Update meta-balena from v2.94.3 to v2.94.4
+        changelog-entry: Update meta-balena from v2.94.3 to v2.94.4
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "balena-supervisor: Fix supervisor tagging command"
+              hash: d25d6289b14edd9111d6abbc45448693ca872036
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.94.4
+          title: "'balena-supervisor: Fix supervisor tagging command'"
+          date: 2022-03-04T05:54:28.770Z
+  version: 2.94.4
+  title: "'layers/meta-balena: Update to v2.94.4'"
+  date: 2022-03-04T06:49:14.476Z
+- commits:
     - subject: Update meta-balena from v2.94.2 to v2.94.3
       hash: 814556e51abf30aa7188fc24d119729c8caef2e7
       body: |
