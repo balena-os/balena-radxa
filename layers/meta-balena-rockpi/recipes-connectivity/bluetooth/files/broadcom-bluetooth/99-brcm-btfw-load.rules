@@ -1,1 +1,0 @@
-ACTION=="add", KERNEL=="*:*:1", SUBSYSTEM=="sdio", ATTR{vendor}=="0x02d0", TAG+="systemd", ENV{SYSTEMD_WANTS}="brcm-btfw-load@%k.service"
