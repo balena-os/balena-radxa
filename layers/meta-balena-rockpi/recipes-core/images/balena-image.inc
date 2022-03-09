@@ -11,7 +11,7 @@ BALENA_BOOT_SIZE="80960"
 IMAGE_INSTALL_append_rockpi-4b-rk3399 = " bluetooth-broadcom"
 
 BALENA_BOOT_PARTITION_FILES = " \
-    rockpi-4b-linux-${MACHINE}.dtb:/rockpi-4b-linux.dtb \
+    rk3399-rock-pi-4b.dtb:/ \
     ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
     hw_intfc.conf:/ \
     overlays/at24c02.dtbo:/overlays/at24c02.dtbo \
