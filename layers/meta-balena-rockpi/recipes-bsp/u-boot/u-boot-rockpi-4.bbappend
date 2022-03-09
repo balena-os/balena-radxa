@@ -28,7 +28,7 @@ MINOR=0
 SEC=0
 [BL31_OPTION]
 SEC=1
-PATH=radxa-binary/rk3399_bl31_v1.26.elf
+PATH=radxa-binary/bl31.elf
 ADDR=0x10000
 [BL32_OPTION]
 SEC=0
