@@ -1,6 +1,55 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.0
+## (2022-03-10)
+
+
+<details>
+<summary> Update meta-balena from v2.94.4 to v2.95.0 [Florin Sarbu] </summary>
+
+> ## meta-balena-2.95.0
+> ### (2022-03-04)
+> 
+> * Adds modem test suite [Alex]
+> 
+> ## meta-balena-2.94.5
+> ### (2022-03-04)
+> 
+> * Use by-state symlink for mounting the EFI partition when split [Michal Toman]
+> * os-helpers: add TPM2 helpers [Michal Toman]
+> * Add PCR protection policy to TPM operation unlocking LUKS passphrase [Michal Toman]
+> 
+</details>
+
+
+<details>
+<summary> Update balena-yocto-scripts to v1.17.6 [Florin Sarbu] </summary>
+
+> ## balena-yocto-scripts-1.17.6
+> ### (2022-03-08)
+> 
+> * barys: Remove RESINHUP setting [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.5
+> ### (2022-03-08)
+> 
+> * balena-deploy: Avoid patching test suites config.js during deploy [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.4
+> ### (2022-03-03)
+> 
+> * Init and update submodules when switching meta-balena branches [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.3
+> ### (2022-03-02)
+> 
+> * jenkins_build: Use recurse-submodules when checking out meta-balena [Kyle Harding]
+> 
+</details>
+
+* Update poky to dunfell-23.0.12 [Florin Sarbu]
+
 # v2.94.4
 ## (2022-03-04)
 
