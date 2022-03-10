@@ -3,6 +3,9 @@
 
 BALENA_STORAGE = "overlay2"
 
+# this does not compile at the moment so let's disable it
+BALENA_DISABLE_KERNEL_HEADERS = "1"
+
 # More info meta-resin/README.md
 #TARGET_REPOSITORY ?= ""
 #TARGET_TAG ?= ""
