@@ -1,0 +1,27 @@
+From d41e8d744f6eea11961ccae5ecd40e0dc055a712 Mon Sep 17 00:00:00 2001
+From: Alex Gonzalez <alexg@balena.io>
+Date: Fri, 11 Mar 2022 18:33:01 +0100
+Subject: [PATCH] arm64: armv8_deprecated: Warn just once about deprecated CP15
+ barrier
+
+Even rate limited, this message completely swamps the logs and makes it
+very difficult to debug issues.
+
+Signed-off-by: Alex Gonzalez <alexg@balena.io>
+---
+ arch/arm64/kernel/armv8_deprecated.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm64/kernel/armv8_deprecated.c b/arch/arm64/kernel/armv8_deprecated.c
+index 10d3642deb7c..feb70a47758f 100644
+--- a/arch/arm64/kernel/armv8_deprecated.c
++++ b/arch/arm64/kernel/armv8_deprecated.c
+@@ -518,7 +518,7 @@ static int cp15barrier_handler(struct pt_regs *regs, u32 instr)
+ 	}
+ 
+ ret:
+-	pr_warn_ratelimited("\"%s\" (%ld) uses deprecated CP15 Barrier instruction at 0x%llx\n",
++	pr_warn_once("\"%s\" (%ld) uses deprecated CP15 Barrier instruction at 0x%llx\n",
+ 			current->comm, (unsigned long)current->pid, regs->pc);
+ 
+ 	regs->pc += 4;
