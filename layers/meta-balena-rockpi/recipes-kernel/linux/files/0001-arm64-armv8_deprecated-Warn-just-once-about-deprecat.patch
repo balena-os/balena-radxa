@@ -7,6 +7,7 @@ Subject: [PATCH] arm64: armv8_deprecated: Warn just once about deprecated CP15
 Even rate limited, this message completely swamps the logs and makes it
 very difficult to debug issues.
 
+Upstream-status: Inappropriate [configuration]
 Signed-off-by: Alex Gonzalez <alexg@balena.io>
 ---
  arch/arm64/kernel/armv8_deprecated.c | 2 +-
