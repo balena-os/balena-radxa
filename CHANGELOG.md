@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.0+rev1
+## (2022-03-12)
+
+* Do not swamp log with deprecation warnings [Alex Gonzalez]
+
 # v2.95.0
 ## (2022-03-10)
 
