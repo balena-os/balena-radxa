@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.1.1
+## (2022-03-18)
+
+* Do not swamp log with deprecation warnings [Alex Gonzalez]
+
 # 2022.01.0
 ## (2022-01-24)
 
