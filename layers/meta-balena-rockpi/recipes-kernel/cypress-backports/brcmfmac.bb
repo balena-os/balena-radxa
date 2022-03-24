@@ -12,7 +12,7 @@ DEPENDS += "bison-native flex-native"
 PR="r0"
 
 SRC_URI = "git://github.com/balena-os/cypress-backports.git;branch=v5.4.18-2021_0527;protocol=https"
-SRCREV = "377fc49500635649ab38d7f504b4c81b2d117cb1"
+SRCREV = "9caf48da1a252a256e0c8e9b66dd514aafad6056"
 
 S = "${WORKDIR}/git/v5.4.18-backports"
 
