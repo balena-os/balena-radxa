@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.1.3
+## (2022-03-24)
+
+* Ensure wireless powersave if off by default [Florin Sarbu]
+
 # v2022.1.2
 ## (2022-03-24)
 
