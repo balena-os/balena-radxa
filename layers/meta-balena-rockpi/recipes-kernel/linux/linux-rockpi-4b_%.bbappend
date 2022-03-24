@@ -12,5 +12,20 @@ do_deploy_append_rockpi-4b-rk3399() {
     sed -i 's/#intfc:dtoverlay=devspi1/intfc:dtoverlay=devspi1/g' ${DEPLOYDIR}/hw_intfc.conf
 }
 
-# we remove this driver because it conflicts with bcmdhd and breaks wifi / bt
-BALENA_CONFIGS_remove_rockpi-4b-rk3399 = "brcmfmac"
+# remove in-tree brcmfmac, cfg80211 and the entire of Rockchip's WiFi stack because we will be using a 5.4.18 backported brcmfmac version instead
+BALENA_CONFIGS_append_rockpi-4b-rk3399 = " no-in-tree_wifi-no-rockchip-wl"
+BALENA_CONFIGS[no-in-tree_wifi-no-rockchip-wl] = " \
+    CONFIG_BRCMFMAC=n \
+    CONFIG_CFG80211=n \
+    CONFIG_WL_ROCKCHIP=n \
+"
+
+# we need some deps for the backported brcmfmac driver as per the README of the brcmfmac backport from Infineon
+BALENA_CONFIGS_append_rockpi-4b-rk3399 = " backported-brcmfmac"
+
+BALENA_CONFIGS_DEPS[backported-brcmfmac] += " \
+    CONFIG_ASYMMETRIC_KEY_TYPE=y \
+    CONFIG_ASYMMETRIC_PUBLIC_KEY_SUBTYPE=y \
+    CONFIG_X509_CERTIFICATE_PARSER=y \
+    CONFIG_PKCS7_MESSAGE_PARSER=y \
+"
