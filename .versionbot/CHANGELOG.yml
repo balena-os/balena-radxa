@@ -1,4 +1,21 @@
 - commits:
+    - subject: Switch the wifi driver for RockPi 4B to backported brcmfmac driver from
+        kernel version 5.4.18
+      hash: a724fccbf0c5958e2dc70883ced07c137e1890d3
+      body: ""
+      footer:
+        Changelog-entry: Switch the wifi driver for RockPi 4B to backported brcmfmac
+          driver from kernel version 5.4.18
+        changelog-entry: Switch the wifi driver for RockPi 4B to backported brcmfmac
+          driver from kernel version 5.4.18
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2022.1.2
+  title: "'Use brcmfmac'"
+  date: 2022-03-24T21:20:21.882Z
+- commits:
     - subject: Do not swamp log with deprecation warnings
       hash: bf98a15ab6c47082b5725d6c93d3fed5d607d303
       body: >
