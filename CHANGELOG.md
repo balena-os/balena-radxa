@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.0+rev2
+## (2022-03-24)
+
+* Switch the wifi driver for RockPi 4B to backported brcmfmac driver from kernel version 5.4.18 [Florin Sarbu]
+
 # v2.95.0+rev1
 ## (2022-03-12)
 
