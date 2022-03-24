@@ -1,4 +1,20 @@
 - commits:
+    - subject: Ensure wireless powersave if off by default
+      hash: 293cfe558107f7000a5db110d759bc87d10484f5
+      body: |
+        We disable wireless powersave in order to fix latency issues:
+        https://github.com/balena-os/balena-rockpi/issues/49
+      footer:
+        Changelog-entry: Ensure wireless powersave if off by default
+        changelog-entry: Ensure wireless powersave if off by default
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.0+rev3
+  title: "'brcmfmac.bb: Update brcmfmac to version that disables powersave'"
+  date: 2022-03-24T22:21:17.217Z
+- commits:
     - subject: Switch the wifi driver for RockPi 4B to backported brcmfmac driver from
         kernel version 5.4.18
       hash: 3d49a0b3edc6577d6eefe2e86693efe618b10cea
