@@ -1,4 +1,22 @@
 - commits:
+    - subject: Fix RockPi 4B hex bootcount issue for rollbacks
+      hash: 481acf6d9ec6421b9ed0fe9958d348038ba7de25
+      body: |
+        We revert the commit that converted the decimal number stored in the
+        bootcount environment variable to hex because when the environment
+        is updated then the bootcount comparison fails during the next boot
+        because it cannot compare numbers that use different bases.
+      footer:
+        Changelog-entry: Fix RockPi 4B hex bootcount issue for rollbacks
+        changelog-entry: Fix RockPi 4B hex bootcount issue for rollbacks
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.8+rev1
+  title: "'u-boot-rockpi-4: Revert bootcount being saved in hex'"
+  date: 2022-03-28T13:58:58.851Z
+- commits:
     - subject: Update meta-balena from v2.95.0 to v2.95.8
       hash: 3792f53f60b900432f12ed81ffb0e699a2e87c62
       body: |
