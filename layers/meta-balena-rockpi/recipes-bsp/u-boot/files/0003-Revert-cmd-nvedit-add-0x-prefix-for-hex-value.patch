@@ -1,0 +1,38 @@
+From 88904afb419a8fc2bff32880577d022f26ef2e85 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Fri, 12 Nov 2021 10:41:40 +0100
+Subject: [PATCH] Revert "cmd: nvedit: add "0x" prefix for hex value"
+
+This reverts commit c0b4a82d396c44e9a8222946b6c5158a9c55a86b.
+
+This commit converted the decimal number stored in
+the bootcount environment variable to hex when
+the environment is updated, and then bootcount comparison
+fails during the next boot because it cannot compare numbers
+that use different bases.
+
+Upstream-status: Inappropriate[configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ cmd/nvedit.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/cmd/nvedit.c b/cmd/nvedit.c
+index 8efb064a74..cca4610521 100644
+--- a/cmd/nvedit.c
++++ b/cmd/nvedit.c
+@@ -659,9 +659,9 @@ int env_set_ulong(const char *varname, ulong value)
+  */
+ int env_set_hex(const char *varname, ulong value)
+ {
+-	char str[19];
++	char str[17];
+ 
+-	sprintf(str, "0x%lx", value);
++	sprintf(str, "%lx", value);
+ 	return env_set(varname, str);
+ }
+ 
+-- 
+2.17.1
+
