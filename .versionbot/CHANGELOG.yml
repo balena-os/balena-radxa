@@ -1,4 +1,30 @@
 - commits:
+    - subject: Specify full path in repo.yml upstreams
+      hash: f29b95f9fb4e1e60fbb1855d539485b661d35887
+      body: |
+        This is required so that versionist can automatically include nested
+        changelogs from renovate PRs.
+      footer:
+        Changelog-entry: Specify full path in repo.yml upstreams
+        changelog-entry: Specify full path in repo.yml upstreams
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add renovate configuration
+      hash: a9cec99f7192a7fc998825460340f4d16afe4bf2
+      body: ""
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.95.8+rev2
+  title: "'Add renovate configuration'"
+  date: 2022-03-29T12:52:10.685Z
+- commits:
     - subject: Fix RockPi 4B hex bootcount issue for rollbacks
       hash: 481acf6d9ec6421b9ed0fe9958d348038ba7de25
       body: |
