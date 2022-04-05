@@ -1,6 +1,36 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.12
+## (2022-04-01)
+
+
+<details>
+<summary> Update layers/meta-balena to 8797487542bebf28f89bcb5251437f12c117dec7 [Renovate Bot] </summary>
+
+> ## meta-balena-2.95.12
+> ### (2022-04-01)
+> 
+> * grub-efi: Remove patch passing secure boot status to the kernel [Michal Toman]
+> 
+> ## meta-balena-2.95.11
+> ### (Invalid date)
+> 
+> * hostapp-update: Mount data partition on target balena/tmp [Kyle Harding]
+> 
+> ## meta-balena-2.95.10
+> ### (Invalid date)
+> 
+> * tests/os: check supervisor is pulled  after purge [rcooke-warwick]
+> 
+> ## meta-balena-2.95.9
+> ### (2022-03-28)
+> 
+> * tests: update leviathan to 2.0.4 [rcooke-warwick]
+> * tests: update config for new leviathan version [rcooke-warwick]
+> 
+</details>
+
 # v2.95.8+rev2
 ## (2022-03-29)
 

@@ -1,4 +1,111 @@
 - commits:
+    - subject: Update layers/meta-balena to 8797487542bebf28f89bcb5251437f12c117dec7
+      hash: 934b275b1ebc23647b8ae8df1e5d59037f283900
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 8797487542bebf28f89bcb5251437f12c117dec7
+        changelog-entry: Update layers/meta-balena to 8797487542bebf28f89bcb5251437f12c117dec7
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "grub-efi: Remove patch passing secure boot status to the kernel"
+              hash: fb171dc507348e11ab2c6ed894289f51689fc874
+              body: >
+                This was originally introduced in combination with a kernel
+                patch backported
+
+                from Red Hat kernel that would enable kernel lockdown when secure boot
+
+                is enabled. We have since changed the approach, dropped the kernel patch
+
+                and when in secure boot mode use a different GRUB config file that enables
+
+                lockdown on kernel command line unconditionally.
+
+
+                That said, while the patch works fine, we do not really need it and it adds
+
+                extra overhead porting it to newer yocto versions so there is no point keeping
+
+                it at this moment. If in the future there is need for the kernel to know
+
+                whether it is in secure boot mode or not, we can roll this back and rebase.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.95.12
+          title: "'grub-efi: Remove patch passing secure boot status to the kernel'"
+          date: 2022-03-31T14:45:57.845Z
+        - commits:
+            - subject: "hostapp-update: Mount data partition on target balena/tmp"
+              hash: 548c6c08f041f69786f0092eb2397f2fbf8e7e86
+              body: >
+                In most cases there is not enough space on rootfs to extract
+
+                and load a local hostapp image when the balena-host tmpdir
+
+                is on the same partition.
+
+
+                This uses a data mount to ensure temporary extracted files of the
+
+                compressed image will not fill the target sysroot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.95.11
+          title: "'hostapp-update: Mount data partition on target balena/tmp'"
+          date: 2022-03-30T17:20:46.022Z
+        - commits:
+            - subject: "tests/os: check supervisor is pulled  after purge"
+              hash: 58a645684921797383602311821522604064fd62
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.95.10
+          title: "'tests/os: check supervisor is pulled  after purge'"
+          date: 2022-03-30T11:28:54.776Z
+        - commits:
+            - subject: "tests: update leviathan to 2.0.4"
+              hash: b90c280d8f08497fcf2ca7b5329bdb7e7dc7c22a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests: update config for new leviathan version"
+              hash: 788cacc8daadf487698e28e2ad308cc54f1d96b4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.95.9
+          title: "'tests: update config for new leviathan version'"
+          date: 2022-03-28T12:52:25.738Z
+  version: 2.95.12
+  title: "'Update layers/meta-balena digest to 8797487'"
+  date: 2022-04-01T00:00:34.912Z
+- commits:
     - subject: Specify full path in repo.yml upstreams
       hash: f29b95f9fb4e1e60fbb1855d539485b661d35887
       body: |
