@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 93481e8aae8a46c292eb6d4dd628992cedbf7757
+      hash: 9085073e9c35f80694a5870e8f55b02bb77c48d3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 93481e8aae8a46c292eb6d4dd628992cedbf7757
+        changelog-entry: Update layers/meta-balena to 93481e8aae8a46c292eb6d4dd628992cedbf7757
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "test/hup: fix unmounting error"
+              hash: 3a318468d90632360109aeea994a51819347742a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.95.13
+          title: "'test/hup: fix unmounting error'"
+          date: 2022-04-06T07:56:32.752Z
+  version: 2.95.13
+  title: "'Update layers/meta-balena digest to 93481e8'"
+  date: 2022-04-06T10:02:13.004Z
+- commits:
     - subject: Update layers/meta-balena to 8797487542bebf28f89bcb5251437f12c117dec7
       hash: 934b275b1ebc23647b8ae8df1e5d59037f283900
       body: Update layers/meta-balena
