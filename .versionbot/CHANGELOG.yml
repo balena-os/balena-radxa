@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to e13a2dbf4bee982f03b709d25b172d670fb7f4f1
+      hash: 8763e138056f68ba12d28d515b9f7216900de6c3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e13a2dbf4bee982f03b709d25b172d670fb7f4f1
+        changelog-entry: Update layers/meta-balena to e13a2dbf4bee982f03b709d25b172d670fb7f4f1
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Updates SIM info for soracom and provides docs.
+              hash: 4706cc1f52e345e3409cd9580cdc9a1372545164
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+                signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+              author: Alex
+              nested: []
+          version: meta-balena-2.95.14
+          title: "'Updates SIM info for soracom and provides docs.'"
+          date: 2022-04-06T08:53:44.650Z
+  version: 2.95.14
+  title: "'Update layers/meta-balena digest to e13a2db'"
+  date: 2022-04-06T14:17:10.082Z
+- commits:
     - subject: Update balena-yocto-scripts to a5b7cacc6dd4e3a3e03c77513760b6d3a89a68d0
       hash: 3e2e0bdba48646531aca8614cbd0912cc3276eb9
       body: Update balena-yocto-scripts
