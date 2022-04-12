@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.15+rev1
+## (2022-04-12)
+
+* Update BSP to latest dunfell so we have the latest bluetooth firmware [Florin Sarbu]
+
 # v2.95.15
 ## (2022-04-06)
 

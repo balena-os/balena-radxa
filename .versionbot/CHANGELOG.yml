@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update BSP to latest dunfell so we have the latest bluetooth firmware
+      hash: 3360369be33fd2c0bd6fbc6bd1ad5d8e89e1433b
+      body: |
+        This BSP update brings in latest bluetooth firmware
+      footer:
+        Changelog-entry: Update BSP to latest dunfell so we have the latest bluetooth firmware
+        changelog-entry: Update BSP to latest dunfell so we have the latest bluetooth firmware
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.15+rev1
+  title: "'layers/meta-radxa: Update BSP to latest dunfell'"
+  date: 2022-04-12T11:15:18.399Z
+- commits:
     - subject: Update layers/meta-balena to 831819bead130a779bfa204b7d1df483486f0eaf
       hash: 6b93495b158430c8be23a11f990cb24ded45f75b
       body: Update layers/meta-balena
