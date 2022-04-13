@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.1.4
+## (2022-04-13)
+
+* Update BSP to latest warrior so we have the latest bluetooth firmware [Florin Sarbu]
+
 # v2022.1.3
 ## (2022-03-24)
 

@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update BSP to latest warrior so we have the latest bluetooth firmware
+      hash: 8facc0d006a7d7ab59489dd6281edd36869e9e4a
+      body: |
+        This BSP update brings in latest bluetooth firmware
+      footer:
+        Changelog-entry: Update BSP to latest warrior so we have the latest bluetooth firmware
+        changelog-entry: Update BSP to latest warrior so we have the latest bluetooth firmware
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2022.1.4
+  title: "'layers/meta-radxa: Update BSP to latest warrior'"
+  date: 2022-04-13T05:36:51.345Z
+- commits:
     - subject: Ensure wireless powersave if off by default
       hash: 284f1ae2db98ce358cff33c6b780c44f85eb1abd
       body: |
