@@ -1,6 +1,25 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.15+rev2
+## (2022-04-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ff9465a20e32843b3b01ec3efa0d8a5390e6d66c [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.1
+> ### (2022-04-14)
+> 
+> * deploy: ensure deployRawArtifact is empty instead of null [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.19.0
+> ### (2022-04-13)
+> 
+> * deploy: push image variant artifacts [Joseph Kogut]
+> 
+</details>
+
 # v2.95.15+rev1
 ## (2022-04-12)
 
