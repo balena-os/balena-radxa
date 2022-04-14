@@ -1,4 +1,20 @@
 - commits:
+    - subject: Package newer bluetooth firmware for AP6212 based chips
+      hash: 9fa714ed26c4c1ec9d2169d8d03c3efcbd5d2f0d
+      body: |
+        This firmware will be used by boards having either the AP6212 or the
+        AzureWave AW-NB197SM wifi/bt chipsets.
+      footer:
+        Changelog-entry: Package newer bluetooth firmware for AP6212 based chips
+        changelog-entry: Package newer bluetooth firmware for AP6212 based chips
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2022.1.5
+  title: "'rkwifibt-firmware: Package newer bt firmware for AP6212 based chips'"
+  date: 2022-04-14T08:41:21.769Z
+- commits:
     - subject: Update BSP to latest warrior so we have the latest bluetooth firmware
       hash: 8facc0d006a7d7ab59489dd6281edd36869e9e4a
       body: |

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.1.5
+## (2022-04-14)
+
+* Package newer bluetooth firmware for AP6212 based chips [Florin Sarbu]
+
 # v2022.1.4
 ## (2022-04-13)
 
