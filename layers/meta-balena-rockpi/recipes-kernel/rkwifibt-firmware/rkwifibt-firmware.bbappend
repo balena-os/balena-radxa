@@ -6,7 +6,7 @@ SRC_URI += " \
 "
 
 do_install_append() {
-	install -m 0644 ${S}/firmware/broadcom/AP6212A1/bt/bcm43438a1.hcd ${D}/system/etc/firmware/
+	install -m 0644 ${S}/firmware/broadcom/AW-NB197/bt/BCM4343A1_001.002.009.1008.1024.hcd ${D}/system/etc/firmware/bcm43438a1.hcd
 	# let's use the firmware for AP62122 from Infineon / Cypress
 	install -d ${D}/lib/firmware/cypress/
 	install -m 0644 ${S}/firmware/broadcom/AP6212A1/wifi/nvram_ap6212a.txt ${D}/lib/firmware/cypress/cyfmac43430-sdio.txt
