@@ -1,4 +1,23 @@
 - commits:
+    - subject: Update BSP to latest dunfell so we now use the AW-NB197 bluetooth
+        firmware for all the AP6212 based chips.
+      hash: 494af8ed98366228725bc22ca5ea9f3bb4154e1d
+      body: |
+        This BSP update uses the AW-NB197 bluetooth firmware
+        for all the AP6212 based chips.
+      footer:
+        Changelog-entry: Update BSP to latest dunfell so we now use the AW-NB197
+          bluetooth firmware for all the AP6212 based chips.
+        changelog-entry: Update BSP to latest dunfell so we now use the AW-NB197
+          bluetooth firmware for all the AP6212 based chips.
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.15+rev3
+  title: "'layers/meta-radxa: Update BSP to latest dunfell'"
+  date: 2022-04-15T09:22:45.290Z
+- commits:
     - subject: Update balena-yocto-scripts to ff9465a20e32843b3b01ec3efa0d8a5390e6d66c
       hash: 81f5e53da76cf1e4716dd99770e25bdcfc533219
       body: Update balena-yocto-scripts

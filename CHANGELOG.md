@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.15+rev3
+## (2022-04-15)
+
+* Update BSP to latest dunfell so we now use the AW-NB197 bluetooth firmware for all the AP6212 based chips. [Florin Sarbu]
+
 # v2.95.15+rev2
 ## (2022-04-14)
 
