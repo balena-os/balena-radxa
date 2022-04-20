@@ -1,0 +1,33 @@
+From 456145420e8497d57358ce06ab33194f2c162cd6 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Wed, 26 Jan 2022 13:59:34 +0100
+Subject: [PATCH] Rework resin-specific-env-integration-kconfig.patch
+
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ include/env_default.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/include/env_default.h b/include/env_default.h
+index a657927e06..ceab467a2e 100644
+--- a/include/env_default.h
++++ b/include/env_default.h
+@@ -9,6 +9,7 @@
+ 
+ #include <env_callback.h>
+ #include <linux/stringify.h>
++#include <env_resin.h>
+ 
+ #ifdef DEFAULT_ENV_INSTANCE_EMBEDDED
+ env_t embedded_environment __UBOOT_ENV_SECTION__(environment) = {
+@@ -22,6 +23,7 @@ static char default_environment[] = {
+ #else
+ const uchar default_environment[] = {
+ #endif
++	BALENA_ENV
+ #ifndef CONFIG_USE_DEFAULT_ENV_FILE
+ #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
+ 	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"
+-- 
+2.17.1
+
