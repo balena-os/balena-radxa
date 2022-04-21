@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.15+rev4
+## (2022-04-21)
+
+* Add new Radxa Zero board [Florin Sarbu]
+
 # v2.95.15+rev3
 ## (2022-04-15)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add new Radxa Zero board
+      hash: 5ef97efb66b0aacb758730735d85fefef247afdc
+      body: ""
+      footer:
+        Changelog-entry: Add new Radxa Zero board
+        changelog-entry: Add new Radxa Zero board
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.15+rev4
+  title: "'Add support for radxa zero'"
+  date: 2022-04-21T09:41:51.731Z
+- commits:
     - subject: Update BSP to latest dunfell so we now use the AW-NB197 bluetooth
         firmware for all the AP6212 based chips.
       hash: 494af8ed98366228725bc22ca5ea9f3bb4154e1d
