@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.15+rev5
+## (2022-04-21)
+
+* Add bootloader hook for Radxa Zero [Florin Sarbu]
+
 # v2.95.15+rev4
 ## (2022-04-21)
 

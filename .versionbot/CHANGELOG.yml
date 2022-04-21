@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add bootloader hook for Radxa Zero
+      hash: 27cdbe6c18520180c40a3c58ebbe77e666bea8d4
+      body: ""
+      footer:
+        Changelog-entry: Add bootloader hook for Radxa Zero
+        changelog-entry: Add bootloader hook for Radxa Zero
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.95.15+rev5
+  title: "'hostapp-update-hooks: Add bootloader hook for Radxa Zero'"
+  date: 2022-04-21T13:19:45.387Z
+- commits:
     - subject: Add new Radxa Zero board
       hash: 5ef97efb66b0aacb758730735d85fefef247afdc
       body: ""
