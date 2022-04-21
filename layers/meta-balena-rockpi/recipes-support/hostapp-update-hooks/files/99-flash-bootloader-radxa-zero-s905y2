@@ -1,0 +1,39 @@
+#!/bin/sh
+
+#
+# Script used by hostapps updater to flash bootloader onto internal media
+#
+
+set -o errexit
+
+# machine specific data
+
+uboot_file="u-boot.bin"
+uboot_block_size=512
+uboot_seek_blocks=1
+
+device="/dev/"$(findmnt --noheadings --canonicalize --output SOURCE /mnt/sysroot/active/ | xargs lsblk -no pkname)
+
+# we sort the update files list by ascending memory addresses these binaries will be written to
+update_files="uboot"
+
+for i in $update_files; do
+        current_update_file=$(eval echo \$${i}_file)
+        block_size=$(eval echo \$${i}_block_size)
+        seek_blocks=$(eval echo \$${i}_seek_blocks)
+
+        # calculate size and md5sum of the binary to update from the update bundle
+        update_size=$(stat -c%s /boot/$current_update_file)
+        update_md5sum=$(md5sum /boot/$current_update_file | awk '{print $1'})
+
+        # calculate number of bytes to skip when computing the checksum of the data we want to update (i.e. the data already written to $device)
+        skip_bytes=$((block_size * seek_blocks))
+
+        # calculate md5sum of the data already written to $device, using $update_size bytes and skipping $skip_bytes from $device
+        existing_md5sum=$(dd if=$device skip=$skip_bytes bs=1 count=$update_size status=none | md5sum | awk '{print $1}')
+
+        if [ ! "$existing_md5sum" = "$update_md5sum" ]; then
+                echo "Flashing $current_update_file to $device"
+                dd if=/boot/$current_update_file of=$device conv=fdatasync seek=$seek_blocks bs=$block_size
+        fi
+done
