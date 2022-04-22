@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.17
+## (2022-04-22)
+
+
+<details>
+<summary> Update layers/meta-balena to 7730a5a3808f7d154b47831f930adedecde1cbba [Renovate Bot] </summary>
+
+> ## meta-balena-2.95.17
+> ### (2022-04-22)
+> 
+> * resin-device-register: avoid blocking the flasher when not connected [Alexandru Costache]
+> 
+</details>
+
 # v2.95.16
 ## (2022-04-22)
 
