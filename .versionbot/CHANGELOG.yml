@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 29b972bc69f5ab1778b9b255c0c0554c3407db32
+      hash: 47b167aabf7bdf96367face3c465390d27e1afff
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 29b972bc69f5ab1778b9b255c0c0554c3407db32
+        changelog-entry: Update layers/meta-balena to 29b972bc69f5ab1778b9b255c0c0554c3407db32
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+              hash: 261534942e5fe5b60680f51b129f33f00363a88e
+              body: |
+                We add this fw on its own package so that boards can add it to
+                rootfs (for Intel NUC 11th generation more specifically)
+              footer:
+                Changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+                changelog-entry: Package iwlwifi-QuZ-a0-hr-b0 firmware separately
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.95.16
+          title: "'linux-firmware: Package iwlwifi-QuZ-a0-hr-b0 firmware'"
+          date: 2022-04-19T13:00:33.214Z
+  version: 2.95.16
+  title: "'Update layers/meta-balena digest to 29b972b'"
+  date: 2022-04-22T08:32:27.298Z
+- commits:
     - subject: Update balena-yocto-scripts to 63e2b61fa462be4f68a2b7d8ca5084fd2d7d09b2
       hash: c24b9324f8c80305385ce8882de762e80c7440fa
       body: Update balena-yocto-scripts

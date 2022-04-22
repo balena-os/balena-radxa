@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.95.16
+## (2022-04-22)
+
+
+<details>
+<summary> Update layers/meta-balena to 29b972bc69f5ab1778b9b255c0c0554c3407db32 [Renovate Bot] </summary>
+
+> ## meta-balena-2.95.16
+> ### (2022-04-19)
+> 
+> * Package iwlwifi-QuZ-a0-hr-b0 firmware separately [Florin Sarbu]
+> 
+</details>
+
 # v2.95.15+rev6
 ## (2022-04-22)
 
