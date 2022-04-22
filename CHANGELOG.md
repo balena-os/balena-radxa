@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.96.0
+## (2022-04-22)
+
+
+<details>
+<summary> Update layers/meta-balena to b7490ca45f22591b1e6f7fddc1bf5853f373c125 [Renovate Bot] </summary>
+
+> ## meta-balena-2.96.0
+> ### (2022-04-22)
+> 
+> * mobynit: Update to v0.2.0 [Alex Gonzalez]
+> 
+</details>
+
 # v2.95.17
 ## (2022-04-22)
 
