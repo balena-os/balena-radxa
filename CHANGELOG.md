@@ -1,6 +1,31 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.6
+## (2022-04-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 798e236d25380d70e7be09d8d5dbb0349c05f413 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.6
+> ### (2022-04-26)
+> 
+> * timeinit/timesync-https: Update rtc after setting system time [Alexandru Costache]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.6
+> ### (2022-04-26)
+> 
+> * timeinit/timesync-https: Update rtc after setting system time [Alexandru Costache]
+> 
+</details>
+
 # v2.98.4+rev1
 ## (2022-04-26)
 

@@ -1,4 +1,70 @@
 - commits:
+    - subject: Update layers/meta-balena to 798e236d25380d70e7be09d8d5dbb0349c05f413
+      hash: a8e1abc4c946bac5716d8b1f2d21cd1a09d3c66a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 798e236d25380d70e7be09d8d5dbb0349c05f413
+        changelog-entry: Update layers/meta-balena to 798e236d25380d70e7be09d8d5dbb0349c05f413
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "timeinit/timesync-https: Update rtc after setting system time"
+              hash: f16451b49b77bd7d3f5f82d20e0605a9797832eb
+              body: >
+                This solves a problem seen on a device on which, although
+
+                timeinit-rtc finishes running before timesync-https, chronyd
+
+                sets the system time to the incorrect rtc time
+
+                as soon as timesync-https finished running and setting the correct date
+
+                from the servers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.98.6
+          title: "'timeinit/timesync-https: Update rtc after setting system time'"
+          date: 2022-04-26T19:32:46.066Z
+    - subject: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+      hash: 50d86e9dda194fdf09717c9be40848cb14daf335
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+        changelog-entry: Update layers/meta-balena to edda207aee705431cd02443bdfe8d6271228b96d
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "timeinit/timesync-https: Update rtc after setting system time"
+              hash: f16451b49b77bd7d3f5f82d20e0605a9797832eb
+              body: >
+                This solves a problem seen on a device on which, although
+
+                timeinit-rtc finishes running before timesync-https, chronyd
+
+                sets the system time to the incorrect rtc time
+
+                as soon as timesync-https finished running and setting the correct date
+
+                from the servers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.98.6
+          title: "'timeinit/timesync-https: Update rtc after setting system time'"
+          date: 2022-04-26T19:32:46.066Z
+  version: 2.98.6
+  title: "'Update layers/meta-balena digest to 798e236'"
+  date: 2022-04-27T11:28:39.445Z
+- commits:
     - subject: Update balena-yocto-scripts to 13da1d2fd4483ba9a2cf9d3d7146985bbd720c6b
       hash: 6202906a9ee3290efff8ba304cef46c4e52e5e2b
       body: Update balena-yocto-scripts
