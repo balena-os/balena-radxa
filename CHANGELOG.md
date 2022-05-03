@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.12
+## (2022-05-03)
+
+
+<details>
+<summary> Update layers/meta-balena to 0c96705ba26cda1062eff0b128eccb4f9388f9cc [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.12
+> ### (2022-05-02)
+> 
+> * tests/hup: Test hostapp-update from current release [Kyle Harding]
+> 
+</details>
+
 # v2.98.11
 ## (2022-04-30)
 
