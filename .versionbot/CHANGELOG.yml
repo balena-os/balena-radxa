@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix WiFi after reboot on Radxa Zero
+      hash: 25533eefd86af0e2c969d19f7dde206e0e94421d
+      body: ""
+      footer:
+        Changelog-entry: Fix WiFi after reboot on Radxa Zero
+        changelog-entry: Fix WiFi after reboot on Radxa Zero
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.98.12+rev1
+  title: "'linux-radxa-zero: Fix WiFi on reboot'"
+  date: 2022-05-04T11:02:37.750Z
+- commits:
     - subject: Update layers/meta-balena to 0c96705ba26cda1062eff0b128eccb4f9388f9cc
       hash: 0926cac85e5e2de186014415b077b1b90e0852a6
       body: Update layers/meta-balena

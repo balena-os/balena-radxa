@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.12+rev1
+## (2022-05-04)
+
+* Fix WiFi after reboot on Radxa Zero [Florin Sarbu]
+
 # v2.98.12
 ## (2022-05-03)
 
