@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 393f57d8695ff3d349370f730cabe31d927fc530
+      hash: 3fe64600df43fb37f553163230ae4874c6c19d5d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 393f57d8695ff3d349370f730cabe31d927fc530
+        changelog-entry: Update layers/meta-balena to 393f57d8695ff3d349370f730cabe31d927fc530
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "os: tests: optimize connectivity tests"
+              hash: fdfa61579dff1a1aaf3aea1318d16cb9f4fc3f50
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.98.13
+          title: "'os: tests: optimize connectivity tests'"
+          date: 2022-05-03T15:52:26.943Z
+  version: 2.98.13
+  title: "'Update layers/meta-balena digest to 393f57d'"
+  date: 2022-05-04T12:04:44.907Z
+- commits:
     - subject: Fix WiFi after reboot on Radxa Zero
       hash: 25533eefd86af0e2c969d19f7dde206e0e94421d
       body: ""
