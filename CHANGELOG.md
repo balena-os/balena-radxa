@@ -1,6 +1,25 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.17
+## (2022-05-06)
+
+
+<details>
+<summary> Update layers/meta-balena to 42c71bfea112ba44e59488fe93284a583654622f [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.17
+> ### (2022-05-06)
+> 
+> * renovate: Override default package rules to enable leviathan [Kyle Harding]
+> 
+> ## meta-balena-2.98.16
+> ### (2022-05-05)
+> 
+> * renovate: Replace tests with tests/suites in default ignorePaths [Kyle Harding]
+> 
+</details>
+
 # v2.98.15
 ## (2022-05-04)
 
