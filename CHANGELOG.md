@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.17+rev1
+## (2022-05-08)
+
+* Update BSP to latest dunfell in order to fix WiFi timing issues [Florin Sarbu]
+
 # v2.98.17
 ## (2022-05-06)
 
