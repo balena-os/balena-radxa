@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.24
+## (2022-05-16)
+
+
+<details>
+<summary> Update layers/meta-balena to 5804aabaac3d665b39d0da3e02d8f20c5d6d5db4 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.24
+> ### (2022-05-15)
+> 
+> * os-config: Randomize the timer period [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.23
 ## (2022-05-13)
 
