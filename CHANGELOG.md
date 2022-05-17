@@ -1,6 +1,21 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.25
+## (2022-05-16)
+
+
+<details>
+<summary> Update layers/meta-balena to b6e9352e8784e433c647811d532d7ab3e2ee05e2 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.25
+> ### (2022-05-16)
+> 
+> * patch: Get CDS doc ready for docs sync [Vipul Gupta]
+> * test: os-config: Use common code to wait for service state [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.24
 ## (2022-05-16)
 
