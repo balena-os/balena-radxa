@@ -1,6 +1,20 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.27
+## (2022-05-18)
+
+
+<details>
+<summary> Update layers/meta-balena to 7ca0039a8faf417f55cbd72b85a346e6407da04f [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.27
+> ### (2022-05-18)
+> 
+> * patch: Fix heading anchor links in CDS doc index [Vipul Gupta]
+> 
+</details>
+
 # v2.98.26
 ## (2022-05-17)
 
