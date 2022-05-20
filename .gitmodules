@@ -16,3 +16,6 @@
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena.git
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/balena-io/contracts.git
