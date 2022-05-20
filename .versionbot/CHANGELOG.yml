@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add contracts submodule
+      hash: b2b1890c800c0759f6a5152981336a0dc96b1898
+      body: |
+        This is used to build and deploy an OS contract to the fleet.
+      footer:
+        Changelog-entry: Add contracts submodule
+        changelog-entry: Add contracts submodule
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.28+rev1
+  title: "'Add contracts submodule'"
+  date: 2022-05-20T18:37:08.160Z
+- commits:
     - subject: Update layers/meta-balena to 7e98e8f49aee1f5538da16ff564c7d8fb009800e
       hash: f05d88ebc2df07ec98aeab89cdff3af9ed74e468
       body: Update layers/meta-balena
