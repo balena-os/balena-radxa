@@ -1,6 +1,21 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.28+rev3
+## (2022-05-24)
+
+
+<details>
+<summary> Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a [Renovate Bot] </summary>
+
+> ## contracts-1.13.76
+> ### (2022-05-23)
+> 
+> * sw.os-image: Add balena-image software image [Alex Gonzalez]
+> * sw.os: Add balenaOS contract [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.28+rev2
 ## (2022-05-21)
 
