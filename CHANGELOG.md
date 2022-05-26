@@ -1,6 +1,37 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.30
+## (2022-05-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.30
+> ### (2022-05-24)
+> 
+> * Remove localMode setting from standalone image configuration [Alex Gonzalez]
+> 
+> ## meta-balena-2.98.29
+> ### (2022-05-23)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.17 [Leandro Motta Barros] </summary>
+> 
+>> ### balena-engine-20.10.17
+>> #### (2022-05-17)
+>> 
+>> * Fix "slice bounds out of range" while applying deltas [Leandro Motta Barros]
+>> 
+> </details>
+> 
+> 
+</details>
+
+* Update balena-yocto-scripts to 7b2a89987f196ec4261d240a88c1790c55b366b0 [Renovate Bot]
+
 # v2.98.28+rev3
 ## (2022-05-24)
 

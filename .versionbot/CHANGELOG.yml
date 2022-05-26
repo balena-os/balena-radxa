@@ -1,4 +1,95 @@
 - commits:
+    - subject: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+      hash: 201008b8e947b41507c422a2a65f13a29bb87985
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+        changelog-entry: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove localMode setting from standalone image configuration
+              hash: 26aa3caf4e4d649d323e57c21f818ca83a9b9b13
+              body: >
+                The `localMode` variable in `config.json` is not longer used and
+                it can
+
+                be removed
+
+
+                Fixes #2041
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Remove localMode setting from standalone image configuration
+                changelog-entry: Remove localMode setting from standalone image configuration
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.98.30
+          title: "'image-balena: Remove localMode from standalone image configuration'"
+          date: 2022-05-24T10:09:17.695Z
+        - commits:
+            - subject: Update balena-engine to v20.10.17
+              hash: 8a7b24d38f67749b5d979ce12a0fafe5626190bb
+              body: |
+                Update balena-engine from 20.10.16 to 20.10.17
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Changelog-entry: Update balena-engine to v20.10.17
+                changelog-entry: Update balena-engine to v20.10.17
+              author: Leandro Motta Barros
+              nested:
+                - commits:
+                    - subject: Fix "slice bounds out of range" while applying deltas
+                      hash: 6f12d0abb3e438f26a18eee9bbaeca9c4702f7e7
+                      body: >
+                        The root cause of this issue was an integer overflow in
+                        32-bit platforms
+
+                        -- specifically, when explicitly converting `io.Reader` offsets
+
+                        (`int64`) to slice indices (`int`, which is only 32-bit long on 32-bit
+
+                        platforms).
+
+
+                        We already had in place the checks supposed to ensure slice bounds where
+
+                        always within the expected bounds. So, in a way, this commit just
+
+                        re-organizes the code so that we perform safely this required `int64` to
+
+                        `int` type conversion.
+                      footer:
+                        Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                        signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                        Change-type: patch
+                        change-type: patch
+                      author: Leandro Motta Barros
+                      nested: []
+                  version: balena-engine-20.10.17
+                  title: "'Lmb/fix oob slice'"
+                  date: 2022-05-17T20:01:47.266Z
+          version: meta-balena-2.98.29
+          title: "'balena-engine: Update to 20.10.17'"
+          date: 2022-05-23T17:18:04.355Z
+    - subject: Update balena-yocto-scripts to 7b2a89987f196ec4261d240a88c1790c55b366b0
+      hash: 660b19f8b59ad526219c3da9e53c8c4beb8d2e92
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 7b2a89987f196ec4261d240a88c1790c55b366b0
+        changelog-entry: Update balena-yocto-scripts to 7b2a89987f196ec4261d240a88c1790c55b366b0
+      author: Renovate Bot
+      nested: []
+  version: 2.98.30
+  title: "'Update layers/meta-balena digest to 5590394'"
+  date: 2022-05-26T18:10:16.291Z
+- commits:
     - subject: Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a
       hash: b3c48984930f8d4dff174bbff5b6b7fe8ca94100
       body: Update contracts
