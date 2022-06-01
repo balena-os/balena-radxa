@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.19.7
+      hash: 3cd31162af86721bd8bd097593aa59b7a9d9d628
+      body: |
+        Update balena-yocto-scripts from v1.19.6 to v1.19.7
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.19.7
+        changelog-entry: Update balena-yocto-scripts to v1.19.7
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested:
+        - commits:
+            - subject: "balena-lib: balena_lib_release_finalize: Pass the correct arguments"
+              hash: e28b745d4ba121b639ba79dad2377f051fe5d3e2
+              body: >
+                The balena_api_fetch_fleet_tag requires a slug as first
+                argument, not
+
+                a fleet that can contain the organization too.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-lib: Tag ESR fleets with patch independent tags"
+              hash: d51ecb6d91fe6ecf91de1ecde4fff700f7f88e67
+              body: >
+                Otherwise patch updates of ESR branches move the ESR phase when
+                they
+
+                should not. For example, if 2022.1.1 is current, 2022.1.2 is also
+
+                current and should not move 2022.1.1 to sunset.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.7
+          title: "'balena-lib: Tag ESR fleets with patch independent tags'"
+          date: 2022-05-31T19:39:43.444Z
+  version: 2.98.33+rev1
+  title: "'balena-yocto-scripts: Update to v1.19.7'"
+  date: 2022-06-01T08:28:33.595Z
+- commits:
     - subject: Update layers/meta-balena to 95c96e0624507fd9701912c67d3ae5ec5dbdf6f9
       hash: c7fe2db5af93053c46da5626b0361c399f2a1bcd
       body: Update layers/meta-balena
