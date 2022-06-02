@@ -1,6 +1,11 @@
 # v2.83.1+rev1
 ## (2021-08-04)
 
+# v2.98.34+rev1
+## (2022-06-02)
+
+* Revert the u-boot balena integration rework for RockPi 4B because it needed additional work [Florin Sarbu]
+
 # v2.98.34
 ## (2022-06-01)
 

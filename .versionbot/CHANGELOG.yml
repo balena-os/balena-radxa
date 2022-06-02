@@ -1,4 +1,23 @@
 - commits:
+    - subject: Revert the u-boot balena integration rework for RockPi 4B because it
+        needed additional work
+      hash: 1630a4e2fdad885b0f1f051c475f4cfa22a0e00f
+      body: |
+        The original intent needs additional work to make it function
+        as needed so let's revert the rework for now and we'll revisit
+      footer:
+        Changelog-entry: Revert the u-boot balena integration rework for RockPi 4B
+          because it needed additional work
+        changelog-entry: Revert the u-boot balena integration rework for RockPi 4B
+          because it needed additional work
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.98.34+rev1
+  title: "'u-boot-rockpi-4.bbappend: Revert the balena integration rework'"
+  date: 2022-06-02T08:22:27.411Z
+- commits:
     - subject: Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3
       hash: dc8cb42a6726154166b34c652dbcd2e14089980b
       body: Update layers/meta-balena
