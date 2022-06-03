@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add required header to changelog file
+      hash: 46fefd15bc2c38e24f0117516ed90031f57d0650
+      body: ""
+      footer:
+        Changelog-entry: Add required header to changelog file
+        changelog-entry: Add required header to changelog file
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.35+rev1
+  title: "'Add required header to changelog file'"
+  date: 2022-06-03T14:55:52.908Z
+- commits:
     - subject: Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942
       hash: a690cac55b47796cb82c513b663858bedd0f6b1d
       body: Update contracts

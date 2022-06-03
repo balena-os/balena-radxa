@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.98.35+rev1
+## (2022-06-03)
+
+* Add required header to changelog file [Alex Gonzalez]
+
+# v2.83.1+rev1
+## (2021-08-04)
+
 # v2.98.35
 ## (2022-06-03)
 
