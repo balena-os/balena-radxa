@@ -1,4 +1,60 @@
 - commits:
+    - subject: Update layers/meta-balena to efd8306a7a838b600d2cbf77a4ecfbd30ba9324a
+      hash: 980426234c7684cdb5dd4e4a29312f6f2ae6162d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to efd8306a7a838b600d2cbf77a4ecfbd30ba9324a
+        changelog-entry: Update layers/meta-balena to efd8306a7a838b600d2cbf77a4ecfbd30ba9324a
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: hup: reduce delay between retries"
+              hash: cb48541fa98093f6ce97419b8304469a4b3bb7ab
+              body: >
+                Reduce delay between retries when using waitUntil, reducing
+                latency and
+
+                test runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.98.40
+          title: "'tests: hup: reduce delay between retries'"
+          date: 2022-06-04T16:25:23.750Z
+    - subject: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+      hash: ce42be4c998b4da39475a6d551efacd2060b57e4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+        changelog-entry: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: hup: reduce delay between retries"
+              hash: cb48541fa98093f6ce97419b8304469a4b3bb7ab
+              body: >
+                Reduce delay between retries when using waitUntil, reducing
+                latency and
+
+                test runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.98.40
+          title: "'tests: hup: reduce delay between retries'"
+          date: 2022-06-04T16:25:23.750Z
+  version: 2.98.40
+  title: "'Update layers/meta-balena digest to efd8306'"
+  date: 2022-06-04T21:41:02.362Z
+- commits:
     - subject: Update layers/meta-balena to 653c85c0b332b740100c527667df6e184a1482c5
       hash: c9a24eafc401c95e33bbdb08a41e5478bf7afe2a
       body: Update layers/meta-balena
