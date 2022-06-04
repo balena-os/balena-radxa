@@ -1,4 +1,76 @@
 - commits:
+    - subject: Revert device tree aliases for bringing back dynamic spi bus name
+        numbering
+      hash: 9b92b06bc92e46220ab29f5fd734c54efce953f6
+      body: >
+        The customer requested here
+        https://jel.ly.fish/73928db3-83ea-4720-b754-3f9bb38bfcb4
+
+        to bring back the older spidev32766.0 node name:
+
+        https://github.com/radxa/kernel/blob/86a614bc15b3b1aeb3a9a9e395aedd088c70e35e/drivers/spi/spi.c#L1805-L1815
+      footer:
+        Changelog-entry: Revert device tree aliases for bringing back dynamic spi bus
+          name numbering
+        changelog-entry: Revert device tree aliases for bringing back dynamic spi bus
+          name numbering
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Add required header to changelog file
+      hash: 46fefd15bc2c38e24f0117516ed90031f57d0650
+      body: ""
+      footer:
+        Changelog-entry: Add required header to changelog file
+        changelog-entry: Add required header to changelog file
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942
+      hash: a690cac55b47796cb82c513b663858bedd0f6b1d
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942
+        changelog-entry: Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942
+      author: Renovate Bot
+      nested: []
+    - subject: Update layers/meta-balena to ff147b2a19933df0c16fb37cb7bb294e77caa985
+      hash: 3f52f916befadce61b22a9c7090a11ad66013b9c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ff147b2a19933df0c16fb37cb7bb294e77caa985
+        changelog-entry: Update layers/meta-balena to ff147b2a19933df0c16fb37cb7bb294e77caa985
+      author: Renovate Bot
+      nested: []
+    - subject: Revert the u-boot balena integration rework for RockPi 4B because it
+        needed additional work
+      hash: 1630a4e2fdad885b0f1f051c475f4cfa22a0e00f
+      body: |
+        The original intent needs additional work to make it function
+        as needed so let's revert the rework for now and we'll revisit
+      footer:
+        Changelog-entry: Revert the u-boot balena integration rework for RockPi 4B
+          because it needed additional work
+        changelog-entry: Revert the u-boot balena integration rework for RockPi 4B
+          because it needed additional work
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3
+      hash: dc8cb42a6726154166b34c652dbcd2e14089980b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3
+        changelog-entry: Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3
+      author: Renovate Bot
+      nested: []
+  version: 2022.4.1
+  title: "'linux-rockpi-4_%.bbappend: Revert device tree aliases'"
+  date: 2022-06-04T11:27:55.577Z
+- commits:
     - subject: Add required header to changelog file
       hash: 46fefd15bc2c38e24f0117516ed90031f57d0650
       body: ""

@@ -1,6 +1,16 @@
 Change log
 -----------
 
+# v2022.4.1
+## (2022-06-04)
+
+* Revert device tree aliases for bringing back dynamic spi bus name numbering [Florin Sarbu]
+* Add required header to changelog file [Alex Gonzalez]
+* Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942 [Renovate Bot]
+* Update layers/meta-balena to ff147b2a19933df0c16fb37cb7bb294e77caa985 [Renovate Bot]
+* Revert the u-boot balena integration rework for RockPi 4B because it needed additional work [Florin Sarbu]
+* Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3 [Renovate Bot]
+
 # 2022.4.0
 ## (2022-06-03)
 
