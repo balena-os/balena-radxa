@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.37+rev1
+## (2022-06-04)
+
+* Revert device tree aliases for bringing back dynamic spi bus name numbering [Florin Sarbu]
+
 # v2.98.37
 ## (2022-06-04)
 

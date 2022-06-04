@@ -1,4 +1,27 @@
 - commits:
+    - subject: Revert device tree aliases for bringing back dynamic spi bus name
+        numbering
+      hash: 16ac1434558f83b4884bbcc96138de50a727d1b8
+      body: >
+        The customer requested here
+        https://jel.ly.fish/73928db3-83ea-4720-b754-3f9bb38bfcb4
+
+        to bring back the older spidev32766.0 node name:
+
+        https://github.com/radxa/kernel/blob/86a614bc15b3b1aeb3a9a9e395aedd088c70e35e/drivers/spi/spi.c#L1805-L1815
+      footer:
+        Changelog-entry: Revert device tree aliases for bringing back dynamic spi bus
+          name numbering
+        changelog-entry: Revert device tree aliases for bringing back dynamic spi bus
+          name numbering
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.98.37+rev1
+  title: "'linux-rockpi-4_%.bbappend: Revert device tree aliases'"
+  date: 2022-06-04T11:30:16.601Z
+- commits:
     - subject: Update layers/meta-balena to bef2872f224d9483910a5cc58110f269faf483c7
       hash: 545574fa62b1c4565ca0923d434014a4cd33adf0
       body: Update layers/meta-balena
