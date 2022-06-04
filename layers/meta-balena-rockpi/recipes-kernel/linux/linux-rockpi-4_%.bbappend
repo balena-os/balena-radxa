@@ -3,6 +3,8 @@ inherit kernel-resin
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 SRC_URI_append = " file://0001-arm64-armv8_deprecated-Warn-just-once-about-deprecat.patch"
 
+SRC_URI_append_rockpi-4b-rk3399 = " file://0002-Revert-arm64-dts-rockchip-fix-ROCK-Pi-4-device-alias.patch"
+
 # spidev module is enabled by default in meta-balena,
 # so let's enable the spidev overlay by default
 # on the rockpi-4b.
