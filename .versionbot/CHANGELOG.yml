@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 653c85c0b332b740100c527667df6e184a1482c5
+      hash: c9a24eafc401c95e33bbdb08a41e5478bf7afe2a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 653c85c0b332b740100c527667df6e184a1482c5
+        changelog-entry: Update layers/meta-balena to 653c85c0b332b740100c527667df6e184a1482c5
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Added all device support options
+              hash: 5d29b6d1e0808d87103897f8210a75342f7f898f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Hampton (@rhampt) rhampt@balena.io
+                signed-off-by: Ryan Hampton (@rhampt) rhampt@balena.io
+              author: Ryan H
+              nested: []
+          version: meta-balena-2.98.38
+          title: "'Added all device support options'"
+          date: 2022-06-03T22:19:04.182Z
+  version: 2.98.38
+  title: "'Update layers/meta-balena digest to 653c85c'"
+  date: 2022-06-04T14:21:49.203Z
+- commits:
     - subject: Revert device tree aliases for bringing back dynamic spi bus name
         numbering
       hash: 16ac1434558f83b4884bbcc96138de50a727d1b8
