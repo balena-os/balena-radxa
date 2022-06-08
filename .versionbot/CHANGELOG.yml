@@ -1,4 +1,23 @@
 - commits:
+    - subject: Remove extlinux.conf from blacklist
+      hash: b5eadcfb3a296eea2554dc0cbdd16002d51c5169
+      body: |
+        We recently updated the BSP which in turn changed the dtb name.
+        We reflected the device tree name change in extlinux.conf but because
+        extlinux.conf is blacklisted then after a host OS update the new
+        extlinux.conf does not get copied over so the newer dtb does not
+        get loaded.
+      footer:
+        Changelog-entry: Remove extlinux.conf from blacklist
+        changelog-entry: Remove extlinux.conf from blacklist
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2022.4.2
+  title: "'hostapp-update-hooks: Remove extlinux.conf from blacklist'"
+  date: 2022-06-08T12:12:57.152Z
+- commits:
     - subject: Revert device tree aliases for bringing back dynamic spi bus name
         numbering
       hash: 9b92b06bc92e46220ab29f5fd734c54efce953f6

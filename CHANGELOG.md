@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.4.2
+## (2022-06-08)
+
+* Remove extlinux.conf from blacklist [Florin Sarbu]
+
 # v2022.4.1
 ## (2022-06-04)
 
