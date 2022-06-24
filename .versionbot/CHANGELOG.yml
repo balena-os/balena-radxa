@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 85c5bf992befbdd5b4f88978aeb7acd1a206bf9b
+      hash: c533aa5904593e806a60632bd815f0b2f9378594
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 85c5bf992befbdd5b4f88978aeb7acd1a206bf9b
+        changelog-entry: Update layers/meta-balena to 85c5bf992befbdd5b4f88978aeb7acd1a206bf9b
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: purge-data: reduce intervals in waitUntil"
+              hash: 1d1bc06cfbaf7be838190cf33427aa63f5b61788
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.19
+          title: "'tests: os: purge-data: reduce intervals in waitUntil'"
+          date: 2022-06-24T02:35:03.988Z
+  version: 2.99.19
+  title: "'Update layers/meta-balena digest to 85c5bf9'"
+  date: 2022-06-24T11:25:05.885Z
+- commits:
     - subject: Update layers/meta-balena to 16898dbf4b204482fc0018bef3d823599a504c36
       hash: 793bb79338cecb6d043e14dd0b203f0e357b8a59
       body: Update layers/meta-balena
