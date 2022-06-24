@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update layers/meta-balena to 16898dbf4b204482fc0018bef3d823599a504c36
+      hash: 793bb79338cecb6d043e14dd0b203f0e357b8a59
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 16898dbf4b204482fc0018bef3d823599a504c36
+        changelog-entry: Update layers/meta-balena to 16898dbf4b204482fc0018bef3d823599a504c36
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: config-json: fix race in udevRules test"
+              hash: 8825d721ca64d523dc6faf8c317f4a09796457b6
+              body: >
+                Readlink can fail when the path is non-existent, raising an
+                error and
+
+                making the udevRules test fail. Test that the link exists before
+
+                attempting to use readlink.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.18
+          title: "'tests: os: config-json: fix race in udevRules test'"
+          date: 2022-06-23T22:09:44.331Z
+  version: 2.99.18
+  title: "'Update layers/meta-balena digest to 16898db'"
+  date: 2022-06-24T01:50:53.951Z
+- commits:
     - subject: Update contracts to 98c8c8ef3039bb927ce39f77eed4479f12c77fac
       hash: 973dcd6df36015fe6ec2b3f5ab2be9bf36701774
       body: Update contracts
