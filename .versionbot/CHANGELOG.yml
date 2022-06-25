@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+      hash: e4d50bd9f3d3769a97c1a6c3a8cc899e259b0cf9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+        changelog-entry: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: make apiKey an optional parameter"
+              hash: 5b959d374810ab1d5e82d3017b91e678d50e4a2d
+              body: >
+                When accessing a test device as part of a fleet, a cloud API key
+                is
+
+                required in order to generate an SSH key and access the device through
+
+                the VPN. However, when accessing a device locally, such as a QEMU
+
+                instance running on the workstation itself, we have a direct path, and
+
+                no VPN is necessary.
+
+
+                Make the apiKey optional, and don't login when it's not specified. This
+
+                allows direct connections to work without it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.20
+          title: "'tests: os: make apiKey an optional parameter'"
+          date: 2022-06-24T20:23:18.792Z
+  version: 2.99.20
+  title: "'Update layers/meta-balena digest to 34e139b'"
+  date: 2022-06-24T23:35:19.569Z
+- commits:
     - subject: Update layers/meta-balena to 85c5bf992befbdd5b4f88978aeb7acd1a206bf9b
       hash: c533aa5904593e806a60632bd815f0b2f9378594
       body: Update layers/meta-balena
