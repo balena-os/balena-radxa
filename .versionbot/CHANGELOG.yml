@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+      hash: 968888e1d58177ad36eb65334c1df3a39cd03b1c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+        changelog-entry: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-config-vars: Do not use systemctl to list unit files"
+              hash: efcc9a0f876dc9b0955189cab535bc4a1926554d
+              body: |
+                On occassions, this fails with a broken pipe error.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.99.21
+          title: "'balena-config-vars: Do not use systemctl to list unit files'"
+          date: 2022-06-27T09:18:07.649Z
+  version: 2.99.21
+  title: "'Update: update layers/meta-balena digest to b266b1a'"
+  date: 2022-06-27T19:45:08.524Z
+- commits:
     - subject: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
       hash: e4d50bd9f3d3769a97c1a6c3a8cc899e259b0cf9
       body: Update layers/meta-balena

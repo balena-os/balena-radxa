@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.99.21
+## (2022-06-27)
+
+
+<details>
+<summary> Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812 [renovate[bot]] </summary>
+
+> ## meta-balena-2.99.21
+> ### (2022-06-27)
+> 
+> * balena-config-vars: Do not use systemctl to list unit files [Alex Gonzalez]
+> 
+</details>
+
 # v2.99.20
 ## (2022-06-24)
 
