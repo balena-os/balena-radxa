@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.99.27
+## (2022-07-01)
+
+
+<details>
+<summary> Update layers/meta-balena to d748c184c7348683378b4e8f0dbc2cfc014b65de [renovate[bot]] </summary>
+
+> ## meta-balena-2.99.27
+> ### (Invalid date)
+> 
+> * tests: os: fingerprint: fix errant promise [Joseph Kogut]
+> 
+> ## meta-balena-2.99.26
+> ### (2022-06-29)
+> 
+> * tests: cloud: Wait for random triggers to be updated [Kyle Harding]
+> 
+</details>
+
 # v2.99.25+rev2
 ## (2022-06-29)
 

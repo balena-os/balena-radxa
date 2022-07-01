@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update layers/meta-balena to d748c184c7348683378b4e8f0dbc2cfc014b65de
+      hash: 72888f5256ef68756eb325291fc0e01e691ad6c8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to d748c184c7348683378b4e8f0dbc2cfc014b65de
+        changelog-entry: Update layers/meta-balena to d748c184c7348683378b4e8f0dbc2cfc014b65de
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: fingerprint: fix errant promise"
+              hash: ff22bce2e729c4fd74963ab7a96377656cad7559
+              body: >
+                When parallelizing fingerprint checks with Promise.any(), the
+
+                unsuccessful command would continue retrying in the background, causing
+
+                spurious error messages.
+
+
+                With mDNS resolution memoization, this optimization no longer saves us
+
+                time, so remove it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.99.27
+          title: "'tests: os: fingerprint: fix errant promise'"
+          date: 2022-06-30T18:10:06.725Z
+        - commits:
+            - subject: "tests: cloud: Wait for random triggers to be updated"
+              hash: b0223bb3a36ffcbfdf5e306cd9fa88398278a42c
+              body: |
+                This prevents a race condition on slower hardware where
+                the systemd unit does not have a value for Trigger immediately
+                after skewing the clock.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.99.26
+          title: "'tests: cloud: Wait for random triggers to be updated'"
+          date: 2022-06-29T18:46:55.181Z
+  version: 2.99.27
+  title: "'Update layers/meta-balena digest to d748c18'"
+  date: 2022-07-01T20:02:38.864Z
+- commits:
     - subject: Update balena-yocto-scripts to 5e003d52ac8e118af3cce662362d45f780ade704
       hash: 58dc4a748fa0d0f3516efc1056a7687fb64e8394
       body: Update balena-yocto-scripts
