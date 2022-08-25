@@ -1,4 +1,22 @@
 - commits:
+    - subject: Load uEnv.txt from the boot partition for the Radxa Zero
+      hash: 6dc87fe95aabfcbd9ac07e39f99fdac3527fe987
+      body: |
+        Loading additional dtb(s) for the Radxa Zero can be done by listing
+        the required dtb(s) in uEnv.txt. We now have moved uEnv.txt to the
+        boot partition which is read-write as opposed to having it in the rootfs
+        which is read-only.
+      footer:
+        Changelog-entry: Load uEnv.txt from the boot partition for the Radxa Zero
+        changelog-entry: Load uEnv.txt from the boot partition for the Radxa Zero
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.101.9+rev1
+  title: "'Move u env'"
+  date: 2022-08-25T08:23:52.095Z
+- commits:
     - subject: Update layers/meta-balena to f2de8e3d438671ac740bfa2119ab881afc5d2101
       hash: 946c61ea2da3617933132cf991fbc3ae070ce390
       body: Update layers/meta-balena

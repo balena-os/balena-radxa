@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.101.9+rev1
+## (2022-08-25)
+
+* Load uEnv.txt from the boot partition for the Radxa Zero [Florin Sarbu]
+
 # v2.101.9
 ## (2022-08-23)
 
