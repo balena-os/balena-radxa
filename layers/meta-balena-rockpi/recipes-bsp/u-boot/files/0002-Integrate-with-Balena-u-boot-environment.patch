@@ -1,4 +1,4 @@
-Index: 1.0-r0/boot.cmd
+Index: radxa-zero-s905y2/boot.cmd
 ===================================================================
 --- a/radxa-zero-s905y2/boot.cmd
 +++ b/radxa-zero-s905y2/boot.cmd
@@ -8,8 +8,8 @@ Index: 1.0-r0/boot.cmd
  
 -if test -e ${devtype} ${devnum}:1 ${prefix}uEnv.txt; then
 -	load ${devtype} ${devnum}:1 ${load_addr} ${prefix}uEnv.txt
-+if test -e ${devtype} ${resin_dev_index}:${resin_root_part} ${prefix}uEnv.txt; then
-+	load ${devtype} ${resin_dev_index}:${resin_root_part} ${load_addr} ${prefix}uEnv.txt
++if test -e ${devtype} ${resin_dev_index}:${resin_boot_part} uEnv.txt; then
++	load ${devtype} ${resin_dev_index}:${resin_boot_part} ${load_addr} uEnv.txt
  	env import -t ${load_addr} ${filesize}
  fi
  

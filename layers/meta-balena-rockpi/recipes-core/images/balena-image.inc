@@ -19,6 +19,10 @@ IMAGE_INSTALL_append_radxa-zero-s905y2 = " \
     u-boot-radxa-zero-scripts \
 "
 
+BALENA_BOOT_PARTITION_FILES_append_radxa-zero-s905y2 = " \
+    uEnv.txt:/ \
+"
+
 BALENA_BOOT_PARTITION_FILES_append_rockpi-4b-rk3399 = " \
     rk3399-rock-pi-4b.dtb:/ \
     ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
