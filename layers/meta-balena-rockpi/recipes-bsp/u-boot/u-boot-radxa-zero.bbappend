@@ -16,3 +16,6 @@ SRC_URI_append = " \
 
 PACKAGE_BEFORE_PN += "${PN}-bins"
 FILES_${PN}-bins = "/boot/u-boot.bin"
+
+# we remove uEnv.txt from the rootfs because we keep it in the read-write boot partition instead
+FILES_${PN}-scripts_remove = "/boot/uEnv.txt"
