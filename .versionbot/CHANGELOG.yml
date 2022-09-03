@@ -1,4 +1,74 @@
 - commits:
+    - subject: Update layers/meta-balena to 608994976c4d5d4f1f4558245f6abc375ac0c0c7
+      hash: 0f7712b6929e08cc7f8db580b544ba79b879cac6
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 608994976c4d5d4f1f4558245f6abc375ac0c0c7
+        changelog-entry: Update layers/meta-balena to 608994976c4d5d4f1f4558245f6abc375ac0c0c7
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "udev: run resin-update-state after md assemble"
+              hash: 09a985b3847b887ae47047c011057372cfee993e
+              body: >
+                Run the resin-update-state rules that create the by-state links
+                after md
+
+                arrays are assembled. This fixes state link creation when running on a
+
+                RAID array.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "resin_update_state_probe: do not skip md devices"
+              hash: fbfb67820b58fcf7659d616e20657857959e46fe
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.102.4
+          title: "'Fix creating by-state links when rootfs is on a RAID array'"
+          date: 2022-08-30T21:04:53.554Z
+        - commits:
+            - subject: "renovate: Restore default commit body"
+              hash: 05be6314e136d40ae8cdf54988b27e059de07e68
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.102.3
+          title: "'renovate: Restore default commit body'"
+          date: 2022-08-30T19:45:01.208Z
+        - commits:
+            - subject: "Renovate: Fix package rules for balena supervisor"
+              hash: 2a7cb0c5bc3a53980ac8bcd2190500a51fcd85c5
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.102.2
+          title: "'Renovate: Fix package rules for balena supervisor'"
+          date: 2022-08-29T16:15:17.586Z
+  version: 2.102.4
+  title: "'Update layers/meta-balena digest to 6089949'"
+  date: 2022-09-03T03:24:52.943Z
+- commits:
     - subject: Update layers/meta-balena to 59f3caaab340bf15bf562b60e1f7315c437e1297
       hash: c739e408485554185bc92679afa5cddff21b695c
       body: Update layers/meta-balena
