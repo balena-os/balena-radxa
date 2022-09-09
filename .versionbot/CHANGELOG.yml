@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update the BSP to latest dunfell
+      hash: dc4876bb4564c1d0b630fea9d4c2ca9747aff652
+      body: |
+        This update should bring in  bt / wifi firmware for Radxa Zero
+        using the AP6212 chipset.
+      footer:
+        Changelog-entry: Update the BSP to latest dunfell
+        changelog-entry: Update the BSP to latest dunfell
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.102.6+rev1
+  title: "'Update bsp'"
+  date: 2022-09-09T06:58:36.012Z
+- commits:
     - subject: Update layers/meta-balena to 6e63144eb5d665dc51958e0aa791256c48cc0522
       hash: 3c58b3874feddeb11282582ab57286fc627e2cbe
       body: Update layers/meta-balena

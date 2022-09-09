@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.102.6+rev1
+## (2022-09-09)
+
+* Update the BSP to latest dunfell [Florin Sarbu]
+
 # v2.102.6
 ## (2022-09-08)
 
