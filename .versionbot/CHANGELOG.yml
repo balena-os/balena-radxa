@@ -1,4 +1,21 @@
 - commits:
+    - subject: Update bsp to latest dunfell so we have brcm 43430 firmware in standard
+        location
+      hash: 13b89277511956fc6b09cdf59986004300c344af
+      body: ""
+      footer:
+        Changelog-entry: Update bsp to latest dunfell so we have brcm 43430 firmware in
+          standard location
+        changelog-entry: Update bsp to latest dunfell so we have brcm 43430 firmware in
+          standard location
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.103.1+rev1
+  title: "'Update bsp to latest dunfell'"
+  date: 2022-09-15T11:15:24.305Z
+- commits:
     - subject: Update layers/meta-balena to 2f207a3dbc3f142d4d1e0b9fdbd6136bcfb40dac
       hash: 48309592ca237215fa386c1eceffcb3ea2c31825
       body: Update layers/meta-balena

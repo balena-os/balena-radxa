@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.103.1+rev1
+## (2022-09-15)
+
+* Update bsp to latest dunfell so we have brcm 43430 firmware in standard location [Florin Sarbu]
+
 # v2.103.1
 ## (2022-09-15)
 
