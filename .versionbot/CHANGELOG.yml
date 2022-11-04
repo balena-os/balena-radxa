@@ -1,4 +1,22 @@
 - commits:
+    - subject: Update meta-balena from v2.102.6 to v2.102.7
+      hash: 63f34b0f86182774a873e5d1b1d27a85a421e991
+      body: |
+        Update meta-balena from 2.102.6 to 2.102.7
+
+        This includes newer contracts that allow the rockpi-4b-rk3399 to pass
+        automated testing.
+      footer:
+        Changelog-entry: Update meta-balena from v2.102.6 to v2.102.7
+        changelog-entry: Update meta-balena from v2.102.6 to v2.102.7
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2022.10.1
+  title: "'layers/meta-balena: Update to v2.102.7'"
+  date: 2022-11-04T11:46:43.111Z
+- commits:
     - subject: Update the BSP to latest dunfell
       hash: dc4876bb4564c1d0b630fea9d4c2ca9747aff652
       body: |

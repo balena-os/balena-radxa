@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2022.10.1
+## (2022-11-04)
+
+* Update meta-balena from v2.102.6 to v2.102.7 [Alex Gonzalez]
+
 # 2022.10.0
 ## (2022-10-26)
 
