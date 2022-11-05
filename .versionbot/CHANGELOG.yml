@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+      hash: 13170c4e8bfe8debfc32efe0603751aa8c457ffb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+        changelog-entry: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "wpa-supplicant: Sync with v2.10 from upstream"
+              hash: 5464be07070bbc4a06a4d432250dd70b2b2e1522
+              body: >
+                Synced from:
+
+                http://cgit.openembedded.org/openembedded-core/commit/meta/recipes-connectivity/wpa-supplicant?id=3a43c2a82881688d85238464db371f695e60b572
+
+
+                Closes #2838
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.105.27
+          title: ""
+          date: 2022-11-04T22:15:37.135Z
+  version: 2.105.27
+  title: ""
+  date: 2022-11-05T03:00:24.641Z
+- commits:
     - subject: Update layers/meta-balena to 397943469235f9eb67a55ce5c98e01e8afbc641e
       hash: 242d99be784c6d22f1b86ab848ff714abc4760ab
       body: Update layers/meta-balena
