@@ -1,8 +1,10 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+ROCKPI_BOARD_SHUTDOWN = "The device is performing a shutdown. Please wait until the blue LED stops flashing (powered off)."
+
 postProvisioningInstructions = [
-	instructions.BOARD_SHUTDOWN
+	ROCKPI_BOARD_SHUTDOWN
 	instructions.REMOVE_INSTALL_MEDIA
 	instructions.BOARD_REPOWER
 ]
