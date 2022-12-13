@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to 0359cad249077b459a6dbc7bb9ba026fcae91a15
+      hash: f51782951fd9f8a4165c5dd947ad46de27647325
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 0359cad249077b459a6dbc7bb9ba026fcae91a15
+        changelog-entry: Update layers/meta-balena to 0359cad249077b459a6dbc7bb9ba026fcae91a15
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: Only unlock LUKS partitions on the OS drive"
+              hash: f5e8488e7b87c38829d241f788413433526d2f78
+              body: >
+                In the current state the cryptsetup initrd script tries to unlock all
+
+                LUKS volumes in the system using the TPM. This includes user-defined LUKS
+
+                volumes that, if present, fail to unlock and make the system unbootable.
+
+                We should also not touch user-defined volumes in the first place.
+
+
+                This patch modifies the cryptsetup script to only unlock LUKS volumes
+
+                that are on the OS drive (same block device as the EFI partition).
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.107.28
+          title: ""
+          date: 2022-12-12T21:10:45.792Z
+  version: 2.107.28
+  title: ""
+  date: 2022-12-13T03:07:37.226Z
+- commits:
     - subject: Update layers/meta-balena to 2ad93348592235ec26760b9f4e3f8b21f0d1d03f
       hash: ef1a4ebfd75c055ee26be40d1ce6ed6c99375cde
       body: Update layers/meta-balena
