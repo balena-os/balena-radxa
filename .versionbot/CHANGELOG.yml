@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update post-provisioning instructions for Rock Pi 4B
+      hash: 4d18da4520ca2ed4c2e70ef6f542138ee5f3d8c8
+      body: ""
+      footer:
+        Changelog-entry: Update post-provisioning instructions for Rock Pi 4B
+        changelog-entry: Update post-provisioning instructions for Rock Pi 4B
+        Signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+        signed-off-by: Alex Bucknall <alex.bucknall@gmail.com>
+      author: Alex Bucknall
+      nested: []
+  version: 2.107.29+rev1
+  title: ""
+  date: 2022-12-13T16:00:04.746Z
+- commits:
     - subject: Update layers/meta-balena to 79367a045b9e8d483e3d330b70d43cadc5462f78
       hash: c16e725313a9dcf3a8db5a2c83406386f324fc45
       body: Update layers/meta-balena
