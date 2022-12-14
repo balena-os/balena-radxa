@@ -1,4 +1,106 @@
 - commits:
+    - subject: Update layers/meta-balena to 6dd2fc68bc13b2d8ad4527a1623da292828ed1c9
+      hash: 67d5911680f740f07b355aca31b832556ea0c35f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 6dd2fc68bc13b2d8ad4527a1623da292828ed1c9
+        changelog-entry: Update layers/meta-balena to 6dd2fc68bc13b2d8ad4527a1623da292828ed1c9
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests/cloud: Increase the wait time for services to start"
+              hash: 99799e83e492f149ff30f956faead7cf34aeeea6
+              body: |
+                Also reduce the interval to 1s.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.107.32
+          title: ""
+          date: 2022-12-14T06:01:21.542Z
+        - commits:
+            - subject: Update tests/leviathan digest to 27b78a4
+              hash: b3b219aae0e3aeed8ac72ce2c5ac9f156d1a4279
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Enable external contributions via flowzone
+                      hash: 8e2489e75fd2d750dec077699f2410335995a6b2
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.10.10
+                  title: ""
+                  date: 2022-12-13T19:44:28.072Z
+          version: meta-balena-2.107.31
+          title: ""
+          date: 2022-12-14T00:00:25.148Z
+    - subject: Update layers/meta-balena to 654c0b9b5b019196e10b348471a50bc7e2e614a8
+      hash: 8c4ea77ee546a790db76c529ad358d2cc34f9eb3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 654c0b9b5b019196e10b348471a50bc7e2e614a8
+        changelog-entry: Update layers/meta-balena to 654c0b9b5b019196e10b348471a50bc7e2e614a8
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests/cloud: Increase the wait time for services to start"
+              hash: 99799e83e492f149ff30f956faead7cf34aeeea6
+              body: |
+                Also reduce the interval to 1s.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.107.32
+          title: ""
+          date: 2022-12-14T06:01:21.542Z
+        - commits:
+            - subject: Update tests/leviathan digest to 27b78a4
+              hash: b3b219aae0e3aeed8ac72ce2c5ac9f156d1a4279
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Enable external contributions via flowzone
+                      hash: 8e2489e75fd2d750dec077699f2410335995a6b2
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.10.10
+                  title: ""
+                  date: 2022-12-13T19:44:28.072Z
+          version: meta-balena-2.107.31
+          title: ""
+          date: 2022-12-14T00:00:25.148Z
+  version: 2.107.32
+  title: ""
+  date: 2022-12-14T10:02:40.255Z
+- commits:
     - subject: Update post-provisioning instructions for Rock Pi 4B
       hash: 4d18da4520ca2ed4c2e70ef6f542138ee5f3d8c8
       body: ""

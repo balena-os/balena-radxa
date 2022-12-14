@@ -1,6 +1,65 @@
 Change log
 -----------
 
+# v2.107.32
+## (2022-12-14)
+
+
+<details>
+<summary> Update layers/meta-balena to 6dd2fc68bc13b2d8ad4527a1623da292828ed1c9 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.32
+> ### (2022-12-14)
+> 
+> * tests/cloud: Increase the wait time for services to start [Kyle Harding]
+> 
+> ## meta-balena-2.107.31
+> ### (2022-12-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 27b78a4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.10
+>> #### (2022-12-13)
+>> 
+>> * Enable external contributions via flowzone [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 654c0b9b5b019196e10b348471a50bc7e2e614a8 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.32
+> ### (2022-12-14)
+> 
+> * tests/cloud: Increase the wait time for services to start [Kyle Harding]
+> 
+> ## meta-balena-2.107.31
+> ### (2022-12-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 27b78a4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.10
+>> #### (2022-12-13)
+>> 
+>> * Enable external contributions via flowzone [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.107.29+rev1
 ## (2022-12-13)
 
