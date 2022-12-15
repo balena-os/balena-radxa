@@ -1,6 +1,52 @@
 Change log
 -----------
 
+# v2.107.37
+## (2022-12-15)
+
+
+<details>
+<summary> Update layers/meta-balena to 66694d0ba5536dfde9087c2aebc6785730414328 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.37
+> ### (2022-12-15)
+> 
+> * tests: cloud: simplify apps to speedup suite [rcooke-warwick]
+> 
+> ## meta-balena-2.107.36
+> ### (2022-12-15)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 48ffd13 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.11
+>> #### (2022-12-14)
+>> 
+>> * Avoid conflicting docker networks [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.107.35
+> ### (2022-12-15)
+> 
+> * patch: Add default debug object to test config [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-2.107.34
+> ### (2022-12-14)
+> 
+> * initrdscripts: Wait for udev processing to complete when unlocking LUKS devices [Michal Toman]
+> 
+> ## meta-balena-2.107.33
+> ### (2022-12-14)
+> 
+> * tests: hup: clean up inactive partition pre hup [rcooke-warwick]
+> 
+
+</details>
+
 # v2.107.32+rev1
 ## (2022-12-15)
 

@@ -1,4 +1,117 @@
 - commits:
+    - subject: Update layers/meta-balena to 66694d0ba5536dfde9087c2aebc6785730414328
+      hash: e2d92766edea9e1ea983c617419184225cee3aba
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 66694d0ba5536dfde9087c2aebc6785730414328
+        changelog-entry: Update layers/meta-balena to 66694d0ba5536dfde9087c2aebc6785730414328
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: cloud: simplify apps to speedup suite"
+              hash: 9552f6ba4961e032fb3bd086548eec06b650609a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.107.37
+          title: ""
+          date: 2022-12-15T14:05:57.987Z
+        - commits:
+            - subject: Update tests/leviathan digest to 48ffd13
+              hash: 71f0b808ee097643b9ea6f8572fb30b9e8c7e0c7
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Avoid conflicting docker networks
+                      hash: 5e04208a9f07567c6aa7fdc55dc95d2cacb6c8c3
+                      body: >
+                        The `make subnet` command can be called on Jenkins and similar to generate
+
+                        a unique subnet that is not in use.
+
+
+                        The DinD daemon in the core service will also start with a non-default
+
+                        subnet.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.10.11
+                  title: ""
+                  date: 2022-12-14T14:15:43.765Z
+          version: meta-balena-2.107.36
+          title: ""
+          date: 2022-12-15T06:04:52.294Z
+        - commits:
+            - subject: "patch: Add default debug object to test config"
+              hash: 3def4d69a63952eac4a5c3fb6bd94fe03b666eda
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: meta-balena-2.107.35
+          title: ""
+          date: 2022-12-15T00:03:58.037Z
+        - commits:
+            - subject: "initrdscripts: Wait for udev processing to complete when unlocking
+                LUKS devices"
+              hash: dc31885048db9a1ef5e1aaa705af9bf3d04052a3
+              body: >
+                When unlocking LUKS devices, udev events initializing the DM devices are
+                still
+
+                generated in the background even after cryptsetup luksOpen returns. We need to
+
+                wait for the udev processing to finish before killing udev and cleaning up
+
+                the udev database to avoid having to deal with partially initialized devices
+
+                or corrupted udev database in the target OS.
+              footer:
+                Fixes: "#2857"
+                fixes: "#2857"
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.107.34
+          title: ""
+          date: 2022-12-14T18:02:58.755Z
+        - commits:
+            - subject: "tests: hup: clean up inactive partition pre hup"
+              hash: 1356c4f244be8b67fac9da9e15d2dee8c3816611
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.107.33
+          title: ""
+          date: 2022-12-14T13:22:43.735Z
+  version: 2.107.37
+  title: ""
+  date: 2022-12-15T19:13:25.369Z
+- commits:
     - subject: Update contracts to 08f029b5c82e71b9b25fbeef4805815bfa4c24aa
       hash: cbccac63542fc5e4e72642b6f7616da1957bde35
       body: Update contracts
