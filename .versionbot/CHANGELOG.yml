@@ -1,4 +1,132 @@
 - commits:
+    - subject: Update layers/meta-balena to 29f12b0d5adc6cdfa993f68e00422371708342d9
+      hash: 58f7b09620a56fb4f344282ae0d028a1cbc187a7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 29f12b0d5adc6cdfa993f68e00422371708342d9
+        changelog-entry: Update layers/meta-balena to 29f12b0d5adc6cdfa993f68e00422371708342d9
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to f06d285
+              hash: 424c0af78fd902d8109b28a77ac94ca6a3eed786
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Fix renovate extends syntax to include balena-io config
+                      hash: 79cb0996fcb77d2211eba02d7221d059e98aba03
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.11.6
+                  title: ""
+                  date: 2022-12-16T17:23:34.994Z
+                - commits:
+                    - subject: "renovate: Inherit settings from balena-io/renovate-config"
+                      hash: 488ea00e558ba338d2b3abea74457a40686caafa
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.11.5
+                  title: ""
+                  date: 2022-12-16T16:17:01.461Z
+                - commits:
+                    - subject: add logging and timeout to balena push
+                      hash: fb354023beadff1151ed3b8acc24817312b68b86
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: leviathan-2.11.4
+                  title: ""
+                  date: 2022-12-16T15:07:34.575Z
+          version: meta-balena-2.108.3
+          title: ""
+          date: 2022-12-20T01:29:29.457Z
+    - subject: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+      hash: 0c7a481bc863f78304bd0b16eb9f6a6db766d226
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+        changelog-entry: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to f06d285
+              hash: 424c0af78fd902d8109b28a77ac94ca6a3eed786
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Fix renovate extends syntax to include balena-io config
+                      hash: 79cb0996fcb77d2211eba02d7221d059e98aba03
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.11.6
+                  title: ""
+                  date: 2022-12-16T17:23:34.994Z
+                - commits:
+                    - subject: "renovate: Inherit settings from balena-io/renovate-config"
+                      hash: 488ea00e558ba338d2b3abea74457a40686caafa
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.11.5
+                  title: ""
+                  date: 2022-12-16T16:17:01.461Z
+                - commits:
+                    - subject: add logging and timeout to balena push
+                      hash: fb354023beadff1151ed3b8acc24817312b68b86
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: leviathan-2.11.4
+                  title: ""
+                  date: 2022-12-16T15:07:34.575Z
+          version: meta-balena-2.108.3
+          title: ""
+          date: 2022-12-20T01:29:29.457Z
+  version: 2.108.3
+  title: ""
+  date: 2022-12-20T06:34:17.451Z
+- commits:
     - subject: Update layers/meta-balena to 1d8c6eeed258f1205d6b1e0b78088ea867308b80
       hash: 7f6abda65c7d673d6c1962624a97245ac19534c7
       body: Update layers/meta-balena
