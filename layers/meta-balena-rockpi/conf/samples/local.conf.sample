@@ -1,4 +1,5 @@
 # Supported machines
+#MACHINE ?= "radxa-cm3-io-rk3566"
 #MACHINE ?= "radxa-zero-s905y2"
 #MACHINE ?= "rockpi-4b-rk3399"
 
