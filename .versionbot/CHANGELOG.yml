@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update poky to dunfell-23.0.21
+      hash: fce21f5770d977c5d6d54425b2df7a7bbd91a140
+      body: ""
+      footer:
+        Changelog-entry: Update poky to dunfell-23.0.21
+        changelog-entry: Update poky to dunfell-23.0.21
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.108.19+rev1
+  title: ""
+  date: 2023-01-12T10:42:03.988Z
+- commits:
     - subject: Update layers/meta-balena to 707ed18ca071fb7d7d557e0774f9f479323892af
       hash: 443b963c0bf22ba6df9284c83129c42d35b1f1f8
       body: Update layers/meta-balena

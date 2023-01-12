@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.19+rev1
+## (2023-01-12)
+
+* Update poky to dunfell-23.0.21 [Florin Sarbu]
+
 # v2.108.19
 ## (2023-01-10)
 
