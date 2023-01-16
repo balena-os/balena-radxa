@@ -1,0 +1,46 @@
+#!/bin/sh
+
+#
+# Script used by hostapps updater to flash bootloader onto internal media
+#
+
+set -o errexit
+
+# machine specific data
+
+idbloader_file="idbloader.img"
+idbloader_block_size=512
+idbloader_seek_blocks=64
+
+uboot_file="trust.itb"
+uboot_block_size=512
+uboot_seek_blocks=16384
+
+device="/dev/"$(findmnt --noheadings --canonicalize --output SOURCE /mnt/boot/ | xargs lsblk -no pkname)
+
+# we sort the update files list by ascending memory addresses these binaries will be written to
+update_files="idbloader uboot"
+
+for i in $update_files; do
+        current_update_file=$(eval echo \$${i}_file)
+        block_size=$(eval echo \$${i}_block_size)
+        seek_blocks=$(eval echo \$${i}_seek_blocks)
+
+        # calculate size and md5sum of the binary to update from the update bundle
+        update_size=$(stat -c%s /resin-boot/$current_update_file)
+        update_md5sum=$(md5sum /resin-boot/$current_update_file | awk '{print $1'})
+
+        # calculate number of bytes to skip when computing the checksum of the data we want to update (i.e. the data already written to $device)
+        skip_bytes=$((block_size * seek_blocks))
+
+        # calculate md5sum of the data already written to $device, using $update_size bytes and skipping $skip_bytes from $device
+        existing_md5sum=$(dd if=$device skip=$skip_bytes bs=1 count=$update_size status=none | md5sum | awk '{print $1}')
+
+        if [ ! "$existing_md5sum" = "$update_md5sum" ] || [ -n "$force_write" ]; then
+                # we are flashing a binary and let's signal that we need to also flash the remaining binaries
+                # (if we do not write the remaining binaries when the previous one was written then the board may not boot anymore, due to the nature of the secure boot mechanism on the Rockchip hardware)
+                force_write=true
+                echo "Flashing $current_update_file to $device"
+                dd if=/resin-boot/$current_update_file of=$device conv=fdatasync seek=$seek_blocks bs=$block_size
+        fi
+done

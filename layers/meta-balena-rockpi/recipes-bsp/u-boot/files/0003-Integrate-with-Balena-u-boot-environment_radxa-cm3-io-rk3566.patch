@@ -1,0 +1,11 @@
+Index: 1.0-r0/radxa-cm3-io-rk3566/uEnv.txt
+===================================================================
+--- 1.0-r0.orig/radxa-cm3-io-rk3566/uEnv.txt
++++ 1.0-r0/radxa-cm3-io-rk3566/uEnv.txt
+@@ -1,5 +1,5 @@
+ verbosity=7
+-fdtfile=rk3566-radxa-cm3-io.dtb
++fdtfile=rk3566-radxa-cm3-rpi-cm4-io.dtb
+ console=ttyFIQ0
+ overlays=rk3568-fiq-debugger-uart2m0 rk3568-disable-npu
+ kernelimg=Image

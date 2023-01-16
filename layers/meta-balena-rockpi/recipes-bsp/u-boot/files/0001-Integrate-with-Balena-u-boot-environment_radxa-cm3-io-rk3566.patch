@@ -1,0 +1,26 @@
+From 2751cb7f74a28231aa12b8965de104246b922da7 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Tue, 23 Aug 2022 11:04:01 +0200
+Subject: [PATCH] Integrate with Balena u-boot environment
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ include/configs/rk3568_common.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/include/configs/rk3568_common.h b/include/configs/rk3568_common.h
+index bf2f6020c4..e983b1b570 100644
+--- a/include/configs/rk3568_common.h
++++ b/include/configs/rk3568_common.h
+@@ -92,6 +92,7 @@
+ 
+ #undef RKIMG_BOOTCOMMAND
+ #define RKIMG_BOOTCOMMAND		\
++	"setenv resin_kernel_load_addr ${kernel_addr_r}; run resin_set_kernel_root; run set_os_cmdline;"\
+ 	"run distro_bootcmd;"		\
+ 	"boot_fit;"			\
+ 	"boot_android ${devtype} ${devnum};"
+-- 
+2.37.2
+
