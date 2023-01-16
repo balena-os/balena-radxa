@@ -1,4 +1,67 @@
 - commits:
+    - subject: Update layers/meta-balena to 5a845504b79eb76e00b6ba4a09a4813d47520923
+      hash: f0ba9fd07f19338d05cab1ea976425c884aeb0f9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5a845504b79eb76e00b6ba4a09a4813d47520923
+        changelog-entry: Update layers/meta-balena to 5a845504b79eb76e00b6ba4a09a4813d47520923
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "workflows: esr: use semver compatible versions"
+              hash: 36b9c035f5d7b55540c2190492f6e02af890bd13
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.22
+          title: ""
+          date: 2023-01-16T09:25:15.067Z
+        - commits:
+            - subject: "efitools: Package lock down EFI image into its own package"
+              hash: 461ad62f13732cd325f3f532fda4fac4b9ffb3da
+              body: >
+                This EFI image contains the secure boot certificates and when executed it
+
+                is supposed to load the keys into the respective secure boot slots.
+
+
+                We don't use this binary in our secure boot implementation, but currently
+
+                the build breaks as the binary is installed but not packaged.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.21
+          title: ""
+          date: 2023-01-14T11:56:57.966Z
+        - commits:
+            - subject: "workflows: meta-balena-esr: Fix version calculation"
+              hash: b56da33230839f4af74bac954cf834c2116e6209
+              body: >
+                Correct the calculation of the version to include in the yml file.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.20
+          title: ""
+          date: 2023-01-12T14:06:53.452Z
+  version: 2.108.22
+  title: ""
+  date: 2023-01-16T16:03:57.547Z
+- commits:
     - subject: Add support for Radxa CM3 on Raspberry Pi Compute Module 4 IO Board
       hash: 765984dc507fd23b8a7be3669810fe55fedb2938
       body: ""
