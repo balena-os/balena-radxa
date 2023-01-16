@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add support for Radxa CM3 on Raspberry Pi Compute Module 4 IO Board
+      hash: 765984dc507fd23b8a7be3669810fe55fedb2938
+      body: ""
+      footer:
+        Changelog-entry: Add support for Radxa CM3 on Raspberry Pi Compute Module 4 IO Board
+        changelog-entry: Add support for Radxa CM3 on Raspberry Pi Compute Module 4 IO Board
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.108.19+rev2
+  title: ""
+  date: 2023-01-16T09:09:55.010Z
+- commits:
     - subject: Add ESR workflow
       hash: 951267f7bd9b27c51914f670e659e6c8b49080aa
       body: |

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.19+rev2
+## (2023-01-16)
+
+* Add support for Radxa CM3 on Raspberry Pi Compute Module 4 IO Board [Florin Sarbu]
+
 # v2.108.19+rev1
 ## (2023-01-13)
 
