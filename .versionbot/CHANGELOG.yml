@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update contracts to 2038ce46b972842522e8fff42312b996167d70ed
+      hash: 55265f6a06ba4722a6e55a28d16b8c6b8ae5a8b6
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 2038ce46b972842522e8fff42312b996167d70ed
+        changelog-entry: Update contracts to 2038ce46b972842522e8fff42312b996167d70ed
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Radxa CM3 on Raspberry Pi Compute Module 4 IO
+                Board"
+              hash: 8672125211a475b2f4742fff0d64273c25bf8421
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.39
+          title: ""
+          date: 2023-01-12T21:09:27.997Z
+  version: 2.108.22+rev1
+  title: ""
+  date: 2023-01-17T12:11:54.588Z
+- commits:
     - subject: Update layers/meta-balena to 5a845504b79eb76e00b6ba4a09a4813d47520923
       hash: f0ba9fd07f19338d05cab1ea976425c884aeb0f9
       body: Update layers/meta-balena

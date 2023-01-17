@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.22+rev1
+## (2023-01-17)
+
+
+<details>
+<summary> Update contracts to 2038ce46b972842522e8fff42312b996167d70ed [renovate[bot]] </summary>
+
+> ## contracts-2.0.39
+> ### (2023-01-12)
+> 
+> * hw.device-type: Add Radxa CM3 on Raspberry Pi Compute Module 4 IO Board [Florin Sarbu]
+> 
+
+</details>
+
 # v2.108.22
 ## (2023-01-16)
 
