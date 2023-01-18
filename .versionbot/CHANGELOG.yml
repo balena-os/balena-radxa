@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 8392bb27f12919d33534f01c28c8ece7c49a7975
+      hash: 2e579c5bdb817cbb1609ac42c8e49a68102d81d8
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 8392bb27f12919d33534f01c28c8ece7c49a7975
+        changelog-entry: Update contracts to 8392bb27f12919d33534f01c28c8ece7c49a7975
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add golang v1.19.5 and v1.18.10
+              hash: 367a8d6f1782238ab4895b8a626256f8d5ae9f88
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.40
+          title: ""
+          date: 2023-01-18T04:50:10.276Z
+  version: 2.108.22+rev2
+  title: ""
+  date: 2023-01-18T12:18:17.813Z
+- commits:
     - subject: Update contracts to 2038ce46b972842522e8fff42312b996167d70ed
       hash: 55265f6a06ba4722a6e55a28d16b8c6b8ae5a8b6
       body: Update contracts

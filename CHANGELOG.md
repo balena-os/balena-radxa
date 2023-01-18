@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.22+rev2
+## (2023-01-18)
+
+
+<details>
+<summary> Update contracts to 8392bb27f12919d33534f01c28c8ece7c49a7975 [renovate[bot]] </summary>
+
+> ## contracts-2.0.40
+> ### (2023-01-18)
+> 
+> * Add golang v1.19.5 and v1.18.10 [Trong Nghia Nguyen]
+> 
+
+</details>
+
 # v2.108.22+rev1
 ## (2023-01-17)
 
