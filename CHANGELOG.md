@@ -1,6 +1,32 @@
 Change log
 -----------
 
+# v2.108.25
+## (2023-01-19)
+
+
+<details>
+<summary> Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.25
+> ### (2023-01-18)
+> 
+> * tests: os: add basic SB/FDE tests [Joseph Kogut]
+> 
+> ## meta-balena-2.108.24
+> ### (2023-01-18)
+> 
+> * networkmanager: Make iptables wait for xtables.lock [Zahari Petkov]
+> 
+> ## meta-balena-2.108.23
+> ### (2023-01-16)
+> 
+> * balena-keys: rebuild if keys change [Alex Gonzalez]
+> * classes: sign-*: resign if keys change [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.22+rev2
 ## (2023-01-18)
 

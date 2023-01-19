@@ -1,4 +1,85 @@
 - commits:
+    - subject: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      hash: d8e0f1cba08f92576bfae6fcd0951cf987dd7230
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+        changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: add basic SB/FDE tests"
+              hash: f8ada0481cc159fd03ac1291c981e4dc0d03342d
+              body: |
+                Check for secureboot and full-disk encryption when supported by
+                firmware.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.108.25
+          title: ""
+          date: 2023-01-18T21:44:59.128Z
+        - commits:
+            - subject: "networkmanager: Make iptables wait for xtables.lock"
+              hash: afebbcddeebdda9e5988507a5fcf5ad93cf79cab
+              body: >
+                iptables takes a file lock at /run/xtables.lock. By default, if
+
+                the file is locked, iptables will fail with error. When that happens,
+
+                the iptables rules won't be configured, and the shared mode
+
+                (for which we use iptables) will not be setup properly.
+
+
+                Instead, pass "--wait 2", to block.
+
+
+                The included patch has to be removed once we upgrade to next
+
+                NetworkManager version as it is already included upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.108.24
+          title: ""
+          date: 2023-01-18T11:11:18.440Z
+        - commits:
+            - subject: "balena-keys: rebuild if keys change"
+              hash: 64cc69a741568d2c2e95cd4197b18628310f34e2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: sign-*: resign if keys change"
+              hash: 1decda2966271638196840c04955ffa12a57158a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.23
+          title: ""
+          date: 2023-01-16T23:11:19.102Z
+  version: 2.108.25
+  title: ""
+  date: 2023-01-19T15:03:00.763Z
+- commits:
     - subject: Update contracts to 8392bb27f12919d33534f01c28c8ece7c49a7975
       hash: 2e579c5bdb817cbb1609ac42c8e49a68102d81d8
       body: Update contracts
