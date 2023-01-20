@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.25+rev1
+## (2023-01-20)
+
+* Fix typo for Radxa CM3 provisioning instructions [Florin Sarbu]
+
 # v2.108.25
 ## (2023-01-19)
 

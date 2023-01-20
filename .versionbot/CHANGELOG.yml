@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix typo for Radxa CM3 provisioning instructions
+      hash: 757cdba5186624723a758a9db9f560887116106c
+      body: ""
+      footer:
+        Changelog-entry: Fix typo for Radxa CM3 provisioning instructions
+        changelog-entry: Fix typo for Radxa CM3 provisioning instructions
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.108.25+rev1
+  title: ""
+  date: 2023-01-20T07:23:27.906Z
+- commits:
     - subject: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
       hash: d8e0f1cba08f92576bfae6fcd0951cf987dd7230
       body: Update layers/meta-balena
