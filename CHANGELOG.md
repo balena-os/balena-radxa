@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.26
+## (2023-01-20)
+
+
+<details>
+<summary> Update layers/meta-balena to 1d7b7e3bd6cd3bc1bbf4bd698a0b946bff498659 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.26
+> ### (2023-01-20)
+> 
+> * Enable back connectivity check in NetworkManager [Zahari Petkov]
+> 
+
+</details>
+
 # v2.108.25+rev1
 ## (2023-01-20)
 
