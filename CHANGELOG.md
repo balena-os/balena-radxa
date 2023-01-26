@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v2.108.28
+## (2023-01-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 00324bf0a842b63ee46b24ab5a19bff68d4b3799 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.28
+> ### (2023-01-26)
+> 
+> * patch: Update balenaOS docs title [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-2.108.27
+> ### (2023-01-20)
+> 
+> * tests: os: fix tests that use glider on rpi0 [rcooke-warwick]
+> 
+
+</details>
+
 # v2.108.26+rev1
 ## (2023-01-26)
 
