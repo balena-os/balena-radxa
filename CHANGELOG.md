@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v2.108.31
+## (2023-01-31)
+
+
+<details>
+<summary> Update layers/meta-balena to c3560cf861dbd8505adecd0e12b280c85a0eac88 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.31
+> ### (2023-02-01)
+> 
+> * rollback-health: bind-mount EFI partition when split from boot [Michal Toman]
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to e7ea08bd6459cb8a0c0c59b61ef3a46caaeaaa68 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.31
+> ### (2023-02-01)
+> 
+> * rollback-health: bind-mount EFI partition when split from boot [Michal Toman]
+> 
+
+</details>
+
 # v2.108.29
 ## (2023-01-28)
 
