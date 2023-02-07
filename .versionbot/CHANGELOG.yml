@@ -1,4 +1,61 @@
 - commits:
+    - subject: Update contracts to 79998a238ca981b890dfb9206f50bde2d367ff7c
+      hash: 79e85996af00923b24c6a01ed494ad44d6715c77
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 79998a238ca981b890dfb9206f50bde2d367ff7c
+        changelog-entry: Update contracts to 79998a238ca981b890dfb9206f50bde2d367ff7c
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Add golang v1.20
+              hash: 038cc1cd40beef684ee1e51207b54afd3eb3c1d4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v19.6.0 and v18.14.0
+              hash: 7074a3fefa923e99da160b37ba296c0480577b20
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.42
+          title: ""
+          date: 2023-02-06T12:00:07.170Z
+        - commits:
+            - subject: Add support for latest dotnet releases v7 (7.0.102) and v6 (6.0.113)
+              hash: 4ac594a0dafbcc1e3522ca40df80b63c9a1d4fa0
+              body: |
+                Drop support for v3.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v19.5.0
+              hash: 255619cd1011b272f7194eb55e182156cf431f93
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.41
+          title: ""
+          date: 2023-02-01T09:00:27.577Z
+  version: 2.108.32+rev1
+  title: ""
+  date: 2023-02-07T11:18:31.348Z
+- commits:
     - subject: Update layers/meta-balena to ccab7759d432f7be780c194087c38eca7e02084d
       hash: 070d15e6ff57ccff81eb698eea045114546bccd6
       body: Update layers/meta-balena
