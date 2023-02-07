@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update layers/meta-balena to 22f6f33279e7d152dec60de927371312093396cd
+      hash: 206f16bec8f0d8142ff04b4a852384ee904e65dc
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 22f6f33279e7d152dec60de927371312093396cd
+        changelog-entry: Update layers/meta-balena to 22f6f33279e7d152dec60de927371312093396cd
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "renovate: Include to and from versions for supervisor and engine"
+              hash: 3ae9703ba53a33e99e2ee81e588466f0e4665977
+              body: |
+                This allows properly formatted commit messages to support
+                nested changelogs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.110.1
+          title: ""
+          date: 2023-02-07T16:40:57.399Z
+  version: 2.110.1
+  title: ""
+  date: 2023-02-07T18:21:04.975Z
+- commits:
     - subject: Update layers/meta-balena to 28f9159565cc5576669b7a327a9239a4020df973
       hash: e26cfd44fe299b3cfc8c6cea91d88aae5cbbcd1d
       body: Update layers/meta-balena
