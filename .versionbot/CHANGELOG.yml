@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to b48ce7abc1eb2506eb81ebbb18a1c4b90e55c4d4
+      hash: 6bb19c3fb8af936b8ed45bce99a1445b06f09ec5
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b48ce7abc1eb2506eb81ebbb18a1c4b90e55c4d4
+        changelog-entry: Update layers/meta-balena to b48ce7abc1eb2506eb81ebbb18a1c4b90e55c4d4
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: hup: fix flashing for tx2"
+              hash: 6e49511d7de1e88ba3a42e6b546cf5e0ebe9a7cf
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.111.4
+          title: ""
+          date: 2023-02-14T12:45:58.350Z
+  version: 2.111.4
+  title: ""
+  date: 2023-02-14T14:29:34.000Z
+- commits:
     - subject: Update layers/meta-balena to a1621d4de1730a4f943f758b7fd7896d870ef9f7
       hash: d70bb9c63ebc5f78e2d57d1389a286033aff585a
       body: Update layers/meta-balena
