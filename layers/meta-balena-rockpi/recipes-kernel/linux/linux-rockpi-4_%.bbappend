@@ -31,3 +31,8 @@ BALENA_CONFIGS_DEPS[backported-brcmfmac] += " \
     CONFIG_X509_CERTIFICATE_PARSER=y \
     CONFIG_PKCS7_MESSAGE_PARSER=y \
 "
+
+BALENA_CONFIGS_append_rockpi-4b-rk3399 = " scsi-generic"
+BALENA_CONFIGS[scsi-generic] = " \
+    CONFIG_CHR_DEV_SG=m \
+"
