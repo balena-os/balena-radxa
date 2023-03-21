@@ -2,6 +2,10 @@ FILESEXTRAPATHS_append := ":${THISDIR}/files"
 
 HOSTAPP_HOOKS += "99-resin-uboot"
 
+HOSTAPP_HOOKS_append_rockpi-e-rk3328 = " \
+    99-flash-bootloader \
+"
+
 HOSTAPP_HOOKS_append_rockpi-4b-rk3399 = " \
     99-flash-bootloader \
 "

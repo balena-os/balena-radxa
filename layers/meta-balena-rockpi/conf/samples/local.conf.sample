@@ -2,6 +2,7 @@
 #MACHINE ?= "radxa-cm3-io-rk3566"
 #MACHINE ?= "radxa-zero-s905y2"
 #MACHINE ?= "rockpi-4b-rk3399"
+#MACHINE ?= "rockpi-e-rk3399"
 
 BALENA_STORAGE = "overlay2"
 

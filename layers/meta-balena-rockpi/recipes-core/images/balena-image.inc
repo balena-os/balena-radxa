@@ -2,15 +2,19 @@ IMAGE_FSTYPES += "balenaos-img"
 
 PARTITION_TABLE_TYPE_radxa-cm3-io-rk3566 = "gpt"
 PARTITION_TABLE_TYPE_rockpi-4b-rk3399 = "gpt"
+PARTITION_TABLE_TYPE_rockpi-e-rk3328 = "gpt"
 
 DEVICE_SPECIFIC_SPACE_radxa-cm3-io-rk3566 = "40960"
 DEVICE_SPECIFIC_SPACE_rockpi-4b-rk3399 = "40960"
+DEVICE_SPECIFIC_SPACE_rockpi-e-rk3328 = "40960"
 
 # we need to increase the rootfs size
 IMAGE_ROOTFS_SIZE_radxa-cm3-io-rk3566="487424"
 IMAGE_ROOTFS_SIZE_radxa-zero-s905y2="487424"
 IMAGE_ROOTFS_SIZE_rockpi-4b-rk3399="733184"
+IMAGE_ROOTFS_SIZE_rockpi-e-rk3328="512000"
 BALENA_BOOT_SIZE_rockpi-4b-rk3399="80960"
+BALENA_BOOT_SIZE_rockpi-e-rk3328="80960"
 
 IMAGE_INSTALL_append_rockpi-4b-rk3399 = " bluetooth-broadcom"
 
@@ -18,6 +22,11 @@ IMAGE_INSTALL_append_rockpi-4b-rk3399 = " bluetooth-broadcom"
 IMAGE_INSTALL_append_radxa-cm3-io-rk3566 = " \
     kernel-devicetree \
     u-boot-radxa-cm3-io-scripts \
+"
+
+IMAGE_INSTALL_append_rockpi-e-rk3328 = " \
+    kernel-devicetree \
+    u-boot-rockpi-e-scripts \
 "
 
 # add the dtb, overlays, u-boot scripts and u-boot binaries to rootfs /boot directory
@@ -30,6 +39,21 @@ IMAGE_INSTALL_append_radxa-zero-s905y2 = " \
 
 BALENA_BOOT_PARTITION_FILES_append_radxa-zero-s905y2 = " \
     uEnv.txt:/ \
+"
+
+BALENA_BOOT_PARTITION_FILES_append_rockpi-e-rk3328 = " \
+    rk3328-rock-pi-e.dtb:/rk3328-rock-pi-e.dtb \
+    boot.scr:/boot/boot.scr \
+    uEnv.txt:/boot/uEnv.txt \
+    ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
+    overlays/rockchip-fixup.scr:/overlays/rockchip-fixup.scr \
+    overlays/rk3328-console-on-uart1.dtbo:/overlays/rk3328-console-on-uart1.dtbo \
+    overlays/rk3328-i2c1.dtbo:/overlays/rk3328-i2c1.dtbo \
+    overlays/rk3328-uart1.dtbo:/overlays/rk3328-uart1.dtbo \
+    overlays/rk3328-w1-gpio.dtbo:/overlays/rk3328-w1-gpio.dtbo \
+    overlays/rk3328-console-on-uart2.dtbo:/overlays/rk3328-console-on-uart2.dtbo \
+    overlays/rk3328-spi-spidev.dtbo:/overlays/rk3328-spi-spidev.dtbo \
+    overlays/rk3328-uart2.dtbo:/overlays/rk3328-uart2.dtbo \
 "
 
 BALENA_BOOT_PARTITION_FILES_append_rockpi-4b-rk3399 = " \
@@ -69,11 +93,24 @@ device_specific_configuration_rockpi-4b-rk3399() {
     parted -s ${BALENA_RAW_IMG} unit s mkpart trust 24576 32767
 }
 
+device_specific_configuration_rockpi-e-rk3328() {
+    parted -s ${BALENA_RAW_IMG} unit s mkpart idbloader 64 8063
+    parted -s ${BALENA_RAW_IMG} unit s mkpart uboot 16384 24575
+    parted -s ${BALENA_RAW_IMG} unit s mkpart trust 24576 32767
+}
+
 IMAGE_CMD_balenaos-img_append_rockpi-4b-rk3399 () {
     dd if=${DEPLOY_DIR_IMAGE}/idbloader.bin of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=64
     dd if=${DEPLOY_DIR_IMAGE}/u-boot.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=16384
     dd if=${DEPLOY_DIR_IMAGE}/trust.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=24576
 }
+
+IMAGE_CMD_balenaos-img_append_rockpi-e-rk3328 () {
+    dd if=${DEPLOY_DIR_IMAGE}/idbloader.bin of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=64
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=16384
+    dd if=${DEPLOY_DIR_IMAGE}/trust.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=24576
+}
+
 
 device_specific_configuration_radxa-cm3-io-rk3566() {
     parted -s ${BALENA_RAW_IMG} unit s mkpart loader1 64 8063
@@ -88,6 +125,7 @@ IMAGE_CMD_balenaos-img_append_radxa-cm3-io-rk3566 () {
 IMAGE_CMD_balenaos-img_append_radxa-zero-s905y2 () {
     dd if=${DEPLOY_DIR_IMAGE}/u-boot.bin of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=1
 }
+
 
 # Ensure extlinux.conf files are deployed
 do_rootfs_balenaos-img[depends] += " u-boot-rockpi-4:do_build "

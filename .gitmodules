@@ -19,3 +19,6 @@
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
+[submodule "layers/meta-python2"]
+	path = layers/meta-python2
+	url = https://github.com/YoeDistro/meta-python2.git
