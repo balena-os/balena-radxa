@@ -1,7 +1,5 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-UBOOT_KCONFIG_SUPPORT = "1"
-
 inherit resin-u-boot
 
 DEPENDS += "radxa-binary-loader radxa-binary-native"
