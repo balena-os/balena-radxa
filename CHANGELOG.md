@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.114.23+rev1
+## (2023-06-26)
+
+* Update balena-os/github-workflows to [Self-hosted Renovate Bot]
+* Remove pull_request_target event run for ESR targets [Alex Gonzalez]
+
 # v2.114.23
 ## (2023-05-09)
 

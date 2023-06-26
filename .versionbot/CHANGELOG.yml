@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+      hash: f451e66ca9af969967b39a5a2fa6fac1e6d06ab2
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+        changelog-entry: Update balena-os/github-workflows to
+      author: Self-hosted Renovate Bot
+      nested: []
+    - subject: Remove pull_request_target event run for ESR targets
+      hash: 2267ebd1363d3445e469e69a59378d1adae13b94
+      body: >
+        Backporting to ESR branches hits a flowzone error as both pull_request
+
+        and pull_request_target run and this only works for master.
+
+
+        Removing the pull_request_target run for ESR branches fixes this, but
+
+        also removes the possibility of external pull requests into ESR branches,
+
+        which we don't actually need.
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: Remove pull_request_target event run for ESR targets
+        changelog-entry: Remove pull_request_target event run for ESR targets
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.114.23+rev1
+  title: ""
+  date: 2023-06-26T12:30:44.897Z
+- commits:
     - subject: Update layers/meta-balena to 3f2f215e39c39fc3ef227db665c99fb8ad77ee08
       hash: ec590c8617e2d4f2df08c099e713b27f5f02e2b3
       body: Update layers/meta-balena
