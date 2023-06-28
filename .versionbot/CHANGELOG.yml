@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update meta-balena from v2.112.15 to v2.112.16
+      hash: 8e47e98d4b834731a99c51703d995d26258d5a54
+      body: |
+        Update meta-balena from 2.112.15 to 2.112.16
+      footer:
+        Changelog-entry: Update meta-balena from v2.112.15 to v2.112.16
+        changelog-entry: Update meta-balena from v2.112.15 to v2.112.16
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2023.4.2
+  title: ""
+  date: 2023-06-28T12:30:52.100Z
+- commits:
     - subject: Update balena-os/github-workflows to
       hash: c3f5118dfc133fe7fdfedd8b5db1e2fa2d9b38d0
       body: Update balena-os/github-workflows
