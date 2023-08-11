@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.114.23+rev2
+## (2023-08-11)
+
+* Update build instructions in README [Alex Gonzalez]
+
 # v2.114.23+rev1
 ## (2023-06-26)
 

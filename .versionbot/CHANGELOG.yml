@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update build instructions in README
+      hash: de5ee21554564bcdf8e6a4bd3f4624fbd59b023d
+      body: |
+        Update the build instructions with
+        steps for containerized builds.
+      footer:
+        Changelog-entry: Update build instructions in README
+        changelog-entry: Update build instructions in README
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.114.23+rev2
+  title: ""
+  date: 2023-08-11T09:27:32.742Z
+- commits:
     - subject: Update balena-os/github-workflows to
       hash: f451e66ca9af969967b39a5a2fa6fac1e6d06ab2
       body: Update balena-os/github-workflows
