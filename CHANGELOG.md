@@ -1,6 +1,619 @@
 Change log
 -----------
 
+# v3.2.11
+## (2023-09-05)
+
+
+<details>
+<summary> Update layers/meta-balena to c1fb1e6bc532507ed9084ba613a481a6a7dbd466 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.2.11
+> ### (2023-09-01)
+> 
+> * Update tibdex/github-app-token action to v1.8.2 [Self-hosted Renovate Bot]
+> 
+> ## meta-balena-3.2.10
+> ### (2023-09-01)
+> 
+> * meta-resin-pyro: do not apply further modemmanager updates [Alex Gonzalez]
+> 
+> ## meta-balena-3.2.9
+> ### (2023-09-01)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to b353754 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.25
+>> #### (Invalid date)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.21 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.24
+>> #### (Invalid date)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.20 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.23
+>> #### (Invalid date)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.19 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.22
+>> #### (Invalid date)
+>> 
+>> * add nocache flash to balena push [rcooke-warwick]
+>> 
+>> ### leviathan-2.28.21
+>> #### (Invalid date)
+>> 
+>> * patch: Update client dependencies [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.20
+>> #### (Invalid date)
+>> 
+>> * patch: Clarify env variables in Documentation [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.19
+>> #### (Invalid date)
+>> 
+>> * patch: Add .nojekyll file to docs [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.18
+>> #### (2023-08-29)
+>> 
+>> * patch: Resolve dead links in README [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.17
+>> #### (2023-08-29)
+>> 
+>> * Update core/contracts digest to ca46c34 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.16
+>> #### (2023-08-25)
+>> 
+>> * Update core/contracts digest to d61d911 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.15
+>> #### (2023-08-25)
+>> 
+>> * Update actions/checkout digest to f43a0e5 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.14
+>> #### (2023-08-25)
+>> 
+>> * Remove custom automerge rules and use the inherited rules [Kyle Harding]
+>> 
+>> ### leviathan-2.28.13
+>> #### (2023-08-25)
+>> 
+>> * patch: Exit GH job if tests fails [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.2.8
+> ### (2023-08-24)
+> 
+> * meta-balena-warrior: modemmanager: use v 1.18.4 [Alex Gonzalez]
+> * meta-balena-warrior: libmqmi: use v 1.30.2 [Alex Gonzalez]
+> * meta-balena-warrior: libmbim: use v 1.26.2 [Alex Gonzalez]
+> 
+> ## meta-balena-3.2.7
+> ### (2023-08-24)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e7622aa [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.12
+>> #### (2023-08-23)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.18 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.2.6
+> ### (2023-08-23)
+> 
+> * resin-u-boot.class: Fix for older u-boot versions [Alex Gonzalez]
+> 
+> ## meta-balena-3.2.5
+> ### (2023-08-22)
+> 
+> * contributing-device-support.md: Clarify repo set-up in balenaOS org for private device types [Florin Sarbu]
+> 
+> ## meta-balena-3.2.4
+> ### (2023-08-21)
+> 
+> * tests: cloud: lockfile: change test order [rcooke-warwick]
+> 
+> ## meta-balena-3.2.3
+> ### (2023-08-21)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 26e6cea [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.11
+>> #### (2023-08-18)
+>> 
+>> * improve autokit quickstart [rcooke-warwick]
+>> 
+>> ### leviathan-2.28.10
+>> #### (2023-08-18)
+>> 
+>> * patch: Update suites dependencies to latest [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.9
+>> #### (2023-08-18)
+>> 
+>> * patch: Add balenaCloud configurable environments to e2e [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.2.2
+> ### (2023-08-18)
+> 
+> * modemmanager: hold ModemManager 1.14.2 on Thud [Alex Gonzalez]
+> * meta-balena-thud: libqmi: Use v1.26.0 [Alex Gonzalez]
+> * meta-balena-thud: libmbim: use v 1.24.2 [Alex Gonzalez]
+> 
+> ## meta-balena-3.2.1
+> ### (2023-08-17)
+> 
+> * meta-balena-thud: adapt migrate module dependencies [Alex Gonzalez]
+> 
+> ## meta-balena-3.2.0
+> ### (2023-08-17)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.12.0 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.12.0
+>> #### (2023-08-17)
+>> 
+>> * Update README [Felipe Lalanne]
+>> * Replace node-dbus with @balena/systemd [Felipe Lalanne]
+>> * Replace dbus test service with mock-systemd-bus [Felipe Lalanne]
+>> * Update to nodejs 18 [Pagan Gazzard]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.1.13
+> ### (2023-08-16)
+> 
+> * Integration layers: mobile-broadband-provider: fix fetch failure [Alex Gonzalez]
+> 
+> ## meta-balena-3.1.12
+> ### (2023-08-15)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.14 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.14
+>> #### (2023-08-14)
+>> 
+>> * Update balena-io/deploy-to-balena-action to v0.28.0 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.1.11
+> ### (2023-08-12)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.13 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.13
+>> #### (2023-08-10)
+>> 
+>> * patch: Remove reference of override_lock variable [Vipul Gupta]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.1.10
+> ### (2023-08-12)
+> 
+> * hostapp-update: bind-mount /sys for Jetson efivars [Alexandru Costache]
+> 
+> ## meta-balena-3.1.9
+> ### (2023-08-10)
+> 
+> * tests: secureboot: add test for module signing [Joseph Kogut]
+> 
+> ## meta-balena-3.1.8
+> ### (2023-08-09)
+> 
+> * tests: hup: retry sending image if fails [rcooke-warwick]
+> 
+> ## meta-balena-3.1.7
+> ### (2023-08-08)
+> 
+> * tests: os: eng. healthcheck: retry timeout change [rcooke-warwick]
+> 
+> ## meta-balena-3.1.6
+> ### (2023-08-02)
+> 
+> * resin-init-flasher: Allow background device registration [Michal Toman]
+> 
+> ## meta-balena-3.1.5
+> ### (2023-08-01)
+> 
+> * Reduce scope of app token used for backports and ESR [Kyle Harding]
+> 
+> ## meta-balena-3.1.4
+> ### (Invalid date)
+> 
+> * kernel-balena: remove mispelled config setting [Alex Gonzalez]
+> 
+> ## meta-balena-3.1.3
+> ### (2023-07-28)
+> 
+> * resin-init-flasher: Install the dispatcher scripts to installation media [Alex Gonzalez]
+> * balena-net-config: populate the dispatcher bind mount [Alex Gonzalez]
+> * resin-mounts: add dispatcher.d bind mount [Alex Gonzalez]
+> 
+> ## meta-balena-3.1.2
+> ### (2023-07-27)
+> 
+> * grub-conf: Do not hardcode the path for grub_extraenv [Michal Toman]
+> 
+> ## meta-balena-3.1.1
+> ### (2023-07-26)
+> 
+> * linux/kernel-devsrc: Fix aarch64 kernel-headers-test build [Alexandru Costache]
+> 
+> ## meta-balena-3.1.0
+> ### (2023-07-25)
+> 
+> * linux-firmware: upgrade 20210511 -> 20230404 [Joseph Kogut]
+> * common: firmware: repackage iwlwifi-quz-a0-hr-b0 [Joseph Kogut]
+> * common: firmware: repackage iwlwifi-cc-a0 [Joseph Kogut]
+> * compat: connectivity: drop deprecated iwlwifi files [Joseph Kogut]
+> * compat: install linux-firmware-iwlwifi-3160 [Joseph Kogut]
+> 
+> ## meta-balena-3.0.17
+> ### (2023-07-25)
+> 
+> * balena-image: Install extra_uEnv for all boards that use u-boot [Alexandru Costache]
+> 
+> ## meta-balena-3.0.16
+> ### (2023-07-22)
+> 
+> * modemmanager: increase qmi port open timeout [Alexandru Costache]
+> * Update ModemManager to v1.20.6 [Zahari Petkov]
+> 
+> ## meta-balena-3.0.15
+> ### (2023-07-20)
+> 
+> * tests: cloud: sv-timer: account for conn. error [rcooke-warwick]
+> * tests: cloud: use local ssh for sv timer test [rcooke-warwick]
+> * tests: cloud: remove preload log check [rcooke-warwick]
+> * tests: allow for configurable BC env [rcooke-warwick]
+> 
+> ## meta-balena-3.0.14
+> ### (2023-07-20)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.12 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.12
+>> #### (2023-07-19)
+>> 
+>> * mount-partitions: do not hardcode partition types [Alex Gonzalez]
+>> 
+>> ### balena-supervisor-14.11.11
+>> #### (2023-07-12)
+>> 
+>> * backends: Add Jetson Orin NANO custom device-tree support [Alexandru Costache]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.13
+> ### (2023-07-19)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 4e4c1bb [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.8
+>> #### (2023-07-19)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.13 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.7
+>> #### (2023-07-18)
+>> 
+>> * update e2e tests to use sshconfig [rcooke-warwick]
+>> * core: allow configurable ssh target [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.12
+> ### (2023-07-16)
+> 
+> * tests/os: skip boot switch during provisioning [Alexandru Costache]
+> 
+> ## meta-balena-3.0.11
+> ### (2023-07-14)
+> 
+> * .github/workflows: Replace GitHub PAT with ephemeral app tokens [Kyle Harding]
+> 
+> ## meta-balena-3.0.10
+> ### (2023-07-14)
+> 
+> * initrdscripts: make initramfs-module-cryptsetup pull libgcc in [Michal Toman]
+> 
+> ## meta-balena-3.0.9
+> ### (2023-07-13)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to b1581a2 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.6
+>> #### (2023-07-13)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.12 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.5
+>> #### (2023-07-13)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.11 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.8
+> ### (2023-07-10)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e081190 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.4
+>> #### (2023-07-07)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.10 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.7
+> ### (2023-07-06)
+> 
+> * bail out in kexec initramfs hook on failure [Joseph Kogut]
+> 
+> ## meta-balena-3.0.6
+> ### (2023-07-06)
+> 
+> * kernel-devsrc: fix for v6.1+ [Alex Gonzalez]
+> 
+> ## meta-balena-3.0.5
+> ### (2023-07-06)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.10 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.10
+>> #### (2023-07-05)
+>> 
+>> * Add revpi-connect-s to Raspberry Pi variants [Florin Sarbu]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.4
+> ### (2023-07-05)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.38 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-engine-20.10.38
+>> #### (2023-07-03)
+>> 
+>> * Document a couple of troubleshooting tips [Leandro Motta Barros]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.3
+> ### (2023-07-05)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.9 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.9
+>> #### (2023-06-28)
+>> 
+>> * Remove the 'Stopped' status for services [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.2
+> ### (2023-07-05)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 498d4cb [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.28.3
+>> #### (2023-07-05)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.9 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.2
+>> #### (2023-07-05)
+>> 
+>> * Update core/contracts digest to 6e3d563 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.28.1
+>> #### (2023-07-05)
+>> 
+>> * patch: Pass env variables to client [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.28.0
+>> #### (Invalid date)
+>> 
+>> * minor: Make client work with different balenaCloud environments [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-3.0.1
+> ### (2023-07-04)
+> 
+> * docs: Explain TPM ownership and possible TPM fill-up with secure boot [Michal Toman]
+> * docs: Recommend BIOS password and no F-key shortcuts with secure boot [Michal Toman]
+> 
+> ## meta-balena-3.0.0
+> ### (2023-07-04)
+> 
+> * mkfs-hostapp-native: Allow the compile task to access the network [Alex Gonzalez]
+> * mkfs-hostapp-native: Use image tags instead of parsing docker output [Alex Gonzalez]
+> * kernel-headers-test: Use image tags instead of parsing docker output [Alex Gonzalez]
+> * kernel-headers-test: Allow network access for compile task [Alex Gonzalez]
+> * kernel-modules-headers: use kernel-devsrc to provide kernel headers [Alex Gonzalez]
+> 
+> ## meta-balena-2.115.18
+> ### (2023-06-29)
+> 
+> * resin-init-flasher: Increase size of LUKS header to 16MB [Michal Toman]
+> 
+> ## meta-balena-2.115.17
+> ### (2023-06-28)
+> 
+> * balena-keys: add SIGN_KMOD_KEY_APPEND [Joseph Kogut]
+> 
+> ## meta-balena-2.115.16
+> ### (2023-06-28)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.8 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.8
+>> #### (2023-06-23)
+>> 
+>> * Parse container exit error message instead of status [Christina W]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.15
+> ### (2023-06-28)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.37 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-engine-20.10.37
+>> #### (2023-06-26)
+>> 
+>> * Bugfix: concatReadSeekCloser.Read() with buffers of any size [Leandro Motta Barros]
+>> * Minor code and comments tweaks [Leandro Motta Barros]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.14
+> ### (2023-06-27)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to a19d6ef [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.27.9
+>> #### (2023-06-27)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.8 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.27.8
+>> #### (2023-06-27)
+>> 
+>> * Update core/contracts digest to 6c4386a [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.27.7
+>> #### (2023-06-22)
+>> 
+>> * patch: Update QEMU getting started guide [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.13
+> ### (2023-06-26)
+> 
+> * os-helpers: Fix os-helpers-api build warnings [Alex Gonzalez]
+> 
+> ## meta-balena-2.115.12
+> ### (2023-06-23)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.7 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.7
+>> #### (2023-06-19)
+>> 
+>> * Fix /v2/applications/state endpoint [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.11.6
+>> #### (2023-06-19)
+>> 
+>> * Add fail-safe to test the image architecture [Felipe Lalanne]
+>> * Use multi-arch in dockerfile [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.11.5
+>> #### (2023-06-19)
+>> 
+>> * Improve tests surrounding Engine-host race patch [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-14.11.4
+>> #### (2023-06-19)
+>> 
+>> * Specify fs type when mounting partitions to prevent "Can't open blockdev" warnings [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.115.11
 ## (2023-09-05)
 
