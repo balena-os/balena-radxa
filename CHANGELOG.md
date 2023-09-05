@@ -1,6 +1,197 @@
 Change log
 -----------
 
+# v2.115.11
+## (2023-09-05)
+
+
+<details>
+<summary> Update layers/meta-balena to 2d298dfd21cc69271a25642a74608ff39c9ca33f [Florin Sarbu] </summary>
+
+> ## meta-balena-2.115.11
+> ### (2023-06-21)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 09eff9c [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.27.6
+>> #### (2023-06-19)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.7 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.27.5
+>> #### (2023-06-19)
+>> 
+>> * tests: only do serial file read with testbot [rcooke-warwick]
+>> * core: enable serial executeCommandinHostOS [rcooke-warwick]
+>> 
+>> ### leviathan-2.27.4
+>> #### (2023-06-16)
+>> 
+>> * Update alpine Docker tag to v3.18.2 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.27.3
+>> #### (2023-06-16)
+>> 
+>> * Update core/contracts digest to c777910 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.27.2
+>> #### (2023-06-16)
+>> 
+>> * patch: Revert "minor: Add Leviathan Test Helpers" [Vipul Gupta]
+>> 
+>> ### leviathan-2.27.1
+>> #### (2023-06-09)
+>> 
+>> * Update Pin dependencies [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.10
+> ### (2023-06-21)
+> 
+> * resin-init-flasher: Format encrypted partitions as LUKS2 [Michal Toman]
+> 
+> ## meta-balena-2.115.9
+> ### (2023-06-15)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.3 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.3
+>> #### (2023-06-15)
+>> 
+>> * Update balena-io/deploy-to-balena-action to v0.27.0 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.8
+> ### (2023-06-14)
+> 
+> * balena_check_crc: Add helper u-boot command for crc manipulation [Alexandru Costache]
+> 
+> ## meta-balena-2.115.7
+> ### (2023-06-09)
+> 
+> * README: Add bootloader section [Alexandru Costache]
+> 
+> ## meta-balena-2.115.6
+> ### (2023-06-08)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 62e4099 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.27.0
+>> #### (2023-05-29)
+>> 
+>> * Update alpine Docker tag to v3.18.0 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.26.1
+>> #### (2023-05-29)
+>> 
+>> * Update core/contracts digest to fd4af4e [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.26.0
+>> #### (2023-05-29)
+>> 
+>> * Update balena-cli to v16.1.0 with arm64 binaries [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.5
+> ### (2023-06-08)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.2 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.2
+>> #### (2023-06-05)
+>> 
+>> * Handle Engine-host race condition for "always" and "unless-stopped" restart policy [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.115.4
+> ### (2023-06-01)
+> 
+> * docs: Make secure boot docs more detailed [Michal Toman]
+> 
+> ## meta-balena-2.115.3
+> ### (2023-05-29)
+> 
+> * resin-init-flasher: check that commands exist before calling [Alex Gonzalez]
+> 
+> ## meta-balena-2.115.2
+> ### (2023-05-28)
+> 
+> * os-helpers: do not fail build if API tests fail [Alex Gonzalez]
+> 
+> ## meta-balena-2.115.1
+> ### (2023-05-17)
+> 
+> * tests: config: set both network options to false [rcooke-warwick]
+> * tests: hup: use contract to configure network [rcooke-warwick]
+> * tests: cloud: use contract to configure network [rcooke-warwick]
+> * tests: os: use contract to configure network [rcooke-warwick]
+> 
+> ## meta-balena-2.115.0
+> ### (2023-05-12)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.1 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.1
+>> #### (2023-05-11)
+>> 
+>> * Fix `sw.arch` typo when testing contracts [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.11.0
+>> #### (2023-05-10)
+>> 
+>> * Add `arch.sw` to the valid container requirements [Felipe Lalanne]
+>> * Allow using slug to validate hw.device-type contract [Felipe Lalanne]
+>> * Simplify and move lib/contract.spec.ts to tests/unit [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.10.11
+>> #### (2023-05-08)
+>> 
+>> * Add information about hdmi port 2 config vars [Felipe Lalanne]
+>> * Update table formatting on configurations.md [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.114.25
+> ### (2023-05-12)
+> 
+> * tests: hup: enable boot-switch skip [rcooke-warwick]
+> * tests: cloud: enable boot-switch skip Commit body [rcooke-warwick]
+> * tests: os: enable boot-switch skip [rcooke-warwick]
+> 
+> ## meta-balena-2.114.24
+> ### (2023-05-11)
+> 
+> * resin-init-flasher: add more comments around efi/boot partition split [Michal Toman]
+> * resin-init-flasher: reboot into signed flasher when provisioning secure boot [Michal Toman]
+> * resin-init-flasher: Fill db EFI variable from esl file instead of auth [Michal Toman]
+> 
+
+</details>
+
 # v2.114.23+rev2
 ## (2023-08-11)
 
