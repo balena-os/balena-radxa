@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v3.2.11+rev3
+## (2024-02-20)
+
+* Load extlinux.conf from the root partition for Rock Pi 4 [Florin Sarbu]
+* Remove redundant u-boot kconfig integration patch [Florin Sarbu]
+* Update poky to dunfell-23.0.21 [Florin Sarbu]
+
 # v3.2.11+rev2
 ## (2024-02-20)
 

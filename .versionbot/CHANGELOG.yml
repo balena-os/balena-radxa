@@ -1,4 +1,46 @@
 - commits:
+    - subject: Load extlinux.conf from the root partition for Rock Pi 4
+      hash: 97073f6685d1b4fcf3082e113496bdfb8ba56c50
+      body: |
+        We are moving the kernel and dtb from the boot partition over to
+        the root partition because HUP fails due to insufficient space.
+      footer:
+        Changelog-entry: Load extlinux.conf from the root partition for Rock Pi 4
+        changelog-entry: Load extlinux.conf from the root partition for Rock Pi 4
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Remove redundant u-boot kconfig integration patch
+      hash: b842d7e7a5c1c1b309c222527ecc2f4e6e36cf20
+      body: >
+        This is now the default and is also included from meta-balena so let's
+        remove
+
+        the patch from here, thus being sure we don't end with the balena env included
+
+        twice in u-boot.
+      footer:
+        Changelog-entry: Remove redundant u-boot kconfig integration patch
+        changelog-entry: Remove redundant u-boot kconfig integration patch
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Update poky to dunfell-23.0.21
+      hash: 998cade75434b1c00437edfef4c0aad85ad08469
+      body: ""
+      footer:
+        Changelog-entry: Update poky to dunfell-23.0.21
+        changelog-entry: Update poky to dunfell-23.0.21
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 3.2.11+rev3
+  title: ""
+  date: 2024-02-20T18:25:01.818Z
+- commits:
     - subject: Update balena-os/github-workflows to v0.0.24
       hash: 2853c89f2f5395dc0428a09addc3471e3fd740c9
       body: Update balena-os/github-workflows
