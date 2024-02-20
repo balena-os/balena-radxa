@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to v0.0.24
+      hash: 2853c89f2f5395dc0428a09addc3471e3fd740c9
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to v0.0.24
+        changelog-entry: Update balena-os/github-workflows to v0.0.24
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 3.2.11+rev2
+  title: ""
+  date: 2024-02-20T18:19:48.952Z
+- commits:
     - subject: Update .gitmodules with submodule branch information
       hash: c6975071e7944924756e179b962af55a4133d658
       body: ""
