@@ -1,16 +1,41 @@
-From e15258b07a967d840075d24e7a5012fa64276592 Mon Sep 17 00:00:00 2001
+From 39ce64d2df16a1d72f79f35af9b5e76be1003944 Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@balena.io>
-Date: Tue, 20 Feb 2024 11:24:00 +0000
+Date: Tue, 20 Feb 2024 17:33:08 +0000
 Subject: [PATCH] Integrate with Balena u-boot environment
 
 Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
+ cmd/pxe_utility.c                   | 6 +++---
  configs/rock-pi-4b-rk3399_defconfig | 2 +-
  include/config_distro_bootcmd.h     | 2 +-
  include/configs/rockchip-common.h   | 1 +
- 3 files changed, 3 insertions(+), 2 deletions(-)
+ 4 files changed, 6 insertions(+), 5 deletions(-)
 
+diff --git a/cmd/pxe_utility.c b/cmd/pxe_utility.c
+index 37b51571fc..ab4fda3e76 100644
+--- a/cmd/pxe_utility.c
++++ b/cmd/pxe_utility.c
+@@ -18,8 +18,8 @@
+ #include "cli.h"
+ 
+ #define DTS_OVERLAY_PROPERTY_LENGTH 10
+-#define DTS_OVERLAY_PREFIX "/overlays/"
+-#define DTS_PREFIX_LENGTH 10
++#define DTS_OVERLAY_PREFIX "/boot/overlays/"
++#define DTS_PREFIX_LENGTH 15
+ 
+ #define MAX_OVERLAY_NAME_LENGTH 128
+ #define MAX_DTS_OVERLAY_NUMBER 16
+@@ -342,7 +342,7 @@ void parse_hw_config(cmd_tbl_t *cmdtp, struct hw_config *hw_conf)
+ 	if (strict_strtoul(envaddr, 16, &file_addr) < 0)
+ 		goto end;
+ 
+-	if(get_relfile(cmdtp, "/hw_intfc.conf", file_addr) < 0)
++	if(get_relfile(cmdtp, "/boot/hw_intfc.conf", file_addr) < 0)
+ 		goto end;
+ 
+ 	conf_size = from_env("filesize");
 diff --git a/configs/rock-pi-4b-rk3399_defconfig b/configs/rock-pi-4b-rk3399_defconfig
 index 57f176c682..18e8fcff9d 100644
 --- a/configs/rock-pi-4b-rk3399_defconfig
