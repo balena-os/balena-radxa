@@ -1,7 +1,5 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-UBOOT_KCONFIG_SUPPORT = "1"
-
 inherit resin-u-boot
 
 DEPENDS += "radxa-binary-loader radxa-binary-native"
@@ -14,6 +12,14 @@ SRC_URI_append = " \
 
 BALENA_BOOT_PART_rockpi-4b-rk3399 = "4"
 BALENA_DEFAULT_ROOT_PART_rockpi-4b-rk3399 = "5"
+
+# create extlinux.conf for the internal image
+UBOOT_EXTLINUX = "1"
+UBOOT_EXTLINUX_KERNEL_IMAGE = "/boot/Image"
+UBOOT_EXTLINUX_CONSOLE = "console=tty1 console=ttyFIQ0,1500000n8"
+UBOOT_EXTLINUX_ROOT = "${resin_kernel_root}"
+UBOOT_EXTLINUX_KERNEL_ARGS_append = " rootfstype=ext4"
+UBOOT_EXTLINUX_FDT = "/boot/rk3399-rock-pi-4b.dtb"
 
 do_compile_append() {
     # create bootloader image
@@ -46,20 +52,7 @@ EOF
 do_deploy[nostamp] = "1"
 
 do_deploy_append() {
-    KERNEL_CMDLINE_ARGS="console=tty1 console=ttyFIQ0,1500000n8 rw \${resin_kernel_root} rootfstype=ext4 rootwait"
     KERNEL_CMDLINE_ARGS_FLASHER="console=tty1 console=ttyFIQ0,1500000n8 rw root=LABEL=flash-rootA rootfstype=ext4 rootwait flasher"
-
-    # Create extlinux config file for internal image
-    mkdir -p ${DEPLOY_DIR_IMAGE}/extlinux || true
-    cat >${DEPLOY_DIR_IMAGE}/extlinux/extlinux.conf <<EOF
-default BalenaOS
-
-label BalenaOS
-    kernel /${KERNEL_IMAGETYPE}
-
-    devicetree /$(echo "${KERNEL_DEVICETREE}" | cut -d '/' -f 2)
-    append ${KERNEL_CMDLINE_ARGS}
-EOF
 
     # Create extlinux config file for flasher image
 
@@ -74,3 +67,7 @@ label balenaOS
 EOF
 
 }
+
+FILES_${PN}-scripts = " \
+	/boot/extlinux/extlinux.conf \
+"

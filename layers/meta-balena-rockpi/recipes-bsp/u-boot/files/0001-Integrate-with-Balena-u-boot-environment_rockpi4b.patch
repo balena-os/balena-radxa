@@ -1,15 +1,41 @@
-From f10897ddbb91f05cbe2a87138ec8c050a9392da8 Mon Sep 17 00:00:00 2001
+From 39ce64d2df16a1d72f79f35af9b5e76be1003944 Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@balena.io>
-Date: Wed, 9 Mar 2022 10:07:50 +0100
+Date: Tue, 20 Feb 2024 17:33:08 +0000
 Subject: [PATCH] Integrate with Balena u-boot environment
 
 Upstream-Status: Inappropriate [configuration]
 Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
+ cmd/pxe_utility.c                   | 6 +++---
  configs/rock-pi-4b-rk3399_defconfig | 2 +-
+ include/config_distro_bootcmd.h     | 2 +-
  include/configs/rockchip-common.h   | 1 +
- 2 files changed, 2 insertions(+), 1 deletion(-)
+ 4 files changed, 6 insertions(+), 5 deletions(-)
 
+diff --git a/cmd/pxe_utility.c b/cmd/pxe_utility.c
+index 37b51571fc..ab4fda3e76 100644
+--- a/cmd/pxe_utility.c
++++ b/cmd/pxe_utility.c
+@@ -18,8 +18,8 @@
+ #include "cli.h"
+ 
+ #define DTS_OVERLAY_PROPERTY_LENGTH 10
+-#define DTS_OVERLAY_PREFIX "/overlays/"
+-#define DTS_PREFIX_LENGTH 10
++#define DTS_OVERLAY_PREFIX "/boot/overlays/"
++#define DTS_PREFIX_LENGTH 15
+ 
+ #define MAX_OVERLAY_NAME_LENGTH 128
+ #define MAX_DTS_OVERLAY_NUMBER 16
+@@ -342,7 +342,7 @@ void parse_hw_config(cmd_tbl_t *cmdtp, struct hw_config *hw_conf)
+ 	if (strict_strtoul(envaddr, 16, &file_addr) < 0)
+ 		goto end;
+ 
+-	if(get_relfile(cmdtp, "/hw_intfc.conf", file_addr) < 0)
++	if(get_relfile(cmdtp, "/boot/hw_intfc.conf", file_addr) < 0)
+ 		goto end;
+ 
+ 	conf_size = from_env("filesize");
 diff --git a/configs/rock-pi-4b-rk3399_defconfig b/configs/rock-pi-4b-rk3399_defconfig
 index 57f176c682..18e8fcff9d 100644
 --- a/configs/rock-pi-4b-rk3399_defconfig
@@ -23,15 +49,28 @@ index 57f176c682..18e8fcff9d 100644
  CONFIG_CMD_CACHE=y
  # CONFIG_CMD_MISC is not set
  # CONFIG_ISO_PARTITION is not set
+diff --git a/include/config_distro_bootcmd.h b/include/config_distro_bootcmd.h
+index f20bc32474..a87d7b8a9b 100644
+--- a/include/config_distro_bootcmd.h
++++ b/include/config_distro_bootcmd.h
+@@ -388,7 +388,7 @@
+ 		"\0"                                                      \
+ 	\
+ 	"scan_dev_for_boot_part="                                         \
+-		"part list ${devtype} ${devnum} -bootable devplist; "     \
++		"setenv devplist ${resin_root_part}; "                    \
+ 		"env exists devplist || setenv devplist 1; "              \
+ 		"for distro_bootpart in ${devplist}; do "                 \
+ 			"if fstype ${devtype} "                           \
 diff --git a/include/configs/rockchip-common.h b/include/configs/rockchip-common.h
-index a8d4e52743..597be0a557 100644
+index a8d4e52743..6abcc8cf29 100644
 --- a/include/configs/rockchip-common.h
 +++ b/include/configs/rockchip-common.h
 @@ -150,6 +150,7 @@
  	"fastboot usb 0;"
  #else
  #define RKIMG_BOOTCOMMAND \
-+	"setenv resin_kernel_load_addr ${kernel_addr_r}; run resin_set_kernel_root; run set_os_cmdline;"\
++	"setenv resin_kernel_load_addr ${kernel_addr_r}; run resin_set_kernel_root; run set_os_cmdline;" \
  	"run distro_bootcmd;" \
  	"boot_android ${devtype} ${devnum};" \
  	"bootrkp;"
