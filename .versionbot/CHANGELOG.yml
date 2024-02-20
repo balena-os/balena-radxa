@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix extlinux.conf creation for Rock Pi 4 flasher images
+      hash: 0c77680672571e7c19558641c89869d326d1b741
+      body: ""
+      footer:
+        Changelog-entry: Fix extlinux.conf creation for Rock Pi 4 flasher images
+        changelog-entry: Fix extlinux.conf creation for Rock Pi 4 flasher images
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 3.2.11+rev4
+  title: ""
+  date: 2024-02-20T19:11:18.251Z
+- commits:
     - subject: Load extlinux.conf from the root partition for Rock Pi 4
       hash: 97073f6685d1b4fcf3082e113496bdfb8ba56c50
       body: |

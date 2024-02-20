@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v3.2.11+rev4
+## (2024-02-20)
+
+* Fix extlinux.conf creation for Rock Pi 4 flasher images [Florin Sarbu]
+
 # v3.2.11+rev3
 ## (2024-02-20)
 
