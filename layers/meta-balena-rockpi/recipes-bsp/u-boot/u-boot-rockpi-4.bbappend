@@ -55,7 +55,7 @@ do_deploy_append() {
     KERNEL_CMDLINE_ARGS_FLASHER="console=tty1 console=ttyFIQ0,1500000n8 rw root=LABEL=flash-rootA rootfstype=ext4 rootwait flasher"
 
     # Create extlinux config file for flasher image
-
+    mkdir -p ${DEPLOY_DIR_IMAGE}/extlinux || true
     cat >${DEPLOY_DIR_IMAGE}/extlinux/extlinux.conf_flasher <<EOF
 default BalenaOS
 
