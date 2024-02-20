@@ -1,6 +1,6 @@
-From 39ce64d2df16a1d72f79f35af9b5e76be1003944 Mon Sep 17 00:00:00 2001
+From 7f168c5d34549bebc750ebc818c2d12a777aed7a Mon Sep 17 00:00:00 2001
 From: Florin Sarbu <florin@balena.io>
-Date: Tue, 20 Feb 2024 17:33:08 +0000
+Date: Wed, 21 Feb 2024 00:30:22 +0000
 Subject: [PATCH] Integrate with Balena u-boot environment
 
 Upstream-Status: Inappropriate [configuration]
@@ -8,12 +8,12 @@ Signed-off-by: Florin Sarbu <florin@balena.io>
 ---
  cmd/pxe_utility.c                   | 6 +++---
  configs/rock-pi-4b-rk3399_defconfig | 2 +-
- include/config_distro_bootcmd.h     | 2 +-
+ include/config_distro_bootcmd.h     | 4 ++--
  include/configs/rockchip-common.h   | 1 +
- 4 files changed, 6 insertions(+), 5 deletions(-)
+ 4 files changed, 7 insertions(+), 6 deletions(-)
 
 diff --git a/cmd/pxe_utility.c b/cmd/pxe_utility.c
-index 37b51571fc..ab4fda3e76 100644
+index 37b51571fc..54f324307b 100644
 --- a/cmd/pxe_utility.c
 +++ b/cmd/pxe_utility.c
 @@ -18,8 +18,8 @@
@@ -50,18 +50,20 @@ index 57f176c682..18e8fcff9d 100644
  # CONFIG_CMD_MISC is not set
  # CONFIG_ISO_PARTITION is not set
 diff --git a/include/config_distro_bootcmd.h b/include/config_distro_bootcmd.h
-index f20bc32474..a87d7b8a9b 100644
+index f20bc32474..82f4fd157e 100644
 --- a/include/config_distro_bootcmd.h
 +++ b/include/config_distro_bootcmd.h
-@@ -388,7 +388,7 @@
+@@ -388,8 +388,8 @@
  		"\0"                                                      \
  	\
  	"scan_dev_for_boot_part="                                         \
 -		"part list ${devtype} ${devnum} -bootable devplist; "     \
-+		"setenv devplist ${resin_root_part}; "                    \
- 		"env exists devplist || setenv devplist 1; "              \
+-		"env exists devplist || setenv devplist 1; "              \
++		"env exists resin_flasher_dev_index && setenv devplist ${resin_boot_part}; " \
++		"env exists devplist || setenv devplist ${resin_root_part} ${resin_boot_part}; " \
  		"for distro_bootpart in ${devplist}; do "                 \
  			"if fstype ${devtype} "                           \
+ 					"${devnum}:${distro_bootpart} "   \
 diff --git a/include/configs/rockchip-common.h b/include/configs/rockchip-common.h
 index a8d4e52743..6abcc8cf29 100644
 --- a/include/configs/rockchip-common.h
