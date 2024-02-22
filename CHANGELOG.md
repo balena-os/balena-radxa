@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.35+rev1
+## (2024-02-22)
+
+* Set the boot partition as bootable for flasher images [Florin Sarbu]
+
 # v5.1.35
 ## (2024-02-20)
 

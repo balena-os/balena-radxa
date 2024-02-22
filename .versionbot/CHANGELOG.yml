@@ -1,4 +1,24 @@
 - commits:
+    - subject: Set the boot partition as bootable for flasher images
+      hash: b3df37fed939eafaa0740bbe2a50578e0ff14e3f
+      body: |
+        This is needed for flasher images that have the kernel, device tree,
+        extlinux.conf, overlays and hw_intfc.conf in the boot partition.
+        In addition, when we are not booting a flasher image we add as backup
+        the boot partition so that we have a working system in case of a HUP
+        rollback to an older OS version which only has extlinux.conf in the boot
+        partition and not in the root partition.
+      footer:
+        Changelog-entry: Set the boot partition as bootable for flasher images
+        changelog-entry: Set the boot partition as bootable for flasher images
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.1.35+rev1
+  title: ""
+  date: 2024-02-22T02:36:22.584Z
+- commits:
     - subject: Update layers/meta-balena to a662615594a604d6f84b8fd47a904a2b1d5be9da
       hash: 9635e23664e5872bb2b15343ddc0b7303426a923
       body: Update layers/meta-balena
