@@ -1,4 +1,648 @@
 - commits:
+    - subject: Update contracts to 0c54ce2d25baac5485f3828dbfed58c33f881256
+      hash: a0aabd23d7f6d6aeb5e886386c56c58596be89a7
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 0c54ce2d25baac5485f3828dbfed58c33f881256
+        changelog-entry: Update contracts to 0c54ce2d25baac5485f3828dbfed58c33f881256
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "odyssey-x86: Update icon to latest revision"
+              hash: 83ad917b2027f2a6fecd8d1422984987efc9da13
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.94
+          title: ""
+          date: 2024-02-14T10:35:34.159Z
+        - commits:
+            - subject: "hw.device-type: Add Kontron i.MX8M Mini device"
+              hash: bfae3a09557f6bb7e3fffb888337339d9b900ebf
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: joris-bright <joris@bright-energy.eu>
+                signed-off-by: joris-bright <joris@bright-energy.eu>
+              author: joris-bright
+          version: contracts-2.0.93
+          title: ""
+          date: 2024-02-08T08:40:46.444Z
+        - commits:
+            - subject: "hw.device-type: Add phyboard-lyra-am62xx-2 device"
+              hash: d9e57b1f2432aac0ea4b6d9e6285e805e5359a6f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Atanas Bunchev <atanas.bunchev@konsulko.com>
+                signed-off-by: Atanas Bunchev <atanas.bunchev@konsulko.com>
+              author: Atanas Bunchev
+          version: contracts-2.0.92
+          title: ""
+          date: 2024-02-01T10:43:30.336Z
+        - commits:
+            - subject: Remove generic-amd64-fde device type
+              hash: a9e475afc5c9a0cc02fe39293b83c2476af2a7e7
+              body: |
+                FDE is a feature, it does not need a separate device type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+          version: contracts-2.0.91
+          title: ""
+          date: 2024-01-31T10:51:22.461Z
+        - commits:
+            - subject: "hw.device-type: Update svg icon for seeed-j4012"
+              hash: 26b20e8e64f1a52c042bf5974931fb3baaa5d8fb
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.90
+          title: ""
+          date: 2024-01-10T10:48:43.053Z
+        - commits:
+            - subject: "hw.device-type: Fix hyperlinks in provisioning instructions"
+              hash: 7ba9c9e03fe93110b2c8f3c866fbd4a3d7c8248b
+              body: |
+                If hyperlinks are unquoted, a target=blank is added and entire
+                link is broken in the dashboard. This doesn't happen for devices
+                which use quoted links, like for example the CM4.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.89
+          title: ""
+          date: 2024-01-05T11:04:31.513Z
+        - commits:
+            - subject: "jetson-orin-nx-seeed-j4012: Add Seeed J4012 device-type"
+              hash: 2f35889ca436bcb17cb8fba3e9192676b9872042
+              body: |
+                This is the initial commit, necessary to create the DT
+                in the API. The icon will need to be updated.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.88
+          title: ""
+          date: 2024-01-03T13:26:42.845Z
+        - commits:
+            - subject: "hw.device-type: Fix device type is_private flag for imx8mp-var-dart"
+              hash: 31176adf167c7f9754c0f7f01f92c759d12b8c2b
+              body: >
+                This was added by mistake as private when it is supposed to be a
+                public dt.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.87
+          title: ""
+          date: 2023-12-29T14:04:58.033Z
+        - commits:
+            - subject: "hw.device-type: Add Variscite DART-MX8M-PLUS"
+              hash: dd4e9de9d010e49040adf8d9f4ce8a4d68c69cce
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.86
+          title: ""
+          date: 2023-12-28T11:16:43.472Z
+        - commits:
+            - subject: "patch: Remove wiki link reference to flash Tinker Board"
+              hash: 2d9a5bbea64deda704298e8ee41834e9d180d4da
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.85
+          title: ""
+          date: 2023-12-21T13:26:59.714Z
+        - commits:
+            - subject: "iot-gate-imx8plus: Update flashing instructions and name"
+              hash: e390406c50b2ec6bb6ea631fcfaf817ceab69736
+              body: |
+                to reflect that this image can be used for both 2G and 4G DRAM
+                boards.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.84
+          title: ""
+          date: 2023-12-13T15:46:08.530Z
+        - commits:
+            - subject: "revpi-connect-4: Added contract files for revpi-connect-4"
+              hash: 02568911b78335c520abb9cb1e0ce8e2cb25e095
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Waqar Rashid <waqar.rashid@voltstorage.com>
+                signed-off-by: Waqar Rashid <waqar.rashid@voltstorage.com>
+              author: Waqar Rashid
+          version: contracts-2.0.83
+          title: ""
+          date: 2023-11-24T09:56:22.891Z
+        - commits:
+            - subject: "lcbzu9: boot from internal storage"
+              hash: d9b9fbc53be0f7dbf92107681540685db703821f
+              body: >
+                Make flasher image available for download to boot lcbzu9 from
+                eMMC
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois Loubser
+          version: contracts-2.0.82
+          title: ""
+          date: 2023-11-22T09:57:10.502Z
+        - commits:
+            - subject: "hw.device-type: Add imx8mm-lpddr4-evk device"
+              hash: 2ecc1b82d8a5e3d4a39e3d200a6c39d748c4d737
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+                signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+              author: Alex J Lennon
+          version: contracts-2.0.81
+          title: ""
+          date: 2023-10-26T06:31:05.497Z
+        - commits:
+            - subject: "hw.device-type: Modify bluechiptechnology-tm3"
+              hash: 3d2002c5e35f4d20fc5ef5307f52f1cfbb91d6ab
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+                signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+              author: crichardson
+          version: contracts-2.0.80
+          title: ""
+          date: 2023-10-20T05:40:17.796Z
+        - commits:
+            - subject: "device: Add Compulab UCM-iMX93"
+              hash: 2bbde3e92d6e1a6c3f9d63e9e79b14b70b755f80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexnadru Costache <alexandru@balena.io>
+                signed-off-by: Alexnadru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.79
+          title: ""
+          date: 2023-10-19T12:44:49.999Z
+        - commits:
+            - subject: "hw.device-type: Modify bluechiptechnology-tm3"
+              hash: 744605ce53f5091f1661c301962dba44c439481a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+                signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+              author: crichardson
+          version: contracts-2.0.78
+          title: ""
+          date: 2023-10-19T07:29:25.960Z
+        - commits:
+            - subject: "hw.device-type: Add bluechiptechnology-tm3"
+              hash: 68790a8618f57524be7ea70b7502d65917de91ad
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+                signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+              author: crichardson
+          version: contracts-2.0.77
+          title: ""
+          date: 2023-10-09T06:33:17.864Z
+        - commits:
+            - subject: "hw.device-type: Add Eurotec Lowpad lcbzu9 device"
+              hash: dab4d718a6012af2774111fb00c0a4d2f3497d24
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois Loubser
+          version: contracts-2.0.76
+          title: ""
+          date: 2023-10-02T06:46:15.804Z
+        - commits:
+            - subject: "raspberrypi5: remove reference to 64bits in display name"
+              hash: 5f7d9230b8ed3caffbfab717b2a197a5b6d83466
+              body: |
+                There won't be a 32bits OS for this device type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+          version: contracts-2.0.75
+          title: ""
+          date: 2023-09-28T14:04:28.190Z
+        - commits:
+            - subject: "raspberrypi5: Explicitly flag as public for the switch to apply"
+              hash: da8c456a1aecb30dfe1ef3ad27e0ac59449ecac8
+              body: >
+                As the device was previously private, the `is_private` needs to
+                be
+
+                explicitly set to false for the device type to become public.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+          version: contracts-2.0.74
+          title: ""
+          date: 2023-09-28T13:27:54.317Z
+        - commits:
+            - subject: "raspberrypi5: Add new device type"
+              hash: cde68c6076b7ed4277027f29778efac42109b0e8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.73
+          title: ""
+          date: 2023-09-28T07:07:06.913Z
+        - commits:
+            - subject: "raspberrypi4-unipi-neuron: Add new device type"
+              hash: e45a691e7773e85f5b3db9f0d9050e7f39a1b2e0
+              body: |
+                This was moved from private to public as agreed with the initial
+                customer.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.72
+          title: ""
+          date: 2023-09-04T06:45:04.941Z
+        - commits:
+            - subject: Add the BeagleBone AI-64.
+              hash: 4296cf27d047c669da781c1c7b304bab5fa848fe
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Add the BeagleBone AI-64.
+                changelog-entry: Add the BeagleBone AI-64.
+                Signed-off-by: Lisandro Pérez Meyer <lperezmeyer@ics.com>
+                signed-off-by: Lisandro Pérez Meyer <lperezmeyer@ics.com>
+              author: Lisandro Damián Nicanor Pérez Meyer
+          version: contracts-2.0.71
+          title: ""
+          date: 2023-08-29T11:19:00.577Z
+        - commits:
+            - subject: Add alpine 3.18
+              hash: d0c33e6434de4e194a3e940a339f58d248b11709
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.70
+          title: ""
+          date: 2023-08-23T12:54:03.746Z
+        - commits:
+            - subject: Remove Ubuntu Impish and Kinetic and add Lunar
+              hash: 44b45eae5a0e77c8cae05971aed7d1c4906221f9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.69
+          title: ""
+          date: 2023-08-22T16:59:36.789Z
+        - commits:
+            - subject: "iot-gate-imx8plus: Improve provisioning instructions for Windows"
+              hash: dbfd03e791d69c657a295d92cd823e32f4bf2369
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.68
+          title: ""
+          date: 2023-08-15T07:20:27.206Z
+        - commits:
+            - subject: Fix conditional when installing libssl1.1
+              hash: 29e5a99050fb93fcea404fd48d2db029acf4acb3
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.67
+          title: ""
+          date: 2023-08-03T20:27:02.315Z
+        - commits:
+            - subject: Fix a condition where /etc/nsswitch.conf exists and the build fails
+              hash: c8c521ae9fdb908fb37642154d5fbe73a2849985
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.66
+          title: ""
+          date: 2023-08-03T20:04:14.870Z
+        - commits:
+            - subject: Replace ifupdown with ifupdown-ng for alpine edge
+              hash: cf7dde1ae72cd0edaa94c783da271b1bf22542ea
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.65
+          title: ""
+          date: 2023-08-02T20:23:30.063Z
+        - commits:
+            - subject: Remove OpenJDK v7 as it has been removed from alpine edge
+              hash: 343a2f5d0a08de2f9bb5ad1013150e98f23feb2c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.64
+          title: ""
+          date: 2023-08-02T20:02:24.824Z
+        - commits:
+            - subject: "sw.os+hw.device-type: Add ubuntu and debian distro configs for Orin
+                Nano"
+              hash: e0d622addd9484046c2f77c6745adbb0e166709b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.63
+          title: ""
+          date: 2023-06-29T14:15:50.808Z
+        - commits:
+            - subject: "hw.device-type: Add Jetson Orin Nano Devkit 8GB (SD) module"
+              hash: ffa98b5a136997b6cc187751d0133a9e7d8fa8cd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.62
+          title: ""
+          date: 2023-06-27T10:51:03.778Z
+        - commits:
+            - subject: "hw/device-type: Update contract.json for iot-gate-imx8"
+              hash: 295b0d72700669fa48289117cbb90dca7f6bf882
+              body: >
+                To specify that the iot-gate-imx8 doesn't have an identification
+                LED
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.61
+          title: ""
+          date: 2023-06-14T13:53:16.158Z
+        - commits:
+            - subject: Fix LED support for ISG-503
+              hash: 8c779e12dbb16892528af17d8749cff1902146ad
+              body: >
+                The LED support was incorrectly changed in
+                https://github.com/balena-io/contracts/commit/4bb6eb1f732957e605f00e47b068199f14ff1765
+
+                Let's switch it back to unsupported. 
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.60
+          title: ""
+          date: 2023-05-04T13:38:26.884Z
+        - commits:
+            - subject: "hw.device-type: Add revpi-connect-s"
+              hash: d81ef3d12565d9c0e81d776a6a156f22f6322728
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Obaid Chemkhi obaid.chemkhi@voltstorage.com
+                signed-off-by: Obaid Chemkhi obaid.chemkhi@voltstorage.com
+              author: Obaid Ch
+          version: contracts-2.0.59
+          title: ""
+          date: 2023-05-03T09:53:24.491Z
+        - commits:
+            - subject: "jetson-agx-orin-devkit: Mention the RAM configuration in the device
+                name"
+              hash: 82d3a94938956376eeafa518a863a344acd2190b
+              body: |
+                By default the AGX Orin Devkit has 32GB RAM, however, new
+                production modules have been released with L4T 35.3.1 so we
+                should emphasize that newer modules may not work with this
+                image.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.58
+          title: ""
+          date: 2023-04-27T11:52:02.405Z
+        - commits:
+            - subject: "debian/ubuntu jetson-orin-nx-xavier-nx-devkit: Add distro configs"
+              hash: ad9d69f447d9091f1ae2a582b02941472efb0539
+              body: |
+                The Orin NX modules uses L4T 35.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Alexandru Costache
+            - subject: "Orin NX: Update flashing steps"
+              hash: c7e77638474694870874afa17a453b727b3797d3
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.57
+          title: ""
+          date: 2023-04-07T12:53:58.620Z
+        - commits:
+            - subject: "jetson-orin-nx-xavier-nx-devkit: Add contract for device type"
+              hash: ddae0174c36b0893d723308d948d72c276787ed5
+              body: |
+                The provisioning instructions are incomplete at this time, they
+                will be updated once the balenaOS integration is complete. The
+                device needs to be inspected in staging first.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.56
+          title: ""
+          date: 2023-04-04T08:46:42.967Z
+        - commits:
+            - subject: "iot-gate-imx8plus: Update provisioning instructions"
+              hash: 25cbb9cb1c96a96367a1d35615f6b679e4a20df5
+              body: |
+                Bring in the latest updates from the coffee file
+                in the device repository.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.55
+          title: ""
+          date: 2023-03-29T18:35:00.091Z
+        - commits:
+            - subject: "patch: Remove CircleCI in favor of Flowzone"
+              hash: 9bed27db936f4ad6acffa4a74cd0fcad72cc313d
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.54
+          title: ""
+          date: 2023-03-16T15:05:25.391Z
+        - commits:
+            - subject: "patch: Fix fluid tags for revpi-core-3"
+              hash: 9ec5bf22c8e0d5033a8b08a432b7651da8616360
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.53
+          title: ""
+          date: 2023-03-16T13:25:57.856Z
+        - commits:
+            - subject: "patch: Fix punctuation in partials"
+              hash: 5062b5bb7b22233ea8851996151834fa0554ea2a
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+            - subject: "patch: Fix spelling of eMMC"
+              hash: 044cc4865a8997e40f3ee4724a3592ce2ae42cbf
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+            - subject: "patch: Fix spelling of while"
+              hash: 95fbb009bb43ef40b77c61961571c64308685aff
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.52
+          title: ""
+          date: 2023-03-16T12:46:31.310Z
+        - commits:
+            - subject: "node: do not set unsafe-perm with npm 9 and newer"
+              hash: c1950ce76e44b48196c44874e09c8857651bddd8
+              body: >
+                The unsafe-perm config option has been dropped in npm 9, trying
+                to set it
+
+                ends with an error and therefore fails the build. With this patch
+
+                the build script parses the major version from `npm --version` and only
+
+                sets unsafe-perm on npm 8 and older.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+          version: contracts-2.0.51
+          title: ""
+          date: 2023-02-24T21:25:17.414Z
+  version: 5.1.37+rev2
+  title: ""
+  date: 2024-02-26T09:02:38.551Z
+- commits:
     - subject: Update balena-yocto-scripts to 0cb57aede8dea798c14ddfc6546525b920504970
       hash: d6b9d190f0e72058a335f48d9783b549c6cb7fec
       body: Update balena-yocto-scripts
