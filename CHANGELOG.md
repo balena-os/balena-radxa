@@ -1,6 +1,61 @@
 Change log
 -----------
 
+# v5.1.39
+## (2024-02-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 47803bace87fd17c2b0bfe89bb06c0744ddcd5e3 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.39
+> ### (2024-02-26)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to ef8cbac [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.61
+>> #### (2024-02-26)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.60
+>> #### (2024-02-26)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.38
+> ### (2024-02-23)
+> 
+> * balena-rollback: adapt to secure boot support [Alex Gonzalez]
+> * hostapp-update-hooks: Adapt resin-uboot hook to secure boot [Alex Gonzalez]
+> * classes: u-boot: use global secure boot kernel command line instead of hardcoding [Alex Gonzalez]
+> * grub: use global secure boot kernel command line instead of hardcoding [Alex Gonzalez]
+> * conf: distro: define kernel command line for secure boot [Alex Gonzalez]
+> * resindataexpander: encrypted partitions will auto-expand on unlock [Alex Gonzalez]
+> * initrdscripts: migrate: replace hardcoded kernel image names [Alex Gonzalez]
+> * resin-mounts: generalize secure boot mounts [Alex Gonzalez]
+> * initrdscripts: abroot: Use the global label for non-encrypted boot partitions [Alex Gonzalez]
+> * initrdscripts: allow for cryptsetup to support different secure boot implementations [Alex Gonzalez]
+> * os-helpers-fs: add shared wait4udev function [Alex Gonzalez]
+> * balena-image-flasher: fix appended variable with a leading space [Alex Gonzalez]
+> * balena-config-vars: customize for secure boot support [Alex Gonzalez]
+> * os-helpers: add dummy os-helpers-sb [Alex Gonzalez]
+> * resin-init-flasher: allow flasher image use in devices without internal storage [Alex Gonzalez]
+> * resin-init-flasher: flag non-encrypted boot partition as bootable [Alex Gonzalez]
+> * resin-init-flasher: replace hardcoded kernel image names [Alex Gonzalez]
+> * resin-init-flasher: split secureboot and disk encryption interfaces [Alex Gonzalez]
+> * distro: balena-os: define the boot labels as global [Alex Gonzalez]
+> * distro: balena-os: Specify full GO version [Alex Gonzalez]
+> 
+
+</details>
+
 # v5.1.37+rev2
 ## (2024-02-26)
 
