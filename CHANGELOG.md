@@ -1,6 +1,86 @@
 Change log
 -----------
 
+# v5.1.43
+## (2024-02-29)
+
+
+<details>
+<summary> Update layers/meta-balena to 87036c0cd6a4e23b55300c64f62158328e0eb779 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.43
+> ### (2024-02-28)
+> 
+> * Start os-config service after extracting CA [jaomaloy]
+> 
+> ## meta-balena-5.1.42
+> ### (2024-02-28)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.1.0
+>> #### (2024-02-27)
+>> 
+>> * Add support for repeated overlays [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.0.4
+>> #### (2024-02-27)
+>> 
+>> * Fix support for rsync deltas [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.0.3
+>> #### (2024-02-21)
+>> 
+>> * Patch default dtparam handling in config.txt [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.0.2
+>> #### (2024-02-17)
+>> 
+>> * Patch config.txt backend to return array configs correctly [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.0.1
+>> #### (2024-02-12)
+>> 
+>> * Update balena-io/deploy-to-balena-action to v2.0.27 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.0.0
+>> #### (2024-02-08)
+>> 
+>> * Add special case for base DTO params on RPI config [Felipe Lalanne]
+>> * Fix processing of dtoverlay/dtparams on config.txt [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.41
+> ### (2024-02-27)
+> 
+> * tests: hup: use secondary antenna for revpi4 [rcooke-warwick]
+> * tests: cloud : use secondary antenna for revpi4 [rcooke-warwick]
+> * tests: os: use secondary antenna for revpi4 [rcooke-warwick]
+> 
+> ## meta-balena-5.1.40
+> ### (2024-02-26)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to d71ce8f [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.62
+>> #### (2024-02-26)
+>> 
+>> * ad extra autokit setup information, and basic troubleshooting [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.39+rev4
 ## (2024-02-29)
 
