@@ -1,4 +1,61 @@
 - commits:
+    - subject: Update layers/meta-balena to 7f676ac7bcb5e0b066aa8f20de1b5c7d20e5843f
+      hash: 3e93f5fd8a2fa62586d4ae05bc0366d8a5b6ede0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 7f676ac7bcb5e0b066aa8f20de1b5c7d20e5843f
+        changelog-entry: Update layers/meta-balena to 7f676ac7bcb5e0b066aa8f20de1b5c7d20e5843f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to 2b34fec
+              hash: 695bd2b086a94945e80d9d677a6019462dd9e35f
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to f3ba2ee
+                      hash: 2334fd02530b6669a3fb5275421543c0a66bca2f
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.63
+                  title: ""
+                  date: 2024-02-27T17:34:15.697Z
+          version: meta-balena-5.1.45
+          title: ""
+          date: 2024-02-29T23:05:05.727Z
+        - commits:
+            - subject: "resin-init-flasher: Allow building images for non-flasher devices that
+                have internal storage"
+              hash: 3a887512b343b80208196f6792a48f81d1a8c8f9
+              body: >
+                As per the internal thread:
+                https://balena.zulipchat.com/#narrow/stream/360838-balena-io.2Fos.2Fdevices/topic/balena-raspberrypi.20jenkins.20build.20failures/near/423970246
+
+
+                Currently devices with on-board storage fail to build in jenkins, if they don't provide a flasher image. One example is the CM4. Since there are multiple devices using this configuration, let's re-enable builds for all of them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: meta-balena-5.1.44
+          title: ""
+          date: 2024-02-29T16:16:34.376Z
+  version: 5.1.45
+  title: ""
+  date: 2024-03-01T04:06:04.654Z
+- commits:
     - subject: Update layers/meta-balena to 87036c0cd6a4e23b55300c64f62158328e0eb779
       hash: 3101227ab5dfcce252c09f5a075b42ea01f26828
       body: Update layers/meta-balena
