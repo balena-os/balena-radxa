@@ -5,15 +5,15 @@
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
-	branch = dunfell
+	branch = kirkstone
 [submodule "layers/meta-radxa"]
 	path = layers/meta-radxa
-	url = https://github.com/radxa/meta-radxa.git
-	branch = dunfell
+	url = https://github.com/radxa/meta-rockchip.git
+	branch = kirkstone-radxa
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
-	branch = dunfell
+	branch = kirkstone
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena.git
