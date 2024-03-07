@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update layers/meta-balena to 069243961adb123830eb4073a6245b2fa1e6f8b3
+      hash: 4049858b3327f49398949d829f7bf4dd2eca405a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 069243961adb123830eb4073a6245b2fa1e6f8b3
+        changelog-entry: Update layers/meta-balena to 069243961adb123830eb4073a6245b2fa1e6f8b3
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to a677d89
+              hash: cb9142269bc348e6c0dbe99dfc8b95d4215c0cf4
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: fad1b73fe8752efee01764264b4aecfd88faf584
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.64
+                  title: ""
+                  date: 2024-03-04T02:11:20.831Z
+          version: meta-balena-5.1.49
+          title: ""
+          date: 2024-03-06T18:33:42.003Z
+  version: 5.1.49
+  title: ""
+  date: 2024-03-07T01:31:07.035Z
+- commits:
     - subject: Update layers/meta-balena to 6898f00e2d312aa468a44a98880882c31e81b26e
       hash: 1b9676c297d29e336da440d85aef28103e73cbf6
       body: Update layers/meta-balena
