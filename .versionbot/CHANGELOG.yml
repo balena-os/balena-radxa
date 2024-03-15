@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+      hash: 65e67fcfb6a687602f8594ef5d16289e1caf9c8e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+        changelog-entry: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Merge AMI publishing dependencies into yocto-build-env
+              hash: c208a885e849b1b49231de31268a482344220d38
+              body: |
+                This allows us to build and publish fewer helper images.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.21.5
+          title: ""
+          date: 2024-03-14T19:05:22.682Z
+  version: 5.1.54+rev3
+  title: ""
+  date: 2024-03-15T01:57:22.500Z
+- commits:
     - subject: Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e
       hash: f69cc40293a2e9a13618598c6eaea4be9eb0bc52
       body: Update contracts
