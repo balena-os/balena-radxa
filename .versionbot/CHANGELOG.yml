@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update meta-balena from v5.1.54 to v5.1.55
+      hash: c7e7560e21c50ad45bf5799f1df670fbed3885d0
+      body: |
+        Update meta-balena from 5.1.54 to 5.1.55
+      footer:
+        Changelog-entry: Update meta-balena from v5.1.54 to v5.1.55
+        changelog-entry: Update meta-balena from v5.1.54 to v5.1.55
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2024.4.1
+  title: ""
+  date: 2024-04-09T10:26:56.612Z
+- commits:
     - subject: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
       hash: 65e67fcfb6a687602f8594ef5d16289e1caf9c8e
       body: Update balena-yocto-scripts
