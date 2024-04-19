@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2024.4.2
+## (2024-04-19)
+
+* Update meta-balena from v5.1.55 to v5.1.56 [Alex Gonzalez]
+
 # v2024.4.1
 ## (2024-04-09)
 
