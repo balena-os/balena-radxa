@@ -1,4 +1,18 @@
 - commits:
+    - subject: "linux-rockpi: Add scsi-generic driver"
+      hash: 0e517e781e0d8fbda874a7460c5cab89a50c966e
+      body: ""
+      footer:
+        Changelog-entry: "linux-rockpi: Add scsi-generic driver"
+        changelog-entry: "linux-rockpi: Add scsi-generic driver"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru
+      nested: []
+  version: 5.2.5+rev4
+  title: ""
+  date: 2024-05-10T08:46:55.501Z
+- commits:
     - subject: Update layers/poky to 63d05fc061006bf1a88630d6d91cdc76ea33fbf2
       hash: 9e1e19e94d0a703fee9e6c15e1635c318522270e
       body: Update layers/poky

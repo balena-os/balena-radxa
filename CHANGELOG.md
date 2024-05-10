@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.2.5+rev4
+## (2024-05-10)
+
+* linux-rockpi: Add scsi-generic driver [Alexandru]
+
 # v5.2.5+rev3
 ## (2024-04-16)
 
