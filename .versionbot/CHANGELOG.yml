@@ -1,4 +1,69 @@
 - commits:
+    - subject: Update layers/meta-balena to 7552b004b5a4d86e823397519ba78ea24632bcec
+      hash: b189220edd80d327862e809741bda95b60319912
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 7552b004b5a4d86e823397519ba78ea24632bcec
+        changelog-entry: Update layers/meta-balena to 7552b004b5a4d86e823397519ba78ea24632bcec
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: safe-reboot: fetch and modify target state"
+              hash: af4d36646c2c301fceadcd10143096b187b67bd1
+              body: >
+                This is a fix targeted for the revpi-connect-4 which requires a
+                config.txt param to be present to connect to wifi. The old way
+                we did this test results in the config.txt being wiped - so now
+                we fetch and change the current state to maintain the existing
+                configuration and avoid this
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-5.3.8
+          title: ""
+          date: 2024-05-23T11:43:26.464Z
+        - commits:
+            - subject: "tests: os: modem: fix curl command"
+              hash: 6a62c9fea1611658504e3ccdff29bd8ae7467b3d
+              body: >
+                The modem test was broken when changing from ping to curl as
+                part of 071c018. Here it is fixed
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-5.3.7
+          title: ""
+          date: 2024-05-22T07:06:53.156Z
+        - commits:
+            - subject: "peak: Update to version 8.17.0"
+              hash: 2ab3cb2eb859d0a8658fda0739e6d287adc0bc6d
+              body: >
+                This is needed to have it compiled against kernel version
+                6.6.23,
+
+                which we will include in balena-generic.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-5.3.6
+          title: ""
+          date: 2024-05-20T08:35:07.780Z
+  version: 5.3.8
+  title: ""
+  date: 2024-05-23T23:29:23.618Z
+- commits:
     - subject: Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455
       hash: 499668d0cca457222553776e1cb8086d41d9d23b
       body: Update balena-yocto-scripts
