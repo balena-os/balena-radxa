@@ -1,6 +1,43 @@
 Change log
 -----------
 
+# v5.3.13
+## (2024-06-02)
+
+
+<details>
+<summary> Update layers/meta-balena to 12f6ea2e865cf1ac9a2e9d095015ad8b7110faae [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.3.13
+> ### (2024-06-01)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.11 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.11
+>> #### (2024-05-27)
+>> 
+>> * Move OS variant retrieval to config module [Felipe Lalanne]
+>> * Do not export balenaApi on api-binder [Felipe Lalanne]
+>> * Move api-keys module to src/lib [Felipe Lalanne]
+>> * Do not re-export ContractObject on lib/contracts [Felipe Lalanne]
+>> * Move Compose(Network|Volume)Config to top level types [Felipe Lalanne]
+>> * Move composition types to compose/types [Felipe Lalanne]
+>> * Split compose types into interface and implementation [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.12
+> ### (2024-06-01)
+> 
+> * patch: Add Test Suite specific config for GHA [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v5.3.11+rev1
 ## (2024-06-02)
 
