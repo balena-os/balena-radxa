@@ -1,6 +1,70 @@
 Change log
 -----------
 
+# v5.3.19
+## (2024-06-11)
+
+
+<details>
+<summary> Update layers/meta-balena to 6d6ebe2b54ad45236c5fe53c1cc046cf350efdbe [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.3.19
+> ### (2024-06-10)
+> 
+> * kernel-balena: do not use cache for signed kernel modules [Alex Gonzalez]
+> 
+> ## meta-balena-5.3.18
+> ### (2024-06-10)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.15 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.15
+>> #### (2024-06-10)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.71 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.17
+> ### (2024-06-09)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.14 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.14
+>> #### (2024-06-09)
+>> 
+>> * Update got to v14.4.1 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.13
+>> #### (2024-06-05)
+>> 
+>> * Split target state set/get into separate module [Felipe Lalanne]
+>> * Move device-state.ts into the device-state/index.ts [Felipe Lalanne]
+>> * Move device-state/target state to api-binder/poll [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.3.12
+>> #### (2024-06-03)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.70 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.16
+> ### (2024-06-06)
+> 
+> * Work around uuid file corruption in balenaEngine health check [Leandro Motta Barros]
+> 
+
+</details>
+
 # v5.3.15
 ## (2024-06-05)
 
