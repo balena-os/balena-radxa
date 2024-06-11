@@ -1,6 +1,27 @@
 Change log
 -----------
 
+# v5.3.19+rev1
+## (2024-06-11)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2bb54e7c3c715176446a895ed765346c52d480b2 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.22.1
+> ### (2024-06-07)
+> 
+> * Prevent duplicate workflow runs for multiple triggers [Kyle Harding]
+> * Add catchall job to yocto-build-deploy for merge requirements [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.22.0
+> ### (2024-06-06)
+> 
+> * Create workflow to build and deploy balenaOS [Kyle Harding]
+> 
+
+</details>
+
 # v5.3.19
 ## (2024-06-11)
 
