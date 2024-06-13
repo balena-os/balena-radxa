@@ -1,0 +1,28 @@
+From d3fc7f0c8085bcc5296dcd3a604f3b268dd78ee9 Mon Sep 17 00:00:00 2001
+From: Alex Gonzalez <alexg@balena.io>
+Date: Thu, 27 Apr 2023 18:09:25 +0200
+Subject: [PATCH] config_whitelist: add CONFIG_USB_DWC3
+
+Addresses the following build error:
+
+| Error: You must add new CONFIG options using Kconfig
+| The following new ad-hoc CONFIG options were detected:
+| CONFIG_USB_DWC3
+
+Signed-off-by: Alex Gonzalez <alexg@balena.io>
+---
+ scripts/config_whitelist.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/scripts/config_whitelist.txt b/scripts/config_whitelist.txt
+index de92384d4015..aaab74464b20 100644
+--- a/scripts/config_whitelist.txt
++++ b/scripts/config_whitelist.txt
+@@ -4990,6 +4990,7 @@ CONFIG_USB_DEVICE
+ CONFIG_USB_DEV_BASE
+ CONFIG_USB_DEV_PULLUP_GPIO
+ CONFIG_USB_DWC2_REG_ADDR
++CONFIG_USB_DWC3
+ CONFIG_USB_EHCI_ARMADA100
+ CONFIG_USB_EHCI_BASE
+ CONFIG_USB_EHCI_BASE_LIST
