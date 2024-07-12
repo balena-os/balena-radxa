@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.3.21+rev1
+## (2024-07-12)
+
+
+<details>
+<summary> Update contracts to 773c77cc902a5896a8fa75663d2aa661c0f4e1e3 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.106
+> ### (2024-07-12)
+> 
+> * hw.device-type: Disable bluetooth until this feature is officially supported [delhiryder]
+> 
+
+</details>
+
 # v5.3.21
 ## (2024-06-13)
 
