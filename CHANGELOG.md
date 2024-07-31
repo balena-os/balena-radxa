@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v5.4.0+rev2
+## (2024-07-31)
+
+
+<details>
+<summary> Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.108
+> ### (2024-07-25)
+> 
+> * hw.device-type: Add new device-type Jetson AGX Orin 64GB Devkit [Alexandru Costache]
+> 
+> ## contracts-2.0.107
+> ### (2024-07-15)
+> 
+> * beagleplay: Fix provisioning instructions [Alexandru]
+> 
+
+</details>
+
 # v5.4.0+rev1
 ## (2024-07-31)
 
