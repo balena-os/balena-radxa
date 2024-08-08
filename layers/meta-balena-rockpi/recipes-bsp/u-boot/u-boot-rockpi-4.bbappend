@@ -8,6 +8,7 @@ SRC_URI_append = " \
     file://0001-Integrate-with-Balena-u-boot-environment_rockpi4b.patch \
     file://0002-fs-fat-fix-wrong-casting-to-unsigned-value-of-sect_t.patch \
     file://0003-Revert-cmd-nvedit-add-0x-prefix-for-hex-value.patch \
+    file://0004-scripts-dtc-Remove-redundant-YYLOC-global-declaratio.patch \
 "
 
 BALENA_BOOT_PART_rockpi-4b-rk3399 = "4"
