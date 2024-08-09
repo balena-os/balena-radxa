@@ -3,7 +3,10 @@ inherit kernel-resin
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 SRC_URI_append = " file://0001-arm64-armv8_deprecated-Warn-just-once-about-deprecat.patch"
 
-SRC_URI_append_rockpi-4b-rk3399 = " file://0002-Revert-arm64-dts-rockchip-fix-ROCK-Pi-4-device-alias.patch"
+SRC_URI_append_rockpi-4b-rk3399 = " \
+    file://0002-Revert-arm64-dts-rockchip-fix-ROCK-Pi-4-device-alias.patch \
+    file://0003-scripts-dtc-Remove-redundant-YYLOC-global-declaratio.patch \
+"
 
 # remove in-tree brcmfmac, cfg80211 and the entire of Rockchip's WiFi stack because we will be using a 5.4.18 backported brcmfmac version instead
 BALENA_CONFIGS_append_rockpi-4b-rk3399 = " no-in-tree_wifi-no-rockchip-wl"

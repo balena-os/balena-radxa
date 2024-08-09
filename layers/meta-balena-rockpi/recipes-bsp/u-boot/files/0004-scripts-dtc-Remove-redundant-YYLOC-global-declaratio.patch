@@ -1,0 +1,75 @@
+From 6725f66a7ad4d85c964fdc2ecd442dce368bbd82 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 9 Aug 2024 10:04:46 +0000
+Subject: [PATCH] u-boot-rockpi-4: Fix dtc-lexer build error
+
+This is a backport of https://github.com/u-boot/u-boot/commit/018921ee79d3f30893614b3b2b63b588d8544f73 that fixes:
+
+scripts/dtc/dtc-parser.tab.o:(.bss+0x10): multiple definition of `yylloc'; scripts/dtc/dtc-lexer.lex.o:(.bss+0x0): first defined here
+
+Also it removes faulty dts' which fail to compile, throwing errors such as:
+
+Error: arch/arm/dts/.rk3036-sdk.dtb.pre.tmp:77.1-10 syntax error
+
+Changelog-entry: Fix dtc-lexer build error for rockpi-4b-rk3399
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ arch/arm/dts/Makefile               | 6 ------
+ scripts/dtc/dtc-lexer.l             | 1 -
+ scripts/dtc/dtc-lexer.lex.c_shipped | 1 -
+ 3 files changed, 8 deletions(-)
+
+diff --git a/arch/arm/dts/Makefile b/arch/arm/dts/Makefile
+index 9c824f45b2..8f186eb993 100644
+--- a/arch/arm/dts/Makefile
++++ b/arch/arm/dts/Makefile
+@@ -28,11 +28,9 @@ dtb-$(CONFIG_EXYNOS5) += exynos5250-arndale.dtb \
+ 	exynos5422-odroidxu3.dtb
+ dtb-$(CONFIG_EXYNOS7420) += exynos7420-espresso7420.dtb
+ dtb-$(CONFIG_ARCH_ROCKCHIP) += \
+-	rk3036-sdk.dtb \
+ 	rk3066a-mk808.dtb \
+ 	rk3126-evb.dtb \
+ 	rk3128-evb.dtb \
+-	rk3188-radxarock.dtb \
+ 	rk3288-evb.dtb \
+ 	rk3288-fennec.dtb \
+ 	rk3288-firefly.dtb \
+@@ -47,10 +45,6 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += \
+ 	rk3288-vyasa.dtb \
+ 	rk3308-evb.dtb \
+ 	rk3328-evb.dtb \
+-	rk3368-lion.dtb \
+-	rk3368-sheep.dtb \
+-	rk3368-geekbox.dtb \
+-	rk3368-px5-evb.dtb \
+ 	rk3399-evb.dtb \
+ 	rk3399-firefly.dtb \
+ 	rk3399-puma-ddr1333.dtb \
+diff --git a/scripts/dtc/dtc-lexer.l b/scripts/dtc/dtc-lexer.l
+index fd825ebba6..24af549977 100644
+--- a/scripts/dtc/dtc-lexer.l
++++ b/scripts/dtc/dtc-lexer.l
+@@ -38,7 +38,6 @@ LINECOMMENT	"//".*\n
+ #include "srcpos.h"
+ #include "dtc-parser.tab.h"
+ 
+-YYLTYPE yylloc;
+ extern bool treesource_error;
+ 
+ /* CAUTION: this will stop working if we ever use yyless() or yyunput() */
+diff --git a/scripts/dtc/dtc-lexer.lex.c_shipped b/scripts/dtc/dtc-lexer.lex.c_shipped
+index 011bb9632f..79952cd3ca 100644
+--- a/scripts/dtc/dtc-lexer.lex.c_shipped
++++ b/scripts/dtc/dtc-lexer.lex.c_shipped
+@@ -631,7 +631,6 @@ char *yytext;
+ #include "srcpos.h"
+ #include "dtc-parser.tab.h"
+ 
+-YYLTYPE yylloc;
+ extern bool treesource_error;
+ 
+ /* CAUTION: this will stop working if we ever use yyless() or yyunput() */
+-- 
+2.34.1
+
