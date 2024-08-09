@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v5.4.0+rev3
+## (2024-08-09)
+
+* Fix kernel dtc-lexer build error for rockpi-4b-rk3399 [Florin Sarbu]
+* Fix u-boot dtc-lexer build error for rockpi-4b-rk3399 [Florin Sarbu]
+
 # v5.4.0+rev2
 ## (2024-07-31)
 

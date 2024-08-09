@@ -1,4 +1,33 @@
 - commits:
+    - subject: Fix kernel dtc-lexer build error for rockpi-4b-rk3399
+      hash: 65e6a93478950ca0cbed00acba67d3c179ffcfe2
+      body: ""
+      footer:
+        Changelog-entry: Fix kernel dtc-lexer build error for rockpi-4b-rk3399
+        changelog-entry: Fix kernel dtc-lexer build error for rockpi-4b-rk3399
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Fix u-boot dtc-lexer build error for rockpi-4b-rk3399
+      hash: 1e659aa5651769d4263a6b2c48f6ddbdcdf057a8
+      body: >
+        This is a backport that fixes:
+
+
+        scripts/dtc/dtc-parser.tab.o:(.bss+0x10): multiple definition of
+        `yylloc'; scripts/dtc/dtc-lexer.lex.o:(.bss+0x0): first defined here
+      footer:
+        Changelog-entry: Fix u-boot dtc-lexer build error for rockpi-4b-rk3399
+        changelog-entry: Fix u-boot dtc-lexer build error for rockpi-4b-rk3399
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.4.0+rev3
+  title: ""
+  date: 2024-08-09T12:23:47.898Z
+- commits:
     - subject: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
       hash: d50b47ddc398b175f9f0c5c952b159dc34108f42
       body: Update contracts
