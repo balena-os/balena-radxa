@@ -1,4 +1,59 @@
 - commits:
+    - subject: Update contracts to bb77690aa0498f1060b64bebc183aea4fafb57e7
+      hash: 381340e9405ca31fd5bd782b09ff9207d01c7317
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to bb77690aa0498f1060b64bebc183aea4fafb57e7
+        changelog-entry: Update contracts to bb77690aa0498f1060b64bebc183aea4fafb57e7
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: Add versionList to OpenJDK"
+              hash: a06af4e592ce4ce552e9d055a07eb1964cbbdb2d
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.111
+          title: ""
+          date: 2024-08-08T14:50:47.699Z
+        - commits:
+            - subject: Add CompuLab iotdin-imx8p to harware contract.
+              hash: 2b0148ba2c6b34d8f74a5b2afe9405419f81e7ab
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+                signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+              author: Valentin Raevsky
+          version: contracts-2.0.110
+          title: ""
+          date: 2024-08-07T13:28:36.285Z
+        - commits:
+            - subject: "hw.device-type: Update provisioning instructions for AGX Orin 64GB"
+              hash: f8d665f044ea2e39a100fb865ffd5f8a8f4ae65f
+              body: >
+                The AGX Orin 64GB should be provisioned on the eMMC by default
+                as per the internal thread
+                https://balena.zulipchat.com/#narrow/stream/346009-aspect.2Fcustomer-success/topic/Get.20feedback.20on.20draft.20balenaOS.20with.20L4T.2036.2E3.20for.20Jetson.20Orin/near/455889690
+
+
+                We thus update the provisioning instructions accordingly
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.109
+          title: ""
+          date: 2024-08-06T08:44:06.923Z
+  version: 6.0.9+rev1
+  title: ""
+  date: 2024-08-14T22:55:33.677Z
+- commits:
     - subject: Update layers/meta-balena to e6eec7bdb572753420bfe543750357c9f18ee4d8
       hash: 58118649dc2340548f1a14755602ec1709e0ab86
       body: Update layers/meta-balena
