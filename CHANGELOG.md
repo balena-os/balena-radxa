@@ -1,6 +1,46 @@
 Change log
 -----------
 
+# v6.0.10+rev1
+## (2024-08-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.22
+> ### (2024-08-12)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.21
+> ### (2024-08-06)
+> 
+> * Update balena-os/leviathan digest to f4e9332 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.20
+> ### (2024-08-06)
+> 
+> * Update actions/upload-artifact action to v4.3.6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.19
+> ### (2024-08-06)
+> 
+> * Update balena-os/leviathan digest to a16cf0f [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.18
+> ### (2024-08-05)
+> 
+> * Update actions/upload-artifact action to v4.3.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.17
+> ### (2024-08-05)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.0.10
 ## (2024-08-15)
 
