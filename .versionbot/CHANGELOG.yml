@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+      hash: 5c3dfbd8dff62c2010e303df708f9d6a632cb8e0
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+        changelog-entry: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add support for Ubuntu Noble
+              hash: 909a9e8fd4f81731975f4a82304947f82a2d5378
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: ruffsl <roxfoxpox@gmail.com>
+                signed-off-by: ruffsl <roxfoxpox@gmail.com>
+              author: ruffsl
+          version: contracts-2.0.112
+          title: ""
+          date: 2024-08-19T15:53:05.491Z
+  version: 6.0.10+rev2
+  title: ""
+  date: 2024-08-19T19:15:02.986Z
+- commits:
     - subject: Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f
       hash: 858c9e2b044b2b5074b2dc7a82f38f650605c82e
       body: Update balena-yocto-scripts

@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v6.0.10+rev2
+## (2024-08-19)
+
+
+<details>
+<summary> Update contracts to e1d59ac348642e274b442db4a41edab5c511576c [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.112
+> ### (2024-08-19)
+> 
+> * Add support for Ubuntu Noble [ruffsl]
+> 
+
+</details>
+
 # v6.0.10+rev1
 ## (2024-08-15)
 
