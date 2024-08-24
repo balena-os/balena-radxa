@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 58b4dd401dd6dd27262675b8061c7fddf5a593d4
+      hash: 7216ef4a62e6ebd643dbee9c19853ceb15e6a267
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 58b4dd401dd6dd27262675b8061c7fddf5a593d4
+        changelog-entry: Update balena-yocto-scripts to 58b4dd401dd6dd27262675b8061c7fddf5a593d4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add unique unique identifiers to summary job
+              hash: 625a45b652c332ec5d048caeee7dc25638df8dfb
+              body: |
+                The "All jobs" job is used for branch protection
+                as it captures the overall success/fail of all
+                the test matrices and build.
+
+                However without a unique name we are unable
+                to identify the device type in order to mark it as required.
+
+                This change adds a single instance matrix
+                to the build job and as a result will append the machine
+                name and deploy environment in the job name.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.25
+          title: ""
+          date: 2024-08-23T15:51:41.585Z
+  version: 6.0.12+rev1
+  title: ""
+  date: 2024-08-24T05:39:15.856Z
+- commits:
     - subject: Update layers/meta-balena to a8d6ff62e7ab5bc1f8b1d0a6a8d06d6da84e11af
       hash: 0e33b0aee9c35f3c195c050b37e5d9d733a0ed06
       body: Update layers/meta-balena
