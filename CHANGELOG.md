@@ -1,6 +1,303 @@
 Change log
 -----------
 
+# v6.0.33
+## (2024-09-23)
+
+
+<details>
+<summary> Update layers/meta-balena to f2c72d6bbd312821f0bb97897fe7836c525950f7 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.33
+> ### (2024-09-22)
+> 
+> * Override the default commit body for digest updates [Kyle Harding]
+> 
+> ## meta-balena-6.0.32
+> ### (2024-09-21)
+> 
+> * kernel-headers-test: update dockerfile to bullseye [Alex Gonzalez]
+> 
+> ## meta-balena-6.0.31
+> ### (2024-09-20)
+> 
+> * mkfs-hostapp-native: update Dockerfile to using trixie [Alex Gonzalez]
+> * meta-balena-rust: rust-llvm: backport a fix for build with gcc-13 [Alex Gonzalez]
+> 
+> ## meta-balena-6.0.30
+> ### (2024-09-18)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 17c522f [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.44
+>> #### (2024-09-18)
+>> 
+>> * Update balena-io/balena-cli to v19.0.11 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.29
+> ### (2024-09-18)
+> 
+> * modemmanager: Fix SIM7100E crash [Florin Sarbu]
+> 
+> ## meta-balena-6.0.28
+> ### (2024-09-18)
+> 
+> * initrdscripts: replace cut by awk for parsing lsblk in cryptsetup hook [Michal Toman]
+> 
+> ## meta-balena-6.0.27
+> ### (2024-09-17)
+> 
+> * tests:os: Use writeConfigJsonProp helper function [Kyle Harding]
+> 
+> ## meta-balena-6.0.26
+> ### (2024-09-16)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 384eab3 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.43
+>> #### (2024-09-16)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.47 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.42
+>> #### (2024-09-16)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.46 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.41
+>> #### (2024-09-13)
+>> 
+>> * Update balena-io/balena-cli to v19.0.10 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.40
+>> #### (2024-09-12)
+>> 
+>> * Update balena-io/balena-cli to v19.0.9 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.39
+>> #### (2024-09-12)
+>> 
+>> * Update balena-io/balena-cli to v19.0.8 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.38
+>> #### (2024-09-12)
+>> 
+>> * Update balena-io/balena-cli to v19.0.7 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.37
+>> #### (2024-09-12)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.45 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.36
+>> #### (2024-09-11)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.44 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.35
+>> #### (2024-09-10)
+>> 
+>> * Update balena-io/balena-cli to v19.0.5 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.34
+>> #### (2024-09-05)
+>> 
+>> * Always upload reports, especially when tests fail [Kyle Harding]
+>> 
+>> ### leviathan-2.31.33
+>> #### (2024-09-05)
+>> 
+>> * Update balena-io/balena-cli to v19.0.3 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.32
+>> #### (2024-09-03)
+>> 
+>> * Update balena-io/balena-cli to v19.0.2 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.31
+>> #### (2024-09-02)
+>> 
+>> * Update actions/upload-artifact digest to 5076954 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.30
+>> #### (2024-09-02)
+>> 
+>> * Update balena-io/balena-cli to v19.0.1 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.25
+> ### (2024-09-13)
+> 
+> * initrdscripts: Make cryptsetup fail hard in unexpected conditions [Michal Toman]
+> 
+> ## meta-balena-6.0.24
+> ### (2024-09-13)
+> 
+> * common: fix return in commit_apply-dbx HUP hook [Joseph Kogut]
+> 
+> ## meta-balena-6.0.23
+> ### (2024-09-12)
+> 
+> * tests:os: Avoid setting apiEndpoint for unmanaged tests [Kyle Harding]
+> 
+> ## meta-balena-6.0.22
+> ### (2024-09-12)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.39 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.21
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.30 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.20
+> ### (2024-09-01)
+> 
+> * tests: config: restore both network options to false [Kyle Harding]
+> 
+> ## meta-balena-6.0.19
+> ### (2024-09-01)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.6.1 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.6.1
+>> #### (2024-08-29)
+>> 
+>> * Remove unused patchDevice function [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.6.0
+>> #### (2024-08-28)
+>> 
+>> * Add support for redsocks dnsu2t config [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.18
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.28 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.17
+> ### (2024-09-01)
+> 
+> * Update Pin balena-os/balena-yocto-scripts action to a3dfa26 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.16
+> ### (2024-08-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to ff6a079 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.29
+>> #### (2024-08-29)
+>> 
+>> * Update core/contracts digest to 59752b7 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.28
+>> #### (2024-08-29)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.43 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.27
+>> #### (2024-08-29)
+>> 
+>> * Update docker/setup-buildx-action digest to 988b5a0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.26
+>> #### (2024-08-29)
+>> 
+>> * specify ipv4 localhost for balena tunnel [rcooke-warwick]
+>> * Move balena-cli download to a build stage with renovate management [Kyle Harding]
+>> * core: update CLI to 19.0.0 [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.15
+> ### (2024-08-29)
+> 
+> * remove up-board and cl-som-imx8 [rcooke-warwick]
+> * Add GHA workflows for additional device types [Kyle Harding]
+> 
+> ## meta-balena-6.0.14
+> ### (2024-08-28)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.5.8 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.5.8
+>> #### (2024-08-27)
+>> 
+>> * Update webpack to v5.94.0 [SECURITY] [balena-renovate[bot]]
+>> 
+>> ### balena-supervisor-16.5.7
+>> #### (2024-08-27)
+>> 
+>> * Add unit test for usingInferStepsLock [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.5.6
+>> #### (2024-08-23)
+>> 
+>> * Revert PR #2364 [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.5.5
+>> #### (2024-08-21)
+>> 
+>> * Avoid unnecessary config calls during Supervisor init [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.5.4
+>> #### (2024-08-16)
+>> 
+>> * Add kmod to runtime-base [Joseph Kogut]
+>> 
+>> ### balena-supervisor-16.5.3
+>> #### (2024-08-08)
+>> 
+>> * Do not write `noProxy` to redsocks.conf [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.5.2
+>> #### (2024-08-07)
+>> 
+>> * Verify that LED_FILE exists on blinking setup [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.5.1
+>> #### (2024-08-05)
+>> 
+>> * Avoid leaking memory on deep promise recursions [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.5.0
+>> #### (Invalid date)
+>> 
+>> * Use promises for setup/writing for logging backend [Felipe Lalanne]
+>> * Improve the LogBackend interface [Felipe Lalanne]
+>> * Use stream pipeline instead of pipe [Felipe Lalanne]
+>> * Do not use DB to store container logs info [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.0.13
 ## (2024-08-26)
 
