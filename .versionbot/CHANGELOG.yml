@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GHA Built Test Deploy workflows
+      hash: 34514532c9f9910ef4c70f25c36d114409ff8949
+      body: ""
+      footer:
+        Changelog-entry: Add GHA Built Test Deploy workflows
+        changelog-entry: Add GHA Built Test Deploy workflows
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+  version: 6.0.33+rev2
+  title: ""
+  date: 2024-10-02T18:20:31.772Z
+- commits:
     - subject: Update balena-yocto-scripts to 0899d814aa7f25d48825ac701c61e066f7b0c4f5
       hash: 0ecfc81187a257b1ae0e65b2acc4a3fb8940a340
       body: Update balena-yocto-scripts
