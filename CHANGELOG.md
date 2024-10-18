@@ -1,6 +1,165 @@
 Change log
 -----------
 
+# v6.0.45
+## (2024-10-18)
+
+
+<details>
+<summary> Update layers/meta-balena to 87424b9f02968562b06c0fdd360262b481e519ae [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.45
+> ### (2024-10-18)
+> 
+> * workflows/meta-balena-esr: fix version creation bash [Ryan Cooke]
+> 
+> ## meta-balena-6.0.44
+> ### (2024-10-10)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to cf58b57 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.59
+>> #### (2024-10-10)
+>> 
+>> * add secureboot identifier into report name [Ryan Cooke]
+>> 
+>> ### leviathan-2.31.58
+>> #### (2024-10-10)
+>> 
+>> * Update core/contracts digest to 5ac053b [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.57
+>> #### (2024-10-10)
+>> 
+>> * Update actions/upload-artifact digest to b4b15b8 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.56
+>> #### (2024-10-09)
+>> 
+>> * compose: map qemu volume into worker [Joseph Kogut]
+>> 
+>> ### leviathan-2.31.55
+>> #### (2024-10-08)
+>> 
+>> * Update actions/upload-artifact digest to 8448086 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.54
+>> #### (2024-10-08)
+>> 
+>> * Update balena-io/balena-cli to v19.0.18 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.53
+>> #### (2024-10-08)
+>> 
+>> * Update actions/checkout digest to eef6144 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.52
+>> #### (2024-10-08)
+>> 
+>> * Update balena-io/balena-cli to v19.0.17 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.51
+>> #### (2024-10-07)
+>> 
+>> * Update actions/upload-artifact digest to 604373d [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.43
+> ### (2024-10-10)
+> 
+> * initrdscripts: Wait for boot partition in the abroot script [Michal Toman]
+> 
+> ## meta-balena-6.0.42
+> ### (2024-10-09)
+> 
+> * flasher: improve logging with secure boot [Joseph Kogut]
+> 
+> ## meta-balena-6.0.41
+> ### (2024-10-09)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.59 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.40
+> ### (2024-10-08)
+> 
+> * os-helpers-efi: silence secure boot variable checks [Joseph Kogut]
+> * os-helpers-efi: silence od stderr [Joseph Kogut]
+> 
+> ## meta-balena-6.0.39
+> ### (2024-10-07)
+> 
+> * tests: hup: login with sdk before fetching image [Ryan Cooke]
+> 
+> ## meta-balena-6.0.38
+> ### (2024-10-04)
+> 
+> * tpm2: ensure auth session contexts are flushed after use [Joseph Kogut]
+> 
+> ## meta-balena-6.0.37
+> ### (2024-10-04)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 3a1a989 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.50
+>> #### (2024-10-04)
+>> 
+>> * Update ubuntu to v24 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.49
+>> #### (2024-10-04)
+>> 
+>> * Update docker/setup-buildx-action digest to c47758b [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.48
+>> #### (2024-10-03)
+>> 
+>> * Update balena-io/balena-cli to v19.0.13 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.47
+>> #### (2024-10-03)
+>> 
+>> * Update docker/setup-buildx-action digest to 8026d2b [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.46
+>> #### (2024-10-03)
+>> 
+>> * Update core/contracts digest to 1fb0b0c [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.45
+>> #### (2024-10-03)
+>> 
+>> * add .git to dockerignore [rcooke-warwick]
+>> * remove pull request target trigger from workflows [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.36
+> ### (2024-10-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.49 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.35
+> ### (Invalid date)
+> 
+> * tests: cloud: prevent hanging in cloud suite teardown [rcooke-warwick]
+> 
+> ## meta-balena-6.0.34
+> ### (2024-09-27)
+> 
+> * CI: Update checkout settings [Pagan Gazzard]
+> 
+
+</details>
+
 # v6.0.33+rev4
 ## (2024-10-10)
 
