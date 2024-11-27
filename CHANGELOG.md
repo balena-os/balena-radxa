@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.1.15+rev2
+## (2024-11-27)
+
+* Update balena-os/balena-yocto-scripts to v1.27.15 [balena-renovate[bot]]
+
 # v6.1.15+rev1
 ## (2024-11-27)
 
