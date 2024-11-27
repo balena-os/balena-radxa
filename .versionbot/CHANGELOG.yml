@@ -1,4 +1,74 @@
 - commits:
+    - subject: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+      hash: 2b884c950e5bf28914c0dd1f936d1e4284f2a01f
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+        changelog-entry: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Rename Seeed J3010 and J4012 to include module name"
+              hash: f803589c9885fb0d8cee7d9c674ec6bde235e7af
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.117
+          title: ""
+          date: 2024-11-25T15:38:04.848Z
+        - commits:
+            - subject: Add alpine 3.20
+              hash: 6d47b5012c98f11c2a6e83944509aee90db099c0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Otavio Jacobi
+          version: contracts-2.0.116
+          title: ""
+          date: 2024-10-17T14:55:03.926Z
+        - commits:
+            - subject: Add alpine 3.19
+              hash: a598678f0c478fe3f0f8a560d3e698ace3561e26
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Otavio Jacobi
+          version: contracts-2.0.115
+          title: ""
+          date: 2024-10-17T14:01:53.134Z
+        - commits:
+            - subject: "sw.os+hw.device-type: Update all Orin devices to r36.3 in
+                sources.list"
+              hash: f2b34b2d9c7c6a58b74984ca5c14217effe253d0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+            - subject: "hw.device-type: Remove superfluous instructions for beagleplay"
+              hash: 3f400e0f27d792734a2db70cc53863ffeb87907c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.114
+          title: ""
+          date: 2024-10-09T13:56:48.392Z
+  version: 6.1.15+rev3
+  title: ""
+  date: 2024-11-27T07:00:03.777Z
+- commits:
     - subject: Update balena-os/balena-yocto-scripts to v1.27.15
       hash: 10a3c02a09174c7892b1a084dd4192ab36233ac8
       body: Update balena-os/balena-yocto-scripts
