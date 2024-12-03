@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v6.1.18
+## (2024-12-03)
+
+
+<details>
+<summary> Update layers/meta-balena to 71b571836a27879545d0fbe42fc2803d829a4f02 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.18
+> ### (2024-12-03)
+> 
+> * Explicitly set GITHUB_TOKEN permissions for yocto workflow [Ryan Cooke]
+> 
+
+</details>
+
 # v6.1.17
 ## (2024-12-02)
 
