@@ -1,6 +1,440 @@
 Change log
 -----------
 
+# v6.1.18
+## (2024-12-03)
+
+
+<details>
+<summary> Update layers/meta-balena to 71b571836a27879545d0fbe42fc2803d829a4f02 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.18
+> ### (2024-12-03)
+> 
+> * Explicitly set GITHUB_TOKEN permissions for yocto workflow [Ryan Cooke]
+> 
+
+</details>
+
+# v6.1.17
+## (2024-12-02)
+
+
+<details>
+<summary> Update layers/meta-balena to b6d27b0d06a7be0f47e42173627bdb8102938a52 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.17
+> ### (2024-12-02)
+> 
+> * resin-init-flasher: adapt EFI snippets to non-LUKS devices support [Alex Gonzalez]
+> * balena-config-vars: adapt to flasher non-LUKS device support [Alex Gonzalez]
+> * resin-init-flasher: add default LUKS configuration [Alex Gonzalez]
+> * hostapp-update-hooks: replace the identification of encrypted partitions [Alex Gonzalez]
+> 
+
+</details>
+
+# v6.1.16+rev1
+## (2024-11-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.16
+> ### (2024-11-29)
+> 
+> * Set additional github token permissions [Ryan Cooke]
+> 
+
+</details>
+
+# v6.1.16
+## (2024-11-29)
+
+
+<details>
+<summary> Update layers/meta-balena to 229a6ad1da498c4ce8aaa17501ddad3e99806f08 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.16
+> ### (2024-11-27)
+> 
+> * classes/kernel-balena: Add aufs patches for 6.1 kernels [Florin Sarbu]
+> 
+
+</details>
+
+# v6.1.15+rev4
+## (2024-11-29)
+
+* Explicitly set GITHUB_TOKEN permissions for yocto workflow [Ryan Cooke]
+
+# v6.1.15+rev3
+## (2024-11-27)
+
+
+<details>
+<summary> Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.117
+> ### (2024-11-25)
+> 
+> * hw.device-type: Rename Seeed J3010 and J4012 to include module name [Alexandru Costache]
+> 
+> ## contracts-2.0.116
+> ### (2024-10-17)
+> 
+> * Add alpine 3.20 [Otavio Jacobi]
+> 
+> ## contracts-2.0.115
+> ### (2024-10-17)
+> 
+> * Add alpine 3.19 [Otavio Jacobi]
+> 
+> ## contracts-2.0.114
+> ### (2024-10-09)
+> 
+> * sw.os+hw.device-type: Update all Orin devices to r36.3 in sources.list [Alexandru Costache]
+> * hw.device-type: Remove superfluous instructions for beagleplay [Alexandru]
+> 
+
+</details>
+
+# v6.1.15+rev2
+## (2024-11-27)
+
+* Update balena-os/balena-yocto-scripts to v1.27.15 [balena-renovate[bot]]
+
+# v6.1.15+rev1
+## (2024-11-27)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 05b373abd099d1862fdff51e96b0122940505756 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.15
+> ### (2024-11-23)
+> 
+> * Update balena-os/leviathan action to v2.31.65 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.14
+> ### (2024-11-20)
+> 
+> * Update balena-os/leviathan action to v2.31.62 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.13
+> ### (2024-11-18)
+> 
+> * Explicitly set GH_TOKEN permissions [Anton Belodedenko]
+> 
+> ## balena-yocto-scripts-1.27.12
+> ### (2024-11-18)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.11
+> ### (2024-11-17)
+> 
+> * github/workflows/yocto-build-deploy.yml: Add hostapp metadata to OS release [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.27.10
+> ### (2024-11-11)
+> 
+> * Set explicit permissions at the job level [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.9
+> ### (2024-11-11)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.8
+> ### (2024-11-04)
+> 
+> * Update product-os/review-commit-action action to v0.1.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.7
+> ### (2024-11-04)
+> 
+> * Update Pin product-os/review-commit-action action to 81db18c [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.6
+> ### (2024-11-04)
+> 
+> * Use official aws cli binaries and commands [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.5
+> ### (2024-11-04)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.4
+> ### (2024-11-01)
+> 
+> * Update actions/checkout action to v4.2.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.3
+> ### (2024-10-29)
+> 
+> * Add pull request write permissions for workflow approvals [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.2
+> ### (2024-10-23)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.1
+> ### (2024-10-23)
+> 
+> * remove CLI check if not deploying [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.27.0
+> ### (2024-10-23)
+> 
+> * add review-commit-action to wait for approvals on PRT events [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.26.0
+> ### (2024-10-15)
+> 
+> * Expose secure boot testing features via matrix input [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.63
+> ### (2024-10-11)
+> 
+> * Update balena-os/leviathan action to v2.31.60 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.62
+> ### (2024-10-11)
+> 
+> * Fix concurrency and cancel in progress contexts [Kyle Harding]
+> 
+
+</details>
+
+# v6.1.15
+## (2024-11-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 1f2c1fb81b4845d841c216a0319193ee56cc151e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.15
+> ### (2024-11-26)
+> 
+> * initrdscripts/migrate: Allow overriding of target internal devices [Alexandru Costache]
+> 
+> ## meta-balena-6.1.14
+> ### (2024-11-23)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 64ba6a3 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.65
+>> #### (2024-11-23)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.50 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.64
+>> #### (2024-11-23)
+>> 
+>> * Update core/contracts digest to 88fb8ad [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.63
+>> #### (2024-11-23)
+>> 
+>> * Update balena-io/balena-cli to v20 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.1.13
+> ### (2024-11-22)
+> 
+> * u-boot: env_resin: fix use of skip bootcount [Alex Gonzalez]
+> * initrdscripts: migrate: panic on installation failure [Alex Gonzalez]
+> 
+> ## meta-balena-6.1.12
+> ### (2024-11-21)
+> 
+> * balena-os: allow to specify early console for OS development builds [Alex Gonzalez]
+> 
+> ## meta-balena-6.1.11
+> ### (2024-11-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to ae505eb [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.62
+>> #### (2024-11-20)
+>> 
+>> * Update actions/checkout digest to 11bd719 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.61
+>> #### (2024-11-20)
+>> 
+>> * Update balena-io/balena-cli to v19.16.0 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.1.10
+> ### (2024-11-15)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.7.7 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.7.7
+>> #### (2024-11-11)
+>> 
+>> * Firewall: allow DNS requests from custom Docker bridge networks [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.1.9
+> ### (2024-11-15)
+> 
+> * Update actions/setup-python digest to 0b93645 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.1.8
+> ### (2024-11-15)
+> 
+> * recipes-kernel/linux-firmware: Package Intel AX210 firmware [Alexandru Costache]
+> 
+> ## meta-balena-6.1.7
+> ### (2024-11-13)
+> 
+> * Update actions/checkout digest to 11bd719 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.1.6
+> ### (2024-11-13)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.27.10 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.1.5
+> ### (2024-11-13)
+> 
+> * recipes-support/os-fan-profile: Don't print logs unless configured [Alexandru Costache]
+> * Update tests/leviathan digest to 8234f44 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.1.4
+> ### (2024-11-12)
+> 
+> * os: test for rootfs by-state link uniqueness [Joseph Kogut]
+> * common: fix udev helper by-state link creation [Joseph Kogut]
+> 
+> ## meta-balena-6.1.3
+> ### (2024-11-11)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.7.6 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.7.6
+>> #### (2024-11-07)
+>> 
+>> * Update firewall documentation [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.7.5
+>> #### (2024-11-07)
+>> 
+>> * Delete apps not in target from db by appUuid instead of appId [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.7.4
+>> #### (2024-10-28)
+>> 
+>> * Update express to v4.20.0 [SECURITY] [balena-renovate[bot]]
+>> 
+>> ### balena-supervisor-16.7.3
+>> #### (2024-10-28)
+>> 
+>> * Add NXP support to balenaOS secure boot [Alex Gonzalez]
+>> 
+>> ### balena-supervisor-16.7.2
+>> #### (2024-10-18)
+>> 
+>> * Use bookworm image to source journalctl binaries [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.7.1
+>> #### (2024-09-26)
+>> 
+>> * Add support for init field from compose [Christina Ying Wang]
+>> 
+>> ### balena-supervisor-16.7.0
+>> #### (2024-09-02)
+>> 
+>> * Store rejected apps in the database [Felipe Lalanne]
+>> * Set the app update status when reporting state [Felipe Lalanne]
+>> * Add update status to types [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.1.2
+> ### (2024-11-11)
+> 
+> * modemmanager: Update outdated context of patches [Florin Sarbu]
+> 
+> ## meta-balena-6.1.1
+> ### (2024-11-07)
+> 
+> * README: format the supported Yocto versions for legibility [Alex Gonzalez]
+> * Extend README to add balena bootloader [Alex Gonzalez]
+> 
+> ## meta-balena-6.1.0
+> ### (2024-11-01)
+> 
+> * Add auth. header to /os/v1/config requests [Anton Belodedenko]
+> 
+> ## meta-balena-6.0.50
+> ### (2024-10-26)
+> 
+> * tests: secureboot: add test to ensure partition integrity [Joseph Kogut]
+> 
+
+</details>
+
+# v6.0.49
+## (2024-10-25)
+
+
+<details>
+<summary> Update layers/meta-balena to 1f8d8cd8886b4e78762eb491eb5b00be6400ad4d [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.49
+> ### (2024-10-25)
+> 
+> * tests/os: Add Jetson Orin device-specific fan and power mode smoke tests [Alexandru Costache]
+> 
+> ## meta-balena-6.0.48
+> ### (2024-10-24)
+> 
+> * os-helpers-fs: introduce a script to split boot partitions [Alex Gonzalez]
+> * os-helpers-fs: add a shared script to deploy non-encrypted boot file [Alex Gonzalez]
+> * systemd: disable systemd-gpt-generator [Alex Gonzalez]
+> * resin-mounts: generalize non-enc boot partition mounter [Alex Gonzalez]
+> * classes: kernel-balena: do not remove whole build directory [Alex Gonzalez]
+> * efitools: Fix syntax [Alex Gonzalez]
+> 
+> ## meta-balena-6.0.47
+> ### (2024-10-21)
+> 
+> * hostapp-update-hooks: remove alternative bootloader environment files [Alex Gonzalez]
+> 
+> ## meta-balena-6.0.46
+> ### (2024-10-19)
+> 
+> * balena-units-conf: Add os-fan-profile to units conf [Alexandru Costache]
+> 
+
+</details>
+
 # v6.0.45
 ## (2024-10-18)
 
