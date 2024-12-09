@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2024.10.1
+## (2024-12-09)
+
+* Allow overriding the meta-balena ref for workflow dispatch [Ryan Cooke]
+* Add GHA Built Test Deploy workflows [rcooke-warwick]
+
 # 2024.10.0
 ## (2024-11-11)
 
