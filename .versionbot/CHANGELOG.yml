@@ -1,4 +1,18 @@
 - commits:
+    - subject: Explicitly set GITHUB_TOKEN permissions for yocto workflow
+      hash: 8d1d9a95d09a7c15bdc788bcaa9621672ce32e45
+      body: ""
+      footer:
+        Changelog-entry: Explicitly set GITHUB_TOKEN permissions for yocto workflow
+        changelog-entry: Explicitly set GITHUB_TOKEN permissions for yocto workflow
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 2024.10.2
+  title: ""
+  date: 2024-12-16T12:32:24.476Z
+- commits:
     - subject: Allow overriding the meta-balena ref for workflow dispatch
       hash: 56a3420976a9b7165174697bc9f15e909e4e7d83
       body: ""
