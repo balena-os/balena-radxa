@@ -1,6 +1,22 @@
 Change log
 -----------
 
+# v6.1.18+rev2
+## (2025-01-07)
+
+
+<details>
+<summary> Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.124
+> ### (2025-01-07)
+> 
+> * sw.os+hw.device-type: Add Forecr DSB Orin Nano 8GB and Orin NX 16GB distro tpl files [Alexandru Costache]
+> * forecr-dsb-ornx-lan-orin-nx-16gb: Add new public device type [Alexandru Costache]
+> 
+
+</details>
+
 # v6.1.18+rev1
 ## (2025-01-06)
 
