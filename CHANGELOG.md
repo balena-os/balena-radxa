@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v6.1.18+rev3
+## (2025-04-30)
+
+* Re-enable generation of kernel modules headers [Florin Sarbu]
+* Use nonarch_base_libdir to install files in /usr/lib instead of /lib for the bluetooth-broadcom recipe [Florin Sarbu]
+* Use nonarch_base_libdir to install files in /usr/lib instead of /lib for the rkwifibt-firmware recipe [Florin Sarbu]
+
 # v6.1.18+rev2
 ## (2025-01-07)
 

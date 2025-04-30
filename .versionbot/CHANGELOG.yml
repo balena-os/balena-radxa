@@ -1,4 +1,73 @@
 - commits:
+    - subject: Re-enable generation of kernel modules headers
+      hash: 1b06096e2466abf993f5dfd2df394c03d8b4f8e7
+      body: |
+        The headers can be generated again so let's add them back.
+      footer:
+        Changelog-entry: Re-enable generation of kernel modules headers
+        changelog-entry: Re-enable generation of kernel modules headers
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Use nonarch_base_libdir to install files in /usr/lib instead of /lib
+        for the bluetooth-broadcom recipe
+      hash: 5bd87863a04395a30deb43786e010e364aabc85b
+      body: >
+        Using the nonarch_base_libdir variable to change the install path to
+        /usr/lib instead
+
+        of hardcoding directly to /lib will help us when we enable the usrmerge
+        feature.
+
+
+        We add the entire recipe here from the existing BSP repo because
+        https://github.com/radxa/meta-radxa.git
+
+        is now a public archive. We must delete this recipe from here when we
+        migrate to the vendor recommended BSP
+
+        on the kirkstone branch.
+      footer:
+        Changelog-entry: Use nonarch_base_libdir to install files in /usr/lib instead of
+          /lib for the bluetooth-broadcom recipe
+        changelog-entry: Use nonarch_base_libdir to install files in /usr/lib instead of
+          /lib for the bluetooth-broadcom recipe
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Use nonarch_base_libdir to install files in /usr/lib instead of /lib
+        for the rkwifibt-firmware recipe
+      hash: 51a6d5cb6d509608219a12bec1166c3f1c009ba8
+      body: >
+        Using the nonarch_base_libdir variable to change the install path to
+        /usr/lib instead
+
+        of hardcoding directly to /lib will help us when we enable the usrmerge
+        feature.
+
+
+        We add the entire recipe here from the existing BSP repo because
+        https://github.com/radxa/meta-radxa.git
+
+        is now a public archive. We must delete this recipe from here when we
+        migrate to the vendor recommended BSP
+
+        on the kirkstone branch.
+      footer:
+        Changelog-entry: Use nonarch_base_libdir to install files in /usr/lib instead of
+          /lib for the rkwifibt-firmware recipe
+        changelog-entry: Use nonarch_base_libdir to install files in /usr/lib instead of
+          /lib for the rkwifibt-firmware recipe
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.1.18+rev3
+  title: ""
+  date: 2025-04-30T14:04:26.879Z
+- commits:
     - subject: Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189
       hash: 89c50a796fd6b55ed3709f6b2ab6e88656874552
       body: Update contracts
