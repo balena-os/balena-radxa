@@ -1,6 +1,57 @@
 Change log
 -----------
 
+# v6.1.18+rev5
+## (2025-05-02)
+
+
+<details>
+<summary> Update contracts to a1e8b75d3ed6714ac854a9d95cd4fc458ca33646 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.132
+> ### (Invalid date)
+> 
+> * imx6ul-var-dart: Update provisioning instructions [Alexandru]
+> 
+> ## contracts-2.0.131
+> ### (2025-04-03)
+> 
+> * Add EDATEC Sensing contract and logo [RayX123456]
+> 
+> ## contracts-2.0.130
+> ### (2025-03-28)
+> 
+> * hw.device-type: Update links to docs for UEFI version checking [Alexandru Costache]
+> 
+> ## contracts-2.0.129
+> ### (2025-03-14)
+> 
+> * Mark Bookworm as the default version for Debian [Thodoris Greasidis]
+> 
+> ## contracts-2.0.128
+> ### (2025-02-05)
+> 
+> * Improve testing of contracts [Felipe Lalanne]
+> * Remove unused sw.os-image contracts [Felipe Lalanne]
+> 
+> ## contracts-2.0.127
+> ### (2025-01-28)
+> 
+> * Mark alpine 3.21 as the default alpine version [Thodoris Greasidis]
+> 
+> ## contracts-2.0.126
+> ### (2025-01-28)
+> 
+> * Add alpine 3.21 [Felipe Lalanne]
+> 
+> ## contracts-2.0.125
+> ### (2025-01-15)
+> 
+> * hw.device-type: Switch to using markdown for links [Alexandru Costache]
+> 
+
+</details>
+
 # v6.1.18+rev4
 ## (2025-05-01)
 
