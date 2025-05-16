@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.1.18+rev9
+## (2025-05-16)
+
+* Update Radxa binary loader to new revision for supporting newer ROCK 4B SKUs [Florin Sarbu]
+
 # v6.1.18+rev8
 ## (2025-05-04)
 

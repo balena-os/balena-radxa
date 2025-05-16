@@ -1,4 +1,21 @@
 - commits:
+    - subject: Update Radxa binary loader to new revision for supporting newer ROCK 4B
+        SKUs
+      hash: 0e230cac3b302ce72ba17a31de3e7cb7619f8a37
+      body: ""
+      footer:
+        Changelog-entry: Update Radxa binary loader to new revision for supporting newer
+          ROCK 4B SKUs
+        changelog-entry: Update Radxa binary loader to new revision for supporting newer
+          ROCK 4B SKUs
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.1.18+rev9
+  title: ""
+  date: 2025-05-16T12:38:11.123Z
+- commits:
     - subject: Update balena-yocto-scripts to d56cc30ad2bebfaa1b0d62be569cf98b4d845d5e
       hash: dc1268ec8645b1ce4ab0349196049f50f182a57c
       body: Update balena-yocto-scripts
