@@ -8,3 +8,15 @@ python __anonymous() {
     d.delVarFlag('do_packagedata', 'noexec')
     d.delVarFlag('do_package_write_ipk', 'noexec')
 }
+
+# update to newer revision in order to support new ROCK 4B SKUs with more RAM
+SRCREV = "cd2b28dc2c83dccdd99266bb2c43ea525bbf6c18"
+
+DDR_rk3399 = "bin/rk33/rk3399_ddr_800MHz_v1.25.bin"
+DDR_rk3399pro = "bin/rk33/rk3399_ddr_800MHz_v1.25.bin"
+DDR_rk3566 = "bin/rk35/rk3568_ddr_1056MHz_v1.16.bin"
+DDR_rk3568 = "bin/rk35/rk3568_ddr_1056MHz_v1.16.bin"
+
+BL31_rk3399 = "bin/rk33/rk3399_bl31_v1.35.elf"
+BL31_rk3566 = "bin/rk35/rk3568_bl31_v1.42.elf"
+BL31_rk3568 = "bin/rk35/rk3568_bl31_v1.42.elf"
