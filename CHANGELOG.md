@@ -1,6 +1,38 @@
 Change log
 -----------
 
+# v6.1.18+rev14
+## (2025-05-28)
+
+
+<details>
+<summary> Update contracts to 417aec2b1a551295d855acd551cd810d2b69420e [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.136
+> ### (2025-05-14)
+> 
+> * patch: Add deprecation notice for balenalib base images [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## contracts-2.0.135
+> ### (2025-05-14)
+> 
+> * patch: Add deprecation notice to balenalib readme [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## contracts-2.0.134
+> ### (2025-05-07)
+> 
+> * Remove Ubuntu Lunar 23.04 leftovers from dotnet & python contracts [Thodoris Greasidis]
+> 
+> ## contracts-2.0.133
+> ### (2025-05-07)
+> 
+> * Remove Ubuntu Xenial from supported distros [Kyle Harding]
+> * Remove Ubuntu Bionic from supported distros [Kyle Harding]
+> * Remove Ubuntu Focal from supported distros [Kyle Harding]
+> 
+
+</details>
+
 # v6.1.18+rev13
 ## (2025-05-28)
 
