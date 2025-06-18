@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v6.1.18+rev19
+## (2025-06-18)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 137906a06beca7bf54684be79b7e891ead6090de [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.34.4
+> ### (2025-06-18)
+> 
+> * prepare deflate artifacts even on PRs [Ryan Cooke]
+> 
+
+</details>
+
 # v6.1.18+rev18
 ## (2025-06-18)
 
