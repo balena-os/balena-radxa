@@ -6,10 +6,6 @@
 	path = layers/poky
 	url = https://github.com/balena-os/poky
 	branch = dunfell
-[submodule "layers/meta-radxa"]
-	path = layers/meta-radxa
-	url = https://github.com/radxa/meta-radxa.git
-	branch = dunfell
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
@@ -22,3 +18,7 @@
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
 	branch = master
+[submodule "layers/meta-rockchip"]
+	path = layers/meta-rockchip
+	url = https://github.com/radxa/meta-rockchip.git
+	branch = dunfell
