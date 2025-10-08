@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 558629f7ee193dfa3a920376f095410df9241a0c
+      hash: 33d20d6b13836631fac30412bc23af33507a4c8c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 558629f7ee193dfa3a920376f095410df9241a0c
+        changelog-entry: Update balena-yocto-scripts to 558629f7ee193dfa3a920376f095410df9241a0c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update GitHub Actions
+              hash: a0c369105a7e357b30853532162340fdf44ad25a
+              body: |
+                Update aws-actions/configure-aws-credentials from 5.0.0 to 5.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.41
+          title: ""
+          date: 2025-10-08T11:38:41.196Z
+  version: 6.1.18+rev68
+  title: ""
+  date: 2025-10-08T16:52:26.720Z
+- commits:
     - subject: Update balena-yocto-scripts to 48aa3346df05d6c758c666d2102f82b3c6ed80cb
       hash: 6cd56d5e504d0c4a8f4f2b14faad53da0b5670c3
       body: Update balena-yocto-scripts
