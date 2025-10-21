@@ -1,4 +1,73 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3225b1b19f1386f2b8f43692eef8ebf4eef5c5a8
+      hash: 0e5f1afc74d523530d3621cd5bc66680e06ebcd3
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3225b1b19f1386f2b8f43692eef8ebf4eef5c5a8
+        changelog-entry: Update balena-yocto-scripts to 3225b1b19f1386f2b8f43692eef8ebf4eef5c5a8
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.18
+              hash: 5f921d4304e84a85a0dd5fd1679890d325062ebf
+              body: |
+                Update aws/aws-cli from 2.31.17 to 2.31.18
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.55
+          title: ""
+          date: 2025-10-21T01:30:26.915Z
+        - commits:
+            - subject: Update acceptable states for previous test runs
+              hash: 736cb72e967d4e5e814b0d49a577283d0b4b5a76
+              body: |
+                This makes the test run check more robust and handles
+                cases where we may see unexpected results like more or
+                fewer test runs with varying conclusions.
+
+                Github script is also more secure and less prone
+                to string processing issues than bash CLI commands.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Fix AMI decrypt step paths
+              hash: 8257cae6fef47b7dd5fb5ec3693e893fc6b1314d
+              body: ""
+              footer:
+                CHange-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.54
+          title: ""
+          date: 2025-10-20T21:05:57.787Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.51
+              hash: ebdc564154f07898e858e65f99acf4c344b34a74
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.48 to
+                0.0.51
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.53
+          title: ""
+          date: 2025-10-18T01:47:52.552Z
+  version: 6.1.18+rev75
+  title: ""
+  date: 2025-10-21T07:09:40.172Z
+- commits:
     - subject: Update balena-yocto-scripts to 465c7787b611921682388ca4772e8ea0e0c57150
       hash: 3d4a77978332ab5837912ae0917503e681c34cbf
       body: Update balena-yocto-scripts
