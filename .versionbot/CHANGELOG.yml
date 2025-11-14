@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3340f57f091c22cd00aafe15c2d4fa17661afe2c
+      hash: b874812fc439aac04c52ef7e4ddfd2b2758fcf6b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3340f57f091c22cd00aafe15c2d4fa17661afe2c
+        changelog-entry: Update balena-yocto-scripts to 3340f57f091c22cd00aafe15c2d4fa17661afe2c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.5.3
+              hash: d9349e173c88954519f2de3eaaab8d5d54846442
+              body: |
+                Update balena-io/balena-cli from 22.5.0 to 22.5.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.81
+          title: ""
+          date: 2025-11-13T21:35:02.290Z
+        - commits:
+            - subject: "balena-build: Fix typo"
+              hash: 718ad2c049ca031a4b808f2c5107a7291e76789e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Atanas Bunchev
+              nested: []
+          version: balena-yocto-scripts-1.38.80
+          title: ""
+          date: 2025-11-13T17:47:44.068Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.5.0
+              hash: 550595f7f552d9817c01e2c29ad941bd57fa56c8
+              body: |
+                Update balena-io/balena-cli from 22.4.17 to 22.5.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.79
+          title: ""
+          date: 2025-11-13T10:14:04.633Z
+  version: 6.1.18+rev84
+  title: ""
+  date: 2025-11-14T01:24:11.930Z
+- commits:
     - subject: Update balena-yocto-scripts to 8e8aa1b8652199dd7947437a7e20ca46d0bc825c
       hash: 58807105a428efa66bbd98b52f1e4c084cc9afeb
       body: Update balena-yocto-scripts
