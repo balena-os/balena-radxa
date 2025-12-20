@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v6.1.18+rev94
+## (2025-12-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ea6132dc7a5e420392215ce41d19b1617f793af8 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.3
+> ### (2025-12-19)
+> 
+> * Update aws/aws-cli to v2.32.21 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.2
+> ### (2025-12-17)
+> 
+> * Update aws/aws-cli to v2.32.18 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.1
+> ### (2025-12-11)
+> 
+> * Update aws/aws-cli to v2.32.15 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.0
+> ### (2025-12-03)
+> 
+> * verify that keys from SIGN_KMOD_KEY_APPEND ends up properly in kernel [Yann CARDAILLAC]
+> 
+
+</details>
+
 # v6.1.18+rev93
 ## (2025-12-03)
 
