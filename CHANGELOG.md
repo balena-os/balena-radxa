@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v6.1.18+rev96
+## (2025-12-31)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 6ed7f28e2ad3c545946bfcebfc29b25e3359d63a [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.6
+> ### (Invalid date)
+> 
+> * Fix condition to check for test suites in workflow [Kyle Harding]
+> 
+
+</details>
+
 # v6.1.18+rev95
 ## (2025-12-30)
 
