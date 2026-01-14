@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.1.18+rev99
+## (2026-01-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 9f18bf21add2a8a3ffa0b96aba7416ba2d752e27 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.12
+> ### (2026-01-14)
+> 
+> * Update aws/aws-cli to v2.32.34 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.11
+> ### (2026-01-14)
+> 
+> * Update actions/upload-artifact action to v6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.10
+> ### (2026-01-13)
+> 
+> * yocto-build-deploy.yml: Search for build logs only in the location where they are produced [Florin Sarbu]
+> 
+
+</details>
+
 # v6.1.18+rev98
 ## (2026-01-03)
 
