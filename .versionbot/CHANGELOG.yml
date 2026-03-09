@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 73054ac4debf63ab177d662ece5d43deb11364c6
+      hash: a1fa5105ad841b1bb7c419000f93a186fdf0ad57
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 73054ac4debf63ab177d662ece5d43deb11364c6
+        changelog-entry: Update contracts to 73054ac4debf63ab177d662ece5d43deb11364c6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "contracts/raspberrypi5: Update device name to mention CM5 support"
+              hash: 5b3c3bb100da7a717be67e9acb168cc3d5721af3
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.138
+          title: ""
+          date: 2026-03-09T10:27:43.239Z
+  version: 6.1.18+rev100
+  title: ""
+  date: 2026-03-09T14:26:52.161Z
+- commits:
     - subject: Update balena-yocto-scripts to 9f18bf21add2a8a3ffa0b96aba7416ba2d752e27
       hash: 96a49b36a58e10dc7610674c600cfb8849847f83
       body: Update balena-yocto-scripts
