@@ -16,7 +16,7 @@ SRC_URI[brcm-btfw-load-service.md5sum] = "9408dcc71c940db2cc0319483bbf6122"
 
 inherit systemd
 
-RDEPENDS_${PN} += "bluez5"
+RDEPENDS:${PN} += "bluez5"
 
 do_install() {
 	install -d ${D}${systemd_system_unitdir}
@@ -27,7 +27,7 @@ do_install() {
 	install -m 0755 ${WORKDIR}/broadcom-bluetooth/brcm-btfw-load.sh ${D}${bindir}/brcm-btfw-load.sh
 }
 
-FILES_${PN} = " \
+FILES:${PN} = " \
   ${nonarch_base_libdir}/udev/rules.d/99-brcm-btfw-load.rules \
   ${nonarch_base_libdir}/systemd/system/brcm-btfw-load@.service \
   /usr/bin/brcm-btfw-load.sh \

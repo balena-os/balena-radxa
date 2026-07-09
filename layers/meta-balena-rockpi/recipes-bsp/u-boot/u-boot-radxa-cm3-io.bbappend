@@ -1,13 +1,13 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 inherit resin-u-boot
 
 DEPENDS += "radxa-binary-loader"
 
-BALENA_BOOT_PART_radxa-cm3-io-rk3566 = "3"
-BALENA_DEFAULT_ROOT_PART_radxa-cm3-io-rk3566 = "4"
+BALENA_BOOT_PART:radxa-cm3-io-rk3566 = "3"
+BALENA_DEFAULT_ROOT_PART:radxa-cm3-io-rk3566 = "4"
 
-SRC_URI_append = " \
+SRC_URI:append = " \
     file://0001-Integrate-with-Balena-u-boot-environment.patch \
     file://0001-Integrate-with-Balena-u-boot-environment_radxa-cm3-io-rk3566.patch \
     file://0002-Integrate-with-Balena-u-boot-environment_radxa-cm3-io-rk3566.patch;patchdir=.. \
