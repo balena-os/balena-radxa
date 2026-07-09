@@ -22,3 +22,7 @@
 	path = layers/meta-rockchip
 	url = https://github.com/radxa/meta-rockchip.git
 	branch = dunfell
+[submodule "layers/meta-arm"]
+	path = layers/meta-arm
+	url = https://git.yoctoproject.org/meta-arm
+	branch = scarthgap
