@@ -12,8 +12,6 @@ IMAGE_ROOTFS_SIZE:radxa-zero-s905y2="487424"
 IMAGE_ROOTFS_SIZE:rockpi-4b-rk3399="733184"
 BALENA_BOOT_SIZE:rockpi-4b-rk3399="80960"
 
-IMAGE_INSTALL:append:rockpi-4b-rk3399 = " bluetooth-broadcom"
-
 # for the Radxa CM3 add the dtb, u-boot scripts to rootfs /boot directory
 IMAGE_INSTALL:append:radxa-cm3-io-rk3566 = " \
     kernel-devicetree \
@@ -43,13 +41,13 @@ BALENA_BOOT_PARTITION_FILES:append:radxa-cm3-io-rk3566 = " \
 device_specific_configuration:rockpi-4b-rk3399() {
     parted -s ${BALENA_RAW_IMG} unit s mkpart loader1 64 8063
     parted -s ${BALENA_RAW_IMG} unit s mkpart loader2 16384 24575
+    # this 3rd partition is not used anymore with the new meta-rockchip BSP but we keep it for backward compatibility
     parted -s ${BALENA_RAW_IMG} unit s mkpart trust 24576 32767
 }
 
 IMAGE_CMD:balenaos-img:append:rockpi-4b-rk3399 () {
-    dd if=${DEPLOY_DIR_IMAGE}/idbloader.bin of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=64
-    dd if=${DEPLOY_DIR_IMAGE}/u-boot.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=16384
-    dd if=${DEPLOY_DIR_IMAGE}/trust.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=24576
+    dd if=${DEPLOY_DIR_IMAGE}/idbloader.img of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=64
+    dd if=${DEPLOY_DIR_IMAGE}/u-boot.itb of=${BALENA_RAW_IMG} conv=notrunc bs=512 seek=16384
 }
 
 device_specific_configuration:radxa-cm3-io-rk3566() {
