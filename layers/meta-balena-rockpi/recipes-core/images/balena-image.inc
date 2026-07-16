@@ -66,3 +66,9 @@ IMAGE_CMD:balenaos-img:append:radxa-zero-s905y2 () {
 
 # Ensure extlinux.conf files are deployed
 do_rootfs_balenaos-img[depends] += " u-boot-rockpi-4:do_build "
+
+BALENA_BOOT_SIZE_radxa-cm3-io-rk3566 = "40960"
+BALENA_STATE_SIZE_radxa-cm3-io-rk3566 = "20480"
+BALENA_BOOT_SIZE_radxa-zero-s905y2 = "40960"
+BALENA_STATE_SIZE_radxa-zero-s905y2 = "20480"
+BALENA_STATE_SIZE_rockpi-4b-rk3399 = "20480"
