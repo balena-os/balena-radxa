@@ -1,0 +1,29 @@
+From 24d12c6d1313c9b45a03093356b30996b6aef35b Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 24 Jul 2026 10:30:13 +0000
+Subject: [PATCH] rk3399_common.h: Increase max decompression buffer for kernel
+
+We will update the BSP which introduces a kernel of type FIT image which is larger.
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ include/configs/rk3399_common.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/rk3399_common.h b/include/configs/rk3399_common.h
+index 8bf53ea811a..6e1aa7afb45 100644
+--- a/include/configs/rk3399_common.h
++++ b/include/configs/rk3399_common.h
+@@ -25,7 +25,7 @@
+ #define CONFIG_SPL_MAX_SIZE             0x100000
+ #define CONFIG_SPL_BSS_START_ADDR	0x00400000
+ #define CONFIG_SPL_BSS_MAX_SIZE         0x2000
+-#define CONFIG_SYS_BOOTM_LEN	(64 << 20)	/* 64M */
++#define CONFIG_SYS_BOOTM_LEN	(128 << 20)	/* 128M */
+ #define CONFIG_SUPPORT_EMMC_RPMB
+ 
+ #define GICD_BASE			0xFEE00000
+-- 
+2.34.1
+
