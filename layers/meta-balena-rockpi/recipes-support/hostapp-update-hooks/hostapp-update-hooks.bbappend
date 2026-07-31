@@ -13,3 +13,5 @@ HOSTAPP_HOOKS:append:radxa-cm3-io-rk3566 = " \
 HOSTAPP_HOOKS:append:radxa-zero-s905y2 = " \
     99-flash-bootloader-radxa-zero-s905y2 \
 "
+
+SRC_URI:append = " file://0001-99-resin-uboot-use-basename-for-blockdev.patch;patchdir=${WORKDIR}"
