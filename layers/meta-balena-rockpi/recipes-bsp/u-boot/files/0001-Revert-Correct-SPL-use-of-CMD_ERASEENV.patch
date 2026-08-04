@@ -1,0 +1,29 @@
+From e29f21a239cc55c9a9242b425f0c68194deb5b3f Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Tue, 14 Jul 2026 12:20:06 +0000
+Subject: [PATCH] Revert "Correct SPL use of CMD_ERASEENV"
+
+This reverts commit cbacacd5c18e4fac64868112f970345d7732123b.
+This revert is needed before we revert 1af031ac3e3e75ea1ae58da093db956a8c9bc144.
+
+Upstream-Status: Inappropriate [configuration]
+---
+ include/env_internal.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/env_internal.h b/include/env_internal.h
+index fcb464263f0..0a2b5e010e1 100644
+--- a/include/env_internal.h
++++ b/include/env_internal.h
+@@ -189,7 +189,7 @@ struct env_driver {
+ #endif
+ 
+ #define ENV_SAVE_PTR(x) (CONFIG_IS_ENABLED(SAVEENV) ? (x) : NULL)
+-#define ENV_ERASE_PTR(x) (IS_ENABLED(CONFIG_CMD_ERASEENV) ? (x) : NULL)
++#define ENV_ERASE_PTR(x) (CONFIG_IS_ENABLED(CMD_ERASEENV) ? (x) : NULL)
+ 
+ extern struct hsearch_data env_htab;
+ 
+-- 
+2.34.1
+

@@ -1,0 +1,76 @@
+From 33be36e90727caa55fd35ff947bb73263c74020b Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Tue, 14 Jul 2026 12:20:41 +0000
+Subject: [PATCH] Revert "env: add ENV_ERASE_PTR macro"
+
+This reverts commit 1af031ac3e3e75ea1ae58da093db956a8c9bc144 which is broken bacause it made
+u-boot not compile when inheriting the resin-u-boot class (we disable CONFIG_CMD_ERASEENV and the
+macro introduced by this commit does not properly check if this config is enabled or not, it always
+returns 1 and because of that some code in env/mmc.c fails to compile).
+There is an attempt upstream to fix it, see https://github.com/u-boot/u-boot/commit/cbacacd but
+that also does not make the code compile.
+
+Upstream-Status: Inappropriate [configuration]
+---
+ env/ext4.c             | 3 ++-
+ env/mmc.c              | 6 +++++-
+ include/env_internal.h | 1 -
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+
+diff --git a/env/ext4.c b/env/ext4.c
+index 47e05a48919..faee303d0e5 100644
+--- a/env/ext4.c
++++ b/env/ext4.c
+@@ -193,5 +193,6 @@ U_BOOT_ENV_LOCATION(ext4) = {
+ 	ENV_NAME("EXT4")
+ 	.load		= env_ext4_load,
+ 	.save		= ENV_SAVE_PTR(env_ext4_save),
+-	.erase		= ENV_ERASE_PTR(env_ext4_erase),
++	.erase		= CONFIG_IS_ENABLED(CMD_ERASEENV) ? env_ext4_erase :
++							    NULL,
+ };
+diff --git a/env/mmc.c b/env/mmc.c
+index cb14bbb58f1..40c3904f2c8 100644
+--- a/env/mmc.c
++++ b/env/mmc.c
+@@ -307,6 +307,7 @@ fini:
+ 	return ret;
+ }
+ 
++#if defined(CONFIG_CMD_ERASEENV)
+ static inline int erase_env(struct mmc *mmc, unsigned long size,
+ 			    unsigned long offset)
+ {
+@@ -368,6 +369,7 @@ fini:
+ 	fini_mmc_for_env(mmc);
+ 	return ret;
+ }
++#endif /* CONFIG_CMD_ERASEENV */
+ #endif /* CONFIG_CMD_SAVEENV && !CONFIG_SPL_BUILD */
+ 
+ static inline int read_env(struct mmc *mmc, unsigned long size,
+@@ -497,6 +499,8 @@ U_BOOT_ENV_LOCATION(mmc) = {
+ 	.load		= env_mmc_load,
+ #ifndef CONFIG_SPL_BUILD
+ 	.save		= env_save_ptr(env_mmc_save),
+-	.erase		= ENV_ERASE_PTR(env_mmc_erase)
++#if defined(CONFIG_CMD_ERASEENV)
++	.erase		= env_mmc_erase,
++#endif
+ #endif
+ };
+diff --git a/include/env_internal.h b/include/env_internal.h
+index 0a2b5e010e1..ba8c89b306b 100644
+--- a/include/env_internal.h
++++ b/include/env_internal.h
+@@ -189,7 +189,6 @@ struct env_driver {
+ #endif
+ 
+ #define ENV_SAVE_PTR(x) (CONFIG_IS_ENABLED(SAVEENV) ? (x) : NULL)
+-#define ENV_ERASE_PTR(x) (CONFIG_IS_ENABLED(CMD_ERASEENV) ? (x) : NULL)
+ 
+ extern struct hsearch_data env_htab;
+ 
+-- 
+2.34.1
+

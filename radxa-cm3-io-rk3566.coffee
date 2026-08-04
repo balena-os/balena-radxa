@@ -37,7 +37,7 @@ module.exports =
 		machine: 'radxa-cm3-io-rk3566'
 		image: 'balena-image'
 		fstype: 'balenaos-img'
-		version: 'yocto-dunfell'
+		version: 'yocto-scarthgap'
 		deployArtifact: 'balena-image-radxa-cm3-io-rk3566.balenaos-img'
 		compressed: true
 

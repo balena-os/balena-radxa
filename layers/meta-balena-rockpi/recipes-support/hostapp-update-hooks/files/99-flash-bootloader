@@ -8,22 +8,18 @@ set -o errexit
 
 # machine specific data
 
-idbloader_file="idbloader.bin"
+idbloader_file="idbloader.img"
 idbloader_block_size=512
 idbloader_seek_blocks=64
 
-trust_file="trust.img"
-trust_block_size=512
-trust_seek_blocks=24576
-
-uboot_file="u-boot.img"
+uboot_file="u-boot.itb"
 uboot_block_size=512
 uboot_seek_blocks=16384
 
-device="/dev/"$(findmnt --noheadings --canonicalize --output SOURCE /mnt/boot/ | xargs lsblk -no pkname)
+device=$(findmnt --noheadings --canonicalize --output SOURCE /mnt/boot/ | sed -E 's/p?[0-9]+$//')
 
 # we sort the update files list by ascending memory addresses these binaries will be written to
-update_files="idbloader uboot trust"
+update_files="idbloader uboot"
 
 for i in $update_files; do
         current_update_file=$(eval echo \$${i}_file)
