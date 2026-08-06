@@ -1,4 +1,145 @@
 - commits:
+    - subject: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+      hash: cb75b58909cdfc02678c5c91f9477b69d12a5db5
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+        changelog-entry: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add device family and manufacturer metadata
+              hash: a74ddb06557df9e0c19f8201d095be10828ef47a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Pranas Ziaukas <pranas@balena.io>
+                signed-off-by: Pranas Ziaukas <pranas@balena.io>
+              author: Pranas Ziaukas
+          version: contracts-2.0.147
+          title: ""
+          date: 2026-08-04T04:57:52.384Z
+        - commits:
+            - subject: Modify existing device family and manufacturer metadata
+              hash: cd120576e7c0f021b84c1e81096c188862a144df
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Pranas Ziaukas <pranas@balena.io>
+                signed-off-by: Pranas Ziaukas <pranas@balena.io>
+              author: Pranas Ziaukas
+          version: contracts-2.0.146
+          title: ""
+          date: 2026-07-16T13:59:26.149Z
+        - commits:
+            - subject: "hw/device-type: Add Jetson AGX Thor Devkit contract"
+              hash: b4177e428fcc74bf0cf18ff0189d7a4826f7da4d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.145
+          title: ""
+          date: 2026-07-01T09:44:52.326Z
+        - commits:
+            - subject: "hw.device-type/beaglebone-ai64: Add the beaglebone-ai-64 alias to
+                align with its device repo definition"
+              hash: 72cf4a59d42908cee0350bb6aa5a96e3c96fcc4f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                See: https://balena.fibery.io/Work/Project/2470
+                see: https://balena.fibery.io/Work/Project/2470
+              author: Thodoris Greasidis
+          version: contracts-2.0.144
+          title: ""
+          date: 2026-05-19T06:48:40.188Z
+        - commits:
+            - subject: "hw.device-type: Add new device-type Compulab IOT-LINK Gateway"
+              hash: 9f8168327bc4393d5fe00aca5cb263003d76de7b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.143
+          title: ""
+          date: 2026-04-22T07:37:35.352Z
+        - commits:
+            - subject: Update iot-gate-imx8plus-d1d8 to remove Wifi and BT
+              hash: caa877e50405ec4dd3c399ae12753c4a4027f372
+              body: |
+                This board does not have a wireless module
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.142
+          title: ""
+          date: 2026-04-09T12:32:15.819Z
+        - commits:
+            - subject: "iot-gate-imx8plus: replace dram size range with explicit dram sizes"
+              hash: 1863899288374bd7ff6b5d42f80480fff11635c9
+              body: >
+                The 1G-8G and 2G-4G slugs could be confused with ranges, so this
+                commit
+
+                replaces them with 1GB or 8GB and 2GB or 4GB.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+          version: contracts-2.0.141
+          title: ""
+          date: 2026-03-16T16:10:34.868Z
+        - commits:
+            - subject: "iot-gate-imx8plus-d1d8: Enable bluetooth and wifi"
+              hash: 51c4c60e2b39798d8155a5bb732d8b119c2b9bcd
+              body: >
+                We attached the official IFM-WB Bluetooth and WiFi module to the
+                DUT in autokit
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.140
+          title: ""
+          date: 2026-03-11T07:59:21.304Z
+        - commits:
+            - subject: "ucm-imx93: Set wifi and bt to false"
+              hash: 56818a46726b814a475d60152dffaf56f701cdb8
+              body: >
+                The SoM we have is a Lite variant (which lacks bluetooth and
+                wifi) so we set
+
+                these to false until we get another SoM that has them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.139
+          title: ""
+          date: 2026-03-11T07:23:06.723Z
+  version: 7.8.0+rev2
+  title: ""
+  date: 2026-08-06T09:02:45.613Z
+- commits:
     - subject: Set explicit partition size overrides for each machine
       hash: 3c0018c244e27cdffdef8a404fadfd60e43a939a
       body: |
