@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v7.8.0+rev3
+## (2026-08-07)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8aa037bbf693fcebce7a7e4e219c6d75d2dead22 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.41.9
+> ### (2026-07-24)
+> 
+> * Update docker/login-action action to v4 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.41.8
+> ### (2026-07-15)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.41.7
+> ### (2026-07-14)
+> 
+> * Update product-os/review-commit-action action to v0.3.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.41.6
+> ### (2026-07-13)
+> 
+> * Update balena-io/balena-cli to v25 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v7.8.0+rev2
 ## (2026-08-06)
 

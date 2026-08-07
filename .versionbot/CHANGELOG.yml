@@ -1,4 +1,68 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8aa037bbf693fcebce7a7e4e219c6d75d2dead22
+      hash: a6cdff823fc320b6f4fbda865e0114adfc781e92
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8aa037bbf693fcebce7a7e4e219c6d75d2dead22
+        changelog-entry: Update balena-yocto-scripts to 8aa037bbf693fcebce7a7e4e219c6d75d2dead22
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update docker/login-action action to v4
+              hash: 215d51d8a9266bf3b6a23111be920d3f3f47a126
+              body: |
+                Update docker/login-action from 3.7.0 to 4.5.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.9
+          title: ""
+          date: 2026-07-24T15:12:10.086Z
+        - commits:
+            - subject: Update GitHub Actions
+              hash: 4514bea4032abfdacbb32c4e0363d69249c3ca3b
+              body: |
+                Update aws-actions/configure-aws-credentials from 6.0.0 to 6.2.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.8
+          title: ""
+          date: 2026-07-15T14:03:30.093Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.3.2
+              hash: d60f358679df56824fd0a24bfb5959e029152ab1
+              body: |
+                Update product-os/review-commit-action from 0.3.0 to 0.3.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.7
+          title: ""
+          date: 2026-07-14T15:56:52.158Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v25
+              hash: 8dd6bdbcf9024a7b9cdbbaa91ee4c2080a396b61
+              body: |
+                Update balena-io/balena-cli from 24.0.3 to 25.1.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.6
+          title: ""
+          date: 2026-07-13T13:20:06.104Z
+  version: 7.8.0+rev3
+  title: ""
+  date: 2026-08-07T04:53:26.929Z
+- commits:
     - subject: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
       hash: cb75b58909cdfc02678c5c91f9477b69d12a5db5
       body: Update contracts
