@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-arm to 045eb74bd9abe7d9ccf365a2417e440ce83bcbb0
+      hash: aba41b90ede6b2f0c0e1905dab0806b022466d49
+      body: Update layers/meta-arm
+      footer:
+        Changelog-entry: Update layers/meta-arm to 045eb74bd9abe7d9ccf365a2417e440ce83bcbb0
+        changelog-entry: Update layers/meta-arm to 045eb74bd9abe7d9ccf365a2417e440ce83bcbb0
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.9.2+rev1
+  title: ""
+  date: 2026-08-08T23:30:03.131Z
+- commits:
     - subject: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
       hash: b6e93ed5e580689e7dc04518d43cfa4ba0165c7c
       body: Update layers/meta-balena
