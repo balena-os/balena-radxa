@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to c806f4ead5c1fb34ed161266c2ed07a7c3b150d6
+      hash: 6f3bfaa200d68861859e9e40c5a4a96549546b13
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c806f4ead5c1fb34ed161266c2ed07a7c3b150d6
+        changelog-entry: Update layers/meta-balena to c806f4ead5c1fb34ed161266c2ed07a7c3b150d6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-extension-runtime: do not duplicate binary"
+              hash: ad640a5705664e0b2e97d90d74c2947239324f5f
+              body: >
+                The extension runtime and manager share the binary so we can
+                symlink it
+
+                instead.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-extension-runtime: update to v1.2.1"
+              hash: 23113b376b7adc6566791098ba357aa6bec9a843
+              body: |
+                Update from v1.1.0 to v1.2.1
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.9.3
+          title: ""
+          date: 2026-08-08T12:40:26.836Z
+  version: 7.9.3
+  title: ""
+  date: 2026-08-09T03:59:03.614Z
+- commits:
     - subject: Update layers/meta-arm to 045eb74bd9abe7d9ccf365a2417e440ce83bcbb0
       hash: aba41b90ede6b2f0c0e1905dab0806b022466d49
       body: Update layers/meta-arm
