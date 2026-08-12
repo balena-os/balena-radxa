@@ -1,6 +1,46 @@
 Change log
 -----------
 
+# v7.9.3+rev2
+## (2026-08-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4b858287c2b8eb6ffb7bedb66908ddde47525605 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.4
+> ### (2026-08-12)
+> 
+> * Deploy the hostApp with `os-profiles` draft release channel [Christina Ying Wang]
+> 
+> ## balena-yocto-scripts-1.42.3
+> ### (2026-08-12)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.2
+> ### (2026-08-12)
+> 
+> * Add source-mirror-setup dependency to All Jobs [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.42.1
+> ### (2026-08-11)
+> 
+> * Update Pin ubuntu Docker tag to 3b06811 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.0
+> ### (2026-08-10)
+> 
+> * yocto-build-deploy: Transport artifacts via lzma-artifact-action [Kyle Harding]
+> * hostapp-deploy: Verify required release assets before finalizing [Kyle Harding]
+> * hostapp-deploy: Group extension release assets by service [Kyle Harding]
+> * hostapp-deploy: Always deploy as draft and finalize after asset upload [Kyle Harding]
+> * hostapp-deploy: Run on ubuntu-24.04 instead of self-hosted [Kyle Harding]
+> * deploy: Create deflates via python script during deploy [Kyle Harding]
+> 
+
+</details>
+
 # v7.9.3+rev1
 ## (2026-08-09)
 
