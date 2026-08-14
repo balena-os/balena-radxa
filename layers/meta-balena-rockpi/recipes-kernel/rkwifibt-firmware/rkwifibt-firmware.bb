@@ -16,8 +16,9 @@ do_install() {
 
 	install -m 0644 ${S}/ap6212/bcm43438a1.hcd ${D}/${nonarch_base_libdir}/firmware/brcm/BCM43430A1.hcd
 
-	install -m 0644 ${S}/ap6212/fw_bcm43438a1.bin ${D}/${nonarch_base_libdir}/firmware/brcm/brcmfmac43430-sdio.bin
+	install -m 0644 ${S}/brcm/brcmfmac43430-sdio.bin ${D}/${nonarch_base_libdir}/firmware/brcm/brcmfmac43430-sdio.bin
 	install -m 0644 ${S}/ap6212/nvram.txt ${D}/${nonarch_base_libdir}/firmware/brcm/brcmfmac43430-sdio.txt
+	install -m 0644 ${S}/brcm/brcmfmac43430-sdio.clm_blob ${D}/${nonarch_base_libdir}/firmware/brcm/brcmfmac43430-sdio.clm_blob
 }
 
 PACKAGES =+ " \
