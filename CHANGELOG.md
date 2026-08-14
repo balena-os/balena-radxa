@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.9.4+rev3
+## (2026-08-14)
+
+* recipes-kernel: rkwifibt-firmware.bb: fix wifi firmware crash in AP mode [Ryan Cooke]
+
 # v7.9.4+rev2
 ## (2026-08-14)
 

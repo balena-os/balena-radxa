@@ -1,4 +1,29 @@
 - commits:
+    - subject: "recipes-kernel: rkwifibt-firmware.bb: fix wifi firmware crash in AP
+        mode"
+      hash: 96039554149ce142b675f446d4dc1cd63f9957e9
+      body: >
+        The onboard BCM43430 wifi firmware (installed from armbian/firmware's
+
+        ap6212/ dir since #570) is a 2016 build with no CLM blob, which was
+
+        crashing (brcmf_fw_crashed) a few minutes into AP mode. Switch to the
+
+        brcm/ files in the same repo instead: a 2021 build plus the CLM blob
+        that was never being installed.
+      footer:
+        Changelog-entry: "recipes-kernel: rkwifibt-firmware.bb: fix wifi firmware crash
+          in AP mode"
+        changelog-entry: "recipes-kernel: rkwifibt-firmware.bb: fix wifi firmware crash
+          in AP mode"
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 7.9.4+rev3
+  title: ""
+  date: 2026-08-14T21:05:36.473Z
+- commits:
     - subject: Update layers/meta-openembedded to
         bec755063a8b5da65df626f5749496aadaa4f4bb
       hash: 961c52df15ee0d6d1829dce7a62c24df74c301df
