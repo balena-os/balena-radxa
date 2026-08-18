@@ -1,6 +1,35 @@
 Change log
 -----------
 
+# v8.0.0
+## (2026-08-18)
+
+
+<details>
+<summary> Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.0
+> ### (2026-08-17)
+> 
+> * image_types_balena: force 4K block size for resin-state ext4 [guille-vega]
+> * Increase default boot, root and state partition sizes [guille-vega]
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 212305a6be2a8a448a4069cf83a57bfcdf654772 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.0
+> ### (2026-08-17)
+> 
+> * image_types_balena: force 4K block size for resin-state ext4 [guille-vega]
+> * Increase default boot, root and state partition sizes [guille-vega]
+> 
+
+</details>
+
 # v7.9.4+rev3
 ## (2026-08-14)
 
