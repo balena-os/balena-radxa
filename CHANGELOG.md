@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v8.0.4
+## (2026-08-27)
+
+
+<details>
+<summary> Update layers/meta-balena to ffa8bb2d616eeca2d95de130933b1177268686ec [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.4
+> ### (2026-08-26)
+> 
+> * hostapp.yml: Set network_mode none on the hostapp service [Christina Ying Wang]
+> 
+> ## meta-balena-8.0.3
+> ### (2026-08-24)
+> 
+> * balena-bootloader.bbclass: Move common bits from devices to class [Michal Toman]
+> 
+> ## meta-balena-8.0.2
+> ### (2026-08-21)
+> 
+> * distro:balena-os.inc: Remove gobject-introspection-data from DISTRO_FEATURES [Florin Sarbu]
+> 
+> ## meta-balena-8.0.1
+> ### (2026-08-20)
+> 
+> * balena: use AtomicWriteFile to save volume options [Kyle Harding]
+> 
+
+</details>
+
 # v8.0.0+rev1
 ## (2026-08-25)
 

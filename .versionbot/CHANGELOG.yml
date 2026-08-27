@@ -1,4 +1,94 @@
 - commits:
+    - subject: Update layers/meta-balena to ffa8bb2d616eeca2d95de130933b1177268686ec
+      hash: e28a93c1ba47035d7db22b7c3cea029cfdd5639a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ffa8bb2d616eeca2d95de130933b1177268686ec
+        changelog-entry: Update layers/meta-balena to ffa8bb2d616eeca2d95de130933b1177268686ec
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hostapp.yml: Set network_mode none on the hostapp service"
+              hash: 81c16302ee5f63da19081bc04ab04066d58d5532
+              body: >
+                Without it, compose-go adds a default network to the published
+
+                composition and the supervisor creates a real bridge whose
+                subnet can
+
+                collide with the device's LAN.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Christina Ying Wang <christina@balena.io>
+                signed-off-by: Christina Ying Wang <christina@balena.io>
+              author: Christina Ying Wang
+              nested: []
+          version: meta-balena-8.0.4
+          title: ""
+          date: 2026-08-26T21:32:57.241Z
+        - commits:
+            - subject: "balena-bootloader.bbclass: Move common bits from devices to class"
+              hash: f0b0c9843b896451123a6e41e7d8e5421608b20b
+              body: >
+                After adding the balena bootloader to a handful of devices, some
+                stuff
+
+                keeps getting copy/pasted into the bootloader recipes.
+
+
+                This patch moves the common bits to balena-bootloader.bbclass to
+                avoid
+
+                duplication and make it easier to use.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-8.0.3
+          title: ""
+          date: 2026-08-24T19:29:40.404Z
+        - commits:
+            - subject: "distro:balena-os.inc: Remove gobject-introspection-data from
+                DISTRO_FEATURES"
+              hash: 049d1a5bf38786fa1d2d50ac563234d4aa742645
+              body: >
+                We do not use GObject Introspection typelib files in the hostOS
+                so let's
+
+                remove them in order to help shrink the rootfs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-8.0.2
+          title: ""
+          date: 2026-08-21T20:43:55.785Z
+        - commits:
+            - subject: "balena: use AtomicWriteFile to save volume options"
+              hash: 130aa0d717e5a2eaf970718a819fb44d86d53a2d
+              body: |
+                Backport moby/moby#48034 to balenaEngine v25
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-8.0.1
+          title: ""
+          date: 2026-08-20T16:35:41.933Z
+  version: 8.0.4
+  title: ""
+  date: 2026-08-27T08:27:51.276Z
+- commits:
     - subject: Update layers/poky to 64e69ed23703f6358ec431d3f5f1f8483f974cae
       hash: a8605c6d5cdfd1b63761b7170548a78789091a8e
       body: Update layers/poky
