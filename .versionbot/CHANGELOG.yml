@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update layers/meta-balena to 179cf40b4211e358b5daa3703112d7034cffbc23
+      hash: 696f645643dba7d77eecf09e2c9206cda2f8c250
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 179cf40b4211e358b5daa3703112d7034cffbc23
+        changelog-entry: Update layers/meta-balena to 179cf40b4211e358b5daa3703112d7034cffbc23
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update flowzonify to v0.4.2
+              hash: 96c841e02785a6c15ee37fb672b316542315ad27
+              body: |
+                Update flowzonify from 0.0.0 to 0.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-8.0.5
+          title: ""
+          date: 2026-08-31T19:52:43.673Z
+  version: 8.0.5
+  title: ""
+  date: 2026-09-01T02:43:08.685Z
+- commits:
     - subject: Update contracts to 93b30010e7441051d361fa319a6e395f5a3c94f4
       hash: 8ac8a06151f06c4a77a78051ac2865dea63d8caf
       body: Update contracts
