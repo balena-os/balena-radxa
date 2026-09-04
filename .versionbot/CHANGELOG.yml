@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update layers/meta-balena to bacf9c06d38ce0747f0b7f7ef75f6e4cfd445d66
+      hash: c3dbc5710982d0f5092d4334287891a80e760e68
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to bacf9c06d38ce0747f0b7f7ef75f6e4cfd445d66
+        changelog-entry: Update layers/meta-balena to bacf9c06d38ce0747f0b7f7ef75f6e4cfd445d66
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "docs: Fix obsolete link to application update locking documentation"
+              hash: 7331c93c62095217cbe9924a655e04215235f853
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ken Bannister <kb2ma@runbox.com>
+                signed-off-by: Ken Bannister <kb2ma@runbox.com>
+              author: Ken Bannister
+              nested: []
+          version: meta-balena-8.0.8
+          title: ""
+          date: 2026-09-03T22:55:02.129Z
+        - commits:
+            - subject: "initrdscripts: more robustness looking for active root"
+              hash: 35dc9967e1e23d36e422e07ba17c0cafdcdf6faf
+              body: >
+                This patch addresses two problems that we have discovered during
+
+                automated QEMU tests:
+
+                1. regenerating UUIDs sometimes makes the by-state symlinks
+                disappear
+
+                2. get_state_path_from_label sometimes picks wrong on encrypted
+                devices
+
+
+                Both fixes have details explained in the comments.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-8.0.7
+          title: ""
+          date: 2026-09-03T14:14:28.030Z
+  version: 8.0.8
+  title: ""
+  date: 2026-09-04T09:29:53.442Z
+- commits:
     - subject: Update balena-yocto-scripts to e040066f030e2ba6577fe9bc481c22e614ec336a
       hash: e97664c6764ff87623d50ecc44daf7d673242537
       body: Update balena-yocto-scripts
