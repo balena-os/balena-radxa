@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update balena-yocto-scripts to e040066f030e2ba6577fe9bc481c22e614ec336a
+      hash: e97664c6764ff87623d50ecc44daf7d673242537
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to e040066f030e2ba6577fe9bc481c22e614ec336a
+        changelog-entry: Update balena-yocto-scripts to e040066f030e2ba6577fe9bc481c22e614ec336a
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "yocto-build-deploy: Use authenticated user to update submodules"
+              hash: 2d810521a03200ae0ef9c4e61419ac408be32592
+              body: >
+                Avoid GitHub rate-limiting of self-hosted runners by using an
+                authenticated
+
+                user when updating submodules.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.42.13
+          title: ""
+          date: 2026-09-03T20:30:42.658Z
+        - commits:
+            - subject: Update actions/upload-artifact action to v7
+              hash: 9b783d47dc1b0409e2bed7c0b30d98f3306b68ed
+              body: |
+                Update actions/upload-artifact from 6.0.0 to 7.0.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.12
+          title: ""
+          date: 2026-09-02T17:42:27.336Z
+  version: 8.0.6+rev1
+  title: ""
+  date: 2026-09-04T04:44:31.023Z
+- commits:
     - subject: Update layers/meta-balena to baa1b6f6cce7d9629621bd36dc73655b3861caea
       hash: 28eefb0462f82aecd9f68a2ea301404f1f61b420
       body: Update layers/meta-balena
