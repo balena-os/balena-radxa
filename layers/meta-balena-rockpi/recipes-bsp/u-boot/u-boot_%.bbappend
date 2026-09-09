@@ -18,7 +18,7 @@ BALENA_UBOOT_DEVICES = "0 1"
 
 UBOOT_EXTLINUX_LABELS = "balenaOS"
 UBOOT_EXTLINUX_ROOT = "${resin_kernel_root}"
-UBOOT_EXTLINUX_KERNEL_ARGS = "${os_cmdline}"
+UBOOT_EXTLINUX_KERNEL_ARGS = "${os_cmdline} usbcore.autosuspend=-1"
 
 # Ensure this isn't re-used from sstate
 do_deploy[nostamp] = "1"
