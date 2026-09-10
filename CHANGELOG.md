@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.9+rev2
+## (2026-09-10)
+
+* Update layers/meta-arm to 0a4b911d9fd63ab29c4532a907fae3282dbdcfe4 [balena-renovate[bot]]
+
 # v8.0.9+rev1
 ## (2026-09-08)
 
