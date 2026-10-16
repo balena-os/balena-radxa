@@ -1,4 +1,28 @@
 - commits:
+    - subject: Backport support for 4K/60 displays
+      hash: 7442506c372995c2dc55c168a027dc40fbbc5a75
+      body: |
+        With the update to scarthgap we've moved from radxa's kernel fork
+        to upstream kernel. This comes with a regression - the GPU driver
+        is capped at HDMI 1.4, so we lost support for HDMI 2.0 and thus 4K/60
+        displays.
+
+        The support is available in upstream 6.12 but scarthgap only ships
+        with 6.6 and there is no wrynose branch for meta-rockchip yet.
+
+        This patch backports the feature to scarthgap's 6.6. It's safe to drop
+        the patchset once we update to 6.12 or later.
+      footer:
+        Changelog-entry: Backport support for 4K/60 displays
+        changelog-entry: Backport support for 4K/60 displays
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 8.0.14+rev4
+  title: ""
+  date: 2026-10-16T09:21:33.437Z
+- commits:
     - subject: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
       hash: 301a2bdc7a897d0665b544da874b94f8a2104d99
       body: Update balena-yocto-scripts

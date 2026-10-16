@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.14+rev4
+## (2026-10-16)
+
+* Backport support for 4K/60 displays [Michal Toman]
+
 # v8.0.14+rev3
 ## (2026-10-14)
 
