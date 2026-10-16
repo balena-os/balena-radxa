@@ -1,0 +1,32 @@
+From 9b62fafe4b01271c9718a0752d8e9823479069ee Mon Sep 17 00:00:00 2001
+From: Jonas Karlman <jonas@kwiboo.se>
+Date: Sat, 15 Jun 2024 17:03:56 +0000
+Subject: [PATCH 05/12] drm/rockchip: dw_hdmi: Allow High TMDS Bit Rates
+
+Call dw_hdmi_set_high_tmds_clock_ratio in phy init ops to allow support
+of High TMDS Bit Rates used by HDMI2.0 display modes.
+
+Signed-off-by: Jonas Karlman <jonas@kwiboo.se>
+Signed-off-by: Heiko Stuebner <heiko@sntech.de>
+Link: https://patchwork.freedesktop.org/patch/msgid/20240615170417.3134517-6-jonas@kwiboo.se
+Upstream-Status: Backport [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1213b65e436d64611cf74ef8f005b22f6793275f]
+---
+ drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c b/drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c
+index cdd95e5..0943ce7 100644
+--- a/drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c
++++ b/drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c
+@@ -356,6 +356,8 @@ static int dw_hdmi_rockchip_genphy_init(struct dw_hdmi *dw_hdmi, void *data,
+ {
+ 	struct rockchip_hdmi *hdmi = (struct rockchip_hdmi *)data;
+ 
++	dw_hdmi_set_high_tmds_clock_ratio(dw_hdmi, display);
++
+ 	return phy_power_on(hdmi->phy);
+ }
+ 
+-- 
+2.47.3
+
