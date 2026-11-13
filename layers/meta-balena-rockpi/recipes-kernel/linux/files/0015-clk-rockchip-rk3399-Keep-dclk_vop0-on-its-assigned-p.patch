@@ -1,0 +1,46 @@
+From ea170c39a2bab93aee4067be84348cc55f78a515 Mon Sep 17 00:00:00 2001
+From: Guillermo Vega <guillermo.vega@balena.io>
+Date: Thu, 12 Nov 2026 08:26:20 +0100
+Subject: [PATCH] clk: rockchip: rk3399: Keep dclk_vop0 on its assigned parent
+
+dclk_vop0_div has no flags, so clk_composite_determine_rate() picks
+whichever of VPLL, CPLL and GPLL gives the closest rate at their
+current settings. When VPLL can only approximate a pixel clock (e.g.
+296.7018 MHz for 296.703 MHz), GPLL or CPLL divided down can be closer,
+and the VOP would then run from a different PLL than the HDMI PHY
+reference clock, which is VPLL in the device tree.
+
+Set CLK_SET_RATE_NO_REPARENT so the clock stays on the parent the
+device tree assigns (VPLL). Don't set CLK_SET_RATE_PARENT: VPLL is
+programmed by dw_hdmi-rockchip to the pixel clock, and letting the VOP
+change it as well makes the divider search pick a multiple of the
+pixel clock for rates VPLL can't produce exactly (e.g. VPLL at
+2076.9 MHz divided by 7), which leaves the HDMI PHY without a usable
+reference.
+
+This needs the board device tree to assign VPLL as the parent of
+DCLK_VOP0_DIV.
+
+Upstream-Status: Pending
+Signed-off-by: Guillermo Vega <guillermo.vega@balena.io>
+---
+ drivers/clk/rockchip/clk-rk3399.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/drivers/clk/rockchip/clk-rk3399.c b/drivers/clk/rockchip/clk-rk3399.c
+index a64bc32..a42a44c 100644
+--- a/drivers/clk/rockchip/clk-rk3399.c
++++ b/drivers/clk/rockchip/clk-rk3399.c
+@@ -1178,7 +1178,8 @@ static struct rockchip_clk_branch rk3399_clk_branches[] __initdata = {
+ 	GATE(HCLK_VOP0_NOC, "hclk_vop0_noc", "hclk_vop0_pre", CLK_IGNORE_UNUSED,
+ 			RK3399_CLKGATE_CON(28), 0, GFLAGS),
+ 
+-	COMPOSITE(DCLK_VOP0_DIV, "dclk_vop0_div", mux_pll_src_vpll_cpll_gpll_p, 0,
++	COMPOSITE(DCLK_VOP0_DIV, "dclk_vop0_div", mux_pll_src_vpll_cpll_gpll_p,
++			CLK_SET_RATE_NO_REPARENT,
+ 			RK3399_CLKSEL_CON(49), 8, 2, MFLAGS, 0, 8, DFLAGS,
+ 			RK3399_CLKGATE_CON(10), 12, GFLAGS),
+ 
+-- 
+2.53.0
+
