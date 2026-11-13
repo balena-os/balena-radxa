@@ -1,0 +1,53 @@
+From 5d443b3f962fc84e6dc312d1a406350f2053e516 Mon Sep 17 00:00:00 2001
+From: Guillermo Vega <guillermo.vega@balena.io>
+Date: Wed, 11 Nov 2026 17:24:54 +0100
+Subject: [PATCH] drm/rockchip: vop: Don't advertise AFBC on the RK3399 primary
+ plane
+
+The RK3399 VOP AFBC decoder only supports frames up to 2560x1600
+(datasheet, "1.2.10 Video IN/OUT": "Support AFBC function co-operation
+with GPU: support 2560x1600 UI"). Panfrost picks AFBC for the scanout
+buffer whenever the primary plane advertises it, so 4K outputs show
+corruption on the right side of the screen.
+
+The plane's modifier list is fixed at init and can't depend on the
+mode. Rejecting wider AFBC framebuffers instead, as proposed in [1],
+breaks userspace that doesn't fall back to linear: Weston fails with
+"failed to create kms fb: Invalid argument" and the output stays black.
+
+Stop advertising AFBC on the primary plane so userspace always
+allocates a linear scanout buffer. The GPU still uses AFBC internally
+and for buffers shared between clients and the compositor.
+
+Link: https://gitlab.freedesktop.org/mesa/mesa/-/issues/7968
+[1]: https://lore.kernel.org/all/20250604090054.7070-1-mail@etehtsea.me/
+
+Upstream-Status: Inappropriate [disable feature]
+Signed-off-by: Guillermo Vega <guillermo.vega@balena.io>
+---
+ drivers/gpu/drm/rockchip/rockchip_vop_reg.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/drivers/gpu/drm/rockchip/rockchip_vop_reg.c b/drivers/gpu/drm/rockchip/rockchip_vop_reg.c
+index f7d0edd..6d9687e 100644
+--- a/drivers/gpu/drm/rockchip/rockchip_vop_reg.c
++++ b/drivers/gpu/drm/rockchip/rockchip_vop_reg.c
+@@ -962,12 +962,14 @@ static const struct vop_win_phy rk3399_win01_data = {
+ };
+ 
+ /*
+- * rk3399 vop big windows register layout is same as rk3288, but we
+- * have a separate rk3399 win data array here so that we can advertise
+- * AFBC on the primary plane.
++ * rk3399 vop big windows register layout is same as rk3288. AFBC is not
++ * advertised on the primary plane: the AFBC decoder only supports up to
++ * 2560x1600, the modifier list can't depend on the mode, and userspace
++ * that composites to an AFBC primary plane doesn't fall back to linear
++ * when a wider AFBC framebuffer is rejected.
+  */
+ static const struct vop_win_data rk3399_vop_win_data[] = {
+-	{ .base = 0x00, .phy = &rk3399_win01_data,
++	{ .base = 0x00, .phy = &rk3368_win01_data,
+ 	  .type = DRM_PLANE_TYPE_PRIMARY },
+ 	{ .base = 0x40, .phy = &rk3368_win01_data,
+ 	  .type = DRM_PLANE_TYPE_OVERLAY },

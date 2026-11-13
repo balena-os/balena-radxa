@@ -19,6 +19,11 @@ SRC_URI:append = " \
     file://0012-drm-rockchip-dw_hdmi-Enable-4K-60Hz-mode-on-RK3399-a.patch \
 "
 
+# Not upstream: AFBC above 2560 px wide shows noise on RK3399
+SRC_URI:append = " \
+    file://0013-drm-rockchip-vop-Don-t-advertise-AFBC-on-the-RK3399-.patch \
+"
+
 BALENA_CONFIGS:append:rockpi-4b-rk3399 = " scsi-generic"
 BALENA_CONFIGS[scsi-generic] = " \
     CONFIG_CHR_DEV_SG=m \
