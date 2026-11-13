@@ -28,6 +28,7 @@ SRC_URI:append = " \
     file://0014-clk-rockchip-rk3399-Add-more-PLL-rates-for-common-pi.patch \
     file://0015-clk-rockchip-rk3399-Keep-dclk_vop0-on-its-assigned-p.patch \
     file://0016-arm64-dts-rockchip-rock-pi-4-Clock-VOPB-from-VPLL.patch \
+    file://0017-clk-rockchip-rk3399-Calculate-VPLL-settings-for-rate.patch \
     file://0018-drm-rockchip-vop-don-t-round-the-pixel-clock-when-th.patch \
 "
 
