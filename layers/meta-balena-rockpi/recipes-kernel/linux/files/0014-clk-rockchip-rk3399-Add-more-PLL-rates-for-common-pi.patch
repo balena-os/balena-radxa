@@ -1,0 +1,72 @@
+From fd4148cc44f0f77adb31d560670b184bd874a05d Mon Sep 17 00:00:00 2001
+From: Guillermo Vega <guillermo.vega@balena.io>
+Date: Wed, 11 Nov 2026 18:49:17 +0100
+Subject: [PATCH] clk: rockchip: rk3399: Add more PLL rates for common pixel
+ clocks
+
+The RK3399 PLL rate table only has nine rates below 300 MHz. Since
+commit d13b10ec6696 ("drm/rockchip: dw_hdmi: discard modes with
+unachievable pixelclocks") dw_hdmi-rockchip rejects any HDMI mode whose
+pixel clock VPLL cannot produce within 0.1%, so displays whose native
+mode uses one of the missing rates fall back to a lower mode.
+
+Add integer-mode settings for these pixel clocks:
+
+  268.5   MHz: 2560x1600@60 (DMT, reduced blanking)
+  241.5   MHz: 2560x1440@60 (CVT, reduced blanking)
+  198     MHz: 2560x1080@60 (CEA VIC 90)
+  185.625 MHz: 2560x1080@50 (CEA VIC 89)
+  162     MHz: 1600x1200@60 (DMT)
+  154     MHz: 1920x1200@60 (DMT, reduced blanking)
+  146.25  MHz: 1680x1050@60 (DMT)
+  138.5   MHz: 1920x1080@60 (CVT, reduced blanking)
+  119     MHz: 1680x1050@60 (DMT, reduced blanking)
+  108     MHz: 1280x1024@60 (DMT)
+  97.75   MHz: 1600x900@60 (CVT, reduced blanking)
+  88.75   MHz: 1440x900@60 (DMT, reduced blanking)
+  85.5    MHz: 1366x768@60 (DMT)
+  83.5    MHz: 1280x800@60 (DMT)
+  81.75   MHz: 1920x540@60 (32:9 signage panels)
+  71      MHz: 1280x800@60 (DMT, reduced blanking)
+
+The VCO for all of them is between 1308 MHz and 2970 MHz, within the
+800-3200 MHz range of the RK3399 PLL, and postdiv1 >= postdiv2.
+
+Upstream-Status: Pending
+Signed-off-by: Guillermo Vega <guillermo.vega@balena.io>
+---
+ drivers/clk/rockchip/clk-rk3399.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+diff --git a/drivers/clk/rockchip/clk-rk3399.c b/drivers/clk/rockchip/clk-rk3399.c
+index 9ebd6c4..a64bc32 100644
+--- a/drivers/clk/rockchip/clk-rk3399.c
++++ b/drivers/clk/rockchip/clk-rk3399.c
+@@ -94,11 +94,27 @@ static struct rockchip_pll_rate_table rk3399_pll_rates[] = {
+ 	RK3036_PLL_RATE( 408000000, 1, 68, 2, 2, 1, 0),
+ 	RK3036_PLL_RATE( 312000000, 1, 52, 2, 2, 1, 0),
+ 	RK3036_PLL_RATE( 297000000, 1, 99, 4, 2, 1, 0),
++	RK3036_PLL_RATE( 268500000, 2, 179, 4, 2, 1, 0),
++	RK3036_PLL_RATE( 241500000, 2, 161, 4, 2, 1, 0),
+ 	RK3036_PLL_RATE( 216000000, 1, 72, 4, 2, 1, 0),
++	RK3036_PLL_RATE( 198000000, 1, 66, 4, 2, 1, 0),
++	RK3036_PLL_RATE( 185625000, 4, 495, 4, 4, 1, 0),
++	RK3036_PLL_RATE( 162000000, 1, 81, 4, 3, 1, 0),
++	RK3036_PLL_RATE( 154000000, 1, 77, 4, 3, 1, 0),
+ 	RK3036_PLL_RATE( 148500000, 1, 99, 4, 4, 1, 0),
++	RK3036_PLL_RATE( 146250000, 2, 195, 4, 4, 1, 0),
++	RK3036_PLL_RATE( 138500000, 3, 277, 4, 4, 1, 0),
++	RK3036_PLL_RATE( 119000000, 1, 119, 6, 4, 1, 0),
++	RK3036_PLL_RATE( 108000000, 1, 72, 4, 4, 1, 0),
+ 	RK3036_PLL_RATE( 106500000, 1, 71, 4, 4, 1, 0),
++	RK3036_PLL_RATE(  97750000, 4, 391, 6, 4, 1, 0),
+ 	RK3036_PLL_RATE(  96000000, 1, 64, 4, 4, 1, 0),
++	RK3036_PLL_RATE(  88750000, 4, 355, 6, 4, 1, 0),
++	RK3036_PLL_RATE(  85500000, 1, 57, 4, 4, 1, 0),
++	RK3036_PLL_RATE(  83500000, 2, 167, 6, 4, 1, 0),
++	RK3036_PLL_RATE(  81750000, 2, 109, 4, 4, 1, 0),
+ 	RK3036_PLL_RATE(  74250000, 2, 99, 4, 4, 1, 0),
++	RK3036_PLL_RATE(  71000000, 1, 71, 6, 4, 1, 0),
+ 	RK3036_PLL_RATE(  65000000, 1, 65, 6, 4, 1, 0),
+ 	RK3036_PLL_RATE(  54000000, 1, 54, 6, 4, 1, 0),
+ 	RK3036_PLL_RATE(  27000000, 1, 27, 6, 4, 1, 0),

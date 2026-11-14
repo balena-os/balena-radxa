@@ -19,6 +19,19 @@ SRC_URI:append = " \
     file://0012-drm-rockchip-dw_hdmi-Enable-4K-60Hz-mode-on-RK3399-a.patch \
 "
 
+# Not upstream: AFBC above 2560 px wide shows noise on RK3399, the VOP
+# picks its dot clock before VPLL is set for the new mode, and VPLL
+# lacks some common pixel clocks (e.g. 81.75 MHz for 1920x540). 0018
+# is a backport of a patch posted to linux-rockchip
+SRC_URI:append = " \
+    file://0013-drm-rockchip-vop-Don-t-advertise-AFBC-on-the-RK3399-.patch \
+    file://0014-clk-rockchip-rk3399-Add-more-PLL-rates-for-common-pi.patch \
+    file://0015-clk-rockchip-rk3399-Keep-dclk_vop0-on-its-assigned-p.patch \
+    file://0016-arm64-dts-rockchip-rock-pi-4-Clock-VOPB-from-VPLL.patch \
+    file://0017-clk-rockchip-rk3399-Calculate-VPLL-settings-for-rate.patch \
+    file://0018-drm-rockchip-vop-don-t-round-the-pixel-clock-when-th.patch \
+"
+
 BALENA_CONFIGS:append:rockpi-4b-rk3399 = " scsi-generic"
 BALENA_CONFIGS[scsi-generic] = " \
     CONFIG_CHR_DEV_SG=m \
