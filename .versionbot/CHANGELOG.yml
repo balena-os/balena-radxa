@@ -1,4 +1,26 @@
 - commits:
+    - subject: "recipes-core/balena-image: Fix BALENA_BOOT_SIZE and BALENA_STATE_SIZE
+        override syntax"
+      hash: f2722053bba17e340f2202ef1d0b56c4c73655f6
+      body: >
+        The boot and state partition sizes were being applied from meta-balena
+        due to a typo in the override syntax.
+
+        This caused newer releases to use the new and increased boot and state
+        partition sizes.
+      footer:
+        Changelog-entry: "recipes-core/balena-image: Fix BALENA_BOOT_SIZE and
+          BALENA_STATE_SIZE override syntax"
+        changelog-entry: "recipes-core/balena-image: Fix BALENA_BOOT_SIZE and
+          BALENA_STATE_SIZE override syntax"
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 9.1.0+rev3
+  title: ""
+  date: 2026-11-18T17:39:20.720Z
+- commits:
     - subject: Update contracts to d3c1db43a35fd33802623d0f30acfb2f0bf095e2
       hash: e812c67d7e013081d7d6383f248f3e6776975f95
       body: Update contracts

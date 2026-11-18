@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.1.0+rev3
+## (2026-11-18)
+
+* recipes-core/balena-image: Fix BALENA_BOOT_SIZE and BALENA_STATE_SIZE override syntax [guille-vega]
+
 # v9.1.0+rev2
 ## (2026-11-17)
 
