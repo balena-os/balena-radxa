@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v9.1.0+rev4
+## (2026-11-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 748e807bac710fad9771c25caab88bca8088a14b [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.20
+> ### (2026-11-18)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.19
+> ### (2026-11-18)
+> 
+> * hostapp-deploy: Stop depending on s3-deploy [Kyle Harding]
+> 
+
+</details>
+
 # v9.1.0+rev3
 ## (2026-11-18)
 
