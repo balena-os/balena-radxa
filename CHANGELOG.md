@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v9.1.1+rev4
+## (2026-11-25)
+
+* rockpi-4b: Support HDMI modes whose pixel clock is not in the kernel's PLL table [guille-vega]
+* rockpi-4b: Support more HDMI display modes, including 1920x540, 1920x1200 and 2560x1440 [guille-vega]
+* rockpi-4b: Fix HDMI modes getting the wrong pixel clock after a mode change [guille-vega]
+* rockpi-4b: Fix noise on 4K displays without needing PAN_MESA_DEBUG=noafbc [guille-vega]
+
 # v9.1.1+rev3
 ## (2026-11-24)
 

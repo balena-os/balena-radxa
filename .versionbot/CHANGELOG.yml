@@ -1,4 +1,111 @@
 - commits:
+    - subject: "rockpi-4b: Support HDMI modes whose pixel clock is not in the kernel's
+        PLL table"
+      hash: 867dd67e51fca844d893ed718d8333b088f84219
+      body: |
+        VPLL only supports the rates in the kernel's PLL table, so HDMI modes
+        with other pixel clocks are still rejected. When a rate is not in the
+        table, calculate integer-mode settings within the 0.1% HDMI accepts,
+        inside the limits of the RK3399 TRM (VCO 800-3200 MHz, reference at
+        least 1 MHz, post dividers 1-7). The table stays the first choice, and
+        only VPLL uses the calculator.
+
+        Never return a rate above the requested one: the mux in front of VPLL
+        only accepts parent rates at or below the request, and otherwise falls
+        back to the 24 MHz oscillator. Among settings with the same rate,
+        prefer the smallest refdiv and then the highest VCO, as the TRM
+        recommends for minimum jitter.
+      footer:
+        Changelog-entry: "rockpi-4b: Support HDMI modes whose pixel clock is not in the
+          kernel's PLL table"
+        changelog-entry: "rockpi-4b: Support HDMI modes whose pixel clock is not in the
+          kernel's PLL table"
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: "rockpi-4b: Support more HDMI display modes, including 1920x540,
+        1920x1200 and 2560x1440"
+      hash: 19f2e0831d0a657fb16027028983a2436a94ea1d
+      body: |
+        Since the move from radxa's 4.4 kernel to upstream 6.6, dw_hdmi-rockchip
+        rejects HDMI modes whose pixel clock VPLL can't produce within 0.1%,
+        and the upstream RK3399 PLL table only has nine rates below 300 MHz.
+        Displays whose native mode needs a missing rate, like 32:9 signage
+        panels at 1920x540 (81.75 MHz) or 1920x1200 and 2560x1440 monitors,
+        don't get their native mode.
+
+        Add 16 rates between 71 and 268.5 MHz to the RK3399 PLL rate table,
+        covering common DMT, CVT and CEA modes.
+      footer:
+        Changelog-entry: "rockpi-4b: Support more HDMI display modes, including
+          1920x540, 1920x1200 and 2560x1440"
+        changelog-entry: "rockpi-4b: Support more HDMI display modes, including
+          1920x540, 1920x1200 and 2560x1440"
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: "rockpi-4b: Fix HDMI modes getting the wrong pixel clock after a mode
+        change"
+      hash: 2ce4f4e11a99023ae98702c96fdeb815bbe97bf7
+      body: |
+        The VOP rounds the pixel clock against its dot clock (dclk_vop0) in the
+        atomic check, while VPLL still runs at the previous mode's rate.
+        dclk_vop0_div then picks whichever of VPLL, CPLL and GPLL gets closest,
+        e.g. CPLL/8 = 100 MHz for 108 MHz, and the HDMI driver sets VPLL to
+        that wrong rate. Depending on the previous mode, modes such as
+        1600x900 or 1280x1024 got the wrong clock and stayed black or
+        flickered.
+
+        Make HDMI the only user that sets the VPLL rate, and have the VOP take
+        VPLL divided by 1:
+        - assign VPLL as the dclk_vop0_div parent in the ROCK Pi 4 device tree
+          and keep it there with CLK_SET_RATE_NO_REPARENT
+        - backport a patch posted to linux-rockchip that skips the VOP rounding
+          when the HDMI encoder sets the PLL itself
+
+        Letting dclk_vop0_div set its parent's rate (CLK_SET_RATE_PARENT)
+        instead was tried: for rates VPLL can only approximate, the divider
+        found a closer multiple, such as VPLL at 2076.9 MHz divided by 7 for
+        3840x2160@29.97. The VOP clock was right, but the HDMI PHY reference
+        was not, and the screen went black.
+      footer:
+        Changelog-entry: "rockpi-4b: Fix HDMI modes getting the wrong pixel clock after
+          a mode change"
+        changelog-entry: "rockpi-4b: Fix HDMI modes getting the wrong pixel clock after
+          a mode change"
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: "rockpi-4b: Fix noise on 4K displays without needing
+        PAN_MESA_DEBUG=noafbc"
+      hash: f19d178958aedee3b5ba36296208d973e75a604e
+      body: |
+        The RK3399 VOP only decodes AFBC up to 2560 px wide. Mesa uses AFBC
+        for the scanout buffer whenever the primary plane advertises it, so 4K
+        displays show a noise strip unless AFBC is disabled with
+        PAN_MESA_DEBUG=noafbc.
+
+        Rejecting wide AFBC framebuffers, as a pending upstream patch does,
+        leaves Weston with a black screen at 4K because it doesn't fall back
+        to a linear buffer. Instead, stop advertising AFBC on the primary plane
+        so every compositor allocates a linear scanout buffer. The GPU still
+        uses AFBC internally.
+      footer:
+        Changelog-entry: "rockpi-4b: Fix noise on 4K displays without needing
+          PAN_MESA_DEBUG=noafbc"
+        changelog-entry: "rockpi-4b: Fix noise on 4K displays without needing
+          PAN_MESA_DEBUG=noafbc"
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 9.1.1+rev4
+  title: ""
+  date: 2026-11-25T13:22:28.313Z
+- commits:
     - subject: Update balena-yocto-scripts to ac62fde95212b8eb2c40b385b530fefbd765846f
       hash: 2ad0fa06c020afa2288f5050ee7b8cde34328317
       body: Update balena-yocto-scripts
